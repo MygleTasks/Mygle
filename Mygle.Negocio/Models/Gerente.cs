@@ -8,5 +8,6 @@ namespace Mygle.Negocio
 {
     public class Gerente
     {
+        //sfadijsafjisaf
     }
 }

@@ -10,9 +10,7 @@ namespace Mygle.Telas
 {
     class Program
     {
-        Vendedor vendedor = new Vendedor();
-        Gerente gerente = new Gerente();
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
             string opcao = "0";
             do
@@ -34,9 +32,10 @@ namespace Mygle.Telas
                 }
             } while (opcao != "0");
         }
-        public void MenuGerente()
+        public static void MenuGerente()
         {
             string opcao = "0";
+            Gerente gerente = new Gerente();
             do
             {
                 Console.WriteLine("1 - Resumo\n2 - Detalhes\n3 - Usuários\n4 - Categorias");
@@ -64,9 +63,10 @@ namespace Mygle.Telas
 
             } while (opcao != "0");
         }
-        public void MenuVendedor()
+        public static void MenuVendedor()
         {
             string opcao = "0";
+            Vendedor vendedor = new Vendedor();
             do
             {
                 Console.Clear();

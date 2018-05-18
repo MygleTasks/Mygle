@@ -40,7 +40,7 @@ namespace Mygle.Negocio.Models
 
         public void Resumo()
         {
-            
+            throw new NotImplementedException();
         }
 
         public void Detalhes()

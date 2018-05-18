@@ -12,7 +12,9 @@ namespace Mygle.Telas
     {
         static void Main(string[] args)
         {
-            Vendedor v = new Vendedor();
+            Vendedor vendedor = new Vendedor();
+            Gerente gerente = new Gerente();
+
             string opcao = "0";
             do
             {
@@ -22,10 +24,14 @@ namespace Mygle.Telas
                 switch (opcao)
                 {
                     case "0": break;
+
                     case "1":
-                        v.Menu();
+                        vendedor.Menu();
                         break;
 
+                    case "2":
+                        gerente.Menu();
+                        break;
                 }
             } while (opcao != "0");
         }

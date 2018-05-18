@@ -10,11 +10,10 @@ namespace Mygle.Telas
 {
     class Program
     {
-        static void Main(string[] args)
+        Vendedor vendedor = new Vendedor();
+        Gerente gerente = new Gerente();
+        public void Main(string[] args)
         {
-            Vendedor vendedor = new Vendedor();
-            Gerente gerente = new Gerente();
-
             string opcao = "0";
             do
             {
@@ -26,11 +25,71 @@ namespace Mygle.Telas
                     case "0": break;
 
                     case "1":
-                        vendedor.Menu();
+                        MenuVendedor();
                         break;
 
                     case "2":
-                        gerente.Menu();
+                        MenuGerente();
+                        break;
+                }
+            } while (opcao != "0");
+        }
+        public void MenuGerente()
+        {
+            string opcao = "0";
+            do
+            {
+                Console.WriteLine("1 - Resumo\n2 - Detalhes\n3 - Usuários\n4 - Categorias");
+                opcao = Console.ReadLine();
+                switch (opcao)
+                {
+                    case "0": break;
+
+                    case "1":
+                        gerente.Resumo();
+                        break;
+
+                    case "2":
+                        gerente.Detalhes();
+                        break;
+
+                    case "3":
+                        gerente.Usuarios();
+                        break;
+
+                    case "4":
+                        gerente.Categorias();
+                        break;
+                }
+
+            } while (opcao != "0");
+        }
+        public void MenuVendedor()
+        {
+            string opcao = "0";
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("1 - Cadastrar venda\n2 - Resumo\n3 - Detalhes");
+                opcao = Console.ReadLine();
+                switch (opcao)
+                {
+                    case "0": break;
+
+                    case "1":
+                        vendedor.AdicionarVenda();
+                        break;
+
+                    case "2":
+                        vendedor.Resumo();
+                        break;
+
+                    case "3":
+                        vendedor.Detalhes();
+                        break;
+
+                    default:
+                        Console.WriteLine("Opção inválida!");
                         break;
                 }
             } while (opcao != "0");

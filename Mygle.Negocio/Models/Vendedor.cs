@@ -10,37 +10,6 @@ namespace Mygle.Negocio.Models
     {
         List<Venda> vendas = new List<Venda>();
 
-        public void Menu()
-        {
-            string opcao = "0";
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("1 - Cadastrar venda\n2 - Resumo\n3 - Detalhes");
-                opcao = Console.ReadLine();
-                switch (opcao)
-                {
-                    case "0": break;
-
-                    case "1":
-                        AdicionarVenda();
-                        break;
-
-                    case "2":
-                        Resumo();
-                        break;
-
-                    case "3":
-                        Detalhes();
-                        break;
-
-                    default:
-                        Console.WriteLine("Opção inválida!");
-                        break;
-                }
-            } while (opcao != "0");
-        }
-
         public void AdicionarVenda()
         {
             Console.Clear();

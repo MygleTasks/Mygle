@@ -8,35 +8,24 @@ namespace Mygle.Negocio.Models
 {
     public class Gerente
     {
-        public void Menu()
+        public void Resumo()
         {
-            string opcao = "0";
-            do
-            {
-                Console.WriteLine("1 - Resumo\n2 - Detalhes\n3 - Usuários\n4 - Categorias");
-                opcao = Console.ReadLine();
-                switch (opcao)
-                {
-                    case "0": break;
+            throw new NotImplementedException();
+        }
 
-                    case "1":
-                        Resumo();
-                        break;
+        public void Detalhes()
+        {
+            throw new NotImplementedException();
+        }
 
-                    case "2":
-                        Detalhes();
-                        break;
+        public void Usuarios()
+        {
+            throw new NotImplementedException();
+        }
 
-                    case "3":
-                        Usuarios();
-                        break;
-
-                    case "4":
-                        Categorias();
-                        break;
-                }
-
-            } while (opcao != "0");
+        public void Categorias()
+        {
+            throw new NotImplementedException();
         }
     }
 }

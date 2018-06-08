@@ -10,11 +10,14 @@ namespace Mygle.Telas
 {
     class Program
     {
+        static Gerenciador gerenciador = new Gerenciador();
+
         public static void Main(string[] args)
         {
             string opcao = "0";
             do
             {
+                Console.Clear();
                 Console.WriteLine("1 - Vendedor\n2 - Gerente\n");
                 opcao = Console.ReadLine();
 
@@ -38,6 +41,7 @@ namespace Mygle.Telas
             Gerente gerente = new Gerente();
             do
             {
+                Console.Clear();
                 Console.WriteLine("1 - Resumo\n2 - Detalhes\n3 - Usuários\n4 - Categorias");
                 opcao = Console.ReadLine();
                 switch (opcao)

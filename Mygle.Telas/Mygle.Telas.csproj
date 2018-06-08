@@ -53,10 +53,6 @@
       <Project>{4f4968bb-bc8e-4832-b865-8b60f62ddb29}</Project>
       <Name>Mygle.Negocio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mygle.Persistencia\Mygle.Persistencia.csproj">
-      <Project>{ea70d99f-d2d4-425f-8d38-61b113b1b417}</Project>
-      <Name>Mygle.Persistencia</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

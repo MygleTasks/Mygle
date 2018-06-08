@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace Mygle.Negocio.Models
 {
-    public class Venda
+    public class Usuario
     {
         public long Id { get; set; }
         public string nome { get; set; }
-        public int quantidade { get; set; }
-        public double valUnit { get; set; }
-        public DateTime data { get; set; }
+        public string matricula { get; set; }
 
-        public double ValorTotal()
+        public string Descrever()
         {
-            return quantidade * valUnit;
+            return string.Format($"ID: {this.Id}\nNome: {this.nome}\nMatricula: {this.matricula}");
         }
     }
 }

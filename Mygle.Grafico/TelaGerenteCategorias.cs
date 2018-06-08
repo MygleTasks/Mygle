@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Mygle.Grafico
 {
-    public partial class TelaCadastrarUsuario : Form
+    public partial class TelaGerenteCategorias : Form
     {
-        public TelaCadastrarUsuario()
+        public TelaGerenteCategorias()
         {
             InitializeComponent();
         }

@@ -16,5 +16,11 @@ namespace Mygle.Grafico
         {
             InitializeComponent();
         }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            TelaCadastroCategorias tela = new TelaCadastroCategorias();
+            tela.Show();
+        }
     }
 }

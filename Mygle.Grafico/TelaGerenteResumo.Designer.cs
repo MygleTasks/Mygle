@@ -174,6 +174,7 @@
             this.btUsuarios.TabIndex = 44;
             this.btUsuarios.Text = "Usuários";
             this.btUsuarios.UseVisualStyleBackColor = true;
+            this.btUsuarios.Click += new System.EventHandler(this.btUsuarios_Click);
             // 
             // btDetalhe
             // 
@@ -183,6 +184,7 @@
             this.btDetalhe.TabIndex = 43;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
+            this.btDetalhe.Click += new System.EventHandler(this.btDetalhe_Click);
             // 
             // pictureBox1
             // 
@@ -210,8 +212,9 @@
             this.btCategorias.TabIndex = 59;
             this.btCategorias.Text = "Categorias";
             this.btCategorias.UseVisualStyleBackColor = true;
+            this.btCategorias.Click += new System.EventHandler(this.btCategorias_Click);
             // 
-            // TelaResumoGerente
+            // TelaGerenteResumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +236,7 @@
             this.Controls.Add(this.btDetalhe);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btResumo);
-            this.Name = "TelaResumoGerente";
+            this.Name = "TelaGerenteResumo";
             this.Text = "TelaResumoGerente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -16,6 +16,11 @@ namespace Mygle.Grafico
         {
             InitializeComponent();
         }
-        
+
+        private void btNovoUsuario_Click(object sender, EventArgs e)
+        {
+            TelaCadastrarUsuario tela = new TelaCadastrarUsuario();
+            tela.Show();
+        }
     }
 }

@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbCategorias = new System.Windows.Forms.Label();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.lbCategorias = new System.Windows.Forms.Label();
             this.btExcluir = new System.Windows.Forms.Button();
+            this.btRemover = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,16 +49,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(345, 268);
             this.dataGridView1.TabIndex = 53;
-            // 
-            // lbCategorias
-            // 
-            this.lbCategorias.AutoSize = true;
-            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbCategorias.Location = new System.Drawing.Point(12, 9);
-            this.lbCategorias.Name = "lbCategorias";
-            this.lbCategorias.Size = new System.Drawing.Size(156, 31);
-            this.lbCategorias.TabIndex = 52;
-            this.lbCategorias.Text = "Categorias";
             // 
             // Item
             // 
@@ -74,6 +65,16 @@
             this.Check.HeaderText = "Check";
             this.Check.Name = "Check";
             // 
+            // lbCategorias
+            // 
+            this.lbCategorias.AutoSize = true;
+            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lbCategorias.Location = new System.Drawing.Point(12, 9);
+            this.lbCategorias.Name = "lbCategorias";
+            this.lbCategorias.Size = new System.Drawing.Size(156, 31);
+            this.lbCategorias.TabIndex = 52;
+            this.lbCategorias.Text = "Categorias";
+            // 
             // btExcluir
             // 
             this.btExcluir.Location = new System.Drawing.Point(293, 17);
@@ -82,12 +83,23 @@
             this.btExcluir.TabIndex = 58;
             this.btExcluir.Text = "Adicionar";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            // 
+            // btRemover
+            // 
+            this.btRemover.Location = new System.Drawing.Point(219, 17);
+            this.btRemover.Name = "btRemover";
+            this.btRemover.Size = new System.Drawing.Size(68, 27);
+            this.btRemover.TabIndex = 59;
+            this.btRemover.Text = "Remover";
+            this.btRemover.UseVisualStyleBackColor = true;
             // 
             // TelaGerenteCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 343);
+            this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lbCategorias);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
         private System.Windows.Forms.Label lbCategorias;
         private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.Button btRemover;
     }
 }

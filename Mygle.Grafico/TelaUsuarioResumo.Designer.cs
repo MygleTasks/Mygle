@@ -205,9 +205,8 @@
             this.label7.Size = new System.Drawing.Size(248, 31);
             this.label7.TabIndex = 38;
             this.label7.Text = "Total de Comissão:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // TelaResumoUsuario
+            // TelaUsuarioResumo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,8 +228,10 @@
             this.Controls.Add(this.btDetalhe);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btResumo);
-            this.Name = "TelaResumoUsuario";
+            this.KeyPreview = true;
+            this.Name = "TelaUsuarioResumo";
             this.Text = "TelaResumoUsuario";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaUsuarioResumo_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -22,5 +22,15 @@ namespace Mygle.Grafico
             TelaCadastroCategorias tela = new TelaCadastroCategorias();
             tela.Show();
         }
+
+        private void TelaGerenteCategorias_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }
+
+

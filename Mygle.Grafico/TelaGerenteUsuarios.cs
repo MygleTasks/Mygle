@@ -22,5 +22,13 @@ namespace Mygle.Grafico
             TelaCadastrarUsuario tela = new TelaCadastrarUsuario();
             tela.Show();
         }
+
+        private void TelaGerenteUsuarios_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

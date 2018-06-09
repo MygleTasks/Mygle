@@ -103,8 +103,10 @@
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lbCategorias);
+            this.KeyPreview = true;
             this.Name = "TelaGerenteCategorias";
             this.Text = "TelaGerenteCategorias";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteCategorias_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

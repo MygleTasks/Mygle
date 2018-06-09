@@ -165,6 +165,7 @@
             this.btLogout.TabIndex = 45;
             this.btLogout.Text = "Logout";
             this.btLogout.UseVisualStyleBackColor = true;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
             // btUsuarios
             // 
@@ -236,8 +237,10 @@
             this.Controls.Add(this.btDetalhe);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btResumo);
+            this.KeyPreview = true;
             this.Name = "TelaGerenteResumo";
             this.Text = "TelaResumoGerente";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteResumo_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

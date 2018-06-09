@@ -107,8 +107,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btNovoUsuario);
             this.Controls.Add(this.lbResumo);
+            this.KeyPreview = true;
             this.Name = "TelaGerenteUsuarios";
             this.Text = "TelaGerenteUsuarios";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteUsuarios_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

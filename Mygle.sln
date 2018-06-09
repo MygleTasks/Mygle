@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Telas", "Mygle.Telas\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Negocio", "Mygle.Negocio\Mygle.Negocio.csproj", "{4F4968BB-BC8E-4832-B865-8B60F62DDB29}"
 EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +22,7 @@ Global
 		{4F4968BB-BC8E-4832-B865-8B60F62DDB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F4968BB-BC8E-4832-B865-8B60F62DDB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F4968BB-BC8E-4832-B865-8B60F62DDB29}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Telas", "Mygle.Telas\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Negocio", "Mygle.Negocio\Mygle.Negocio.csproj", "{4F4968BB-BC8E-4832-B865-8B60F62DDB29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Grafico", "..\Mygle Ruan\Mygle.Grafico\Mygle.Grafico.csproj", "{1EA8F479-C11B-4A97-962C-4A769BEAD7C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mygle.Grafico", "Mygle.Grafico\Mygle.Grafico.csproj", "{1EA8F479-C11B-4A97-962C-4A769BEAD7C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

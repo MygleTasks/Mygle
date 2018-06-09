@@ -1,6 +1,6 @@
 ﻿namespace Mygle.Grafico
 {
-    partial class TelaCadastroUsuario
+    partial class TelaCadastrarUsuario
     {
         /// <summary>
         /// Required designer variable.

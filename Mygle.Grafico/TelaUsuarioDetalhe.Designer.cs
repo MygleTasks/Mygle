@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbDetalhe = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.lbDetalhe = new System.Windows.Forms.Label();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btAlterar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -53,16 +53,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(545, 268);
             this.dataGridView1.TabIndex = 53;
-            // 
-            // lbDetalhe
-            // 
-            this.lbDetalhe.AutoSize = true;
-            this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbDetalhe.Location = new System.Drawing.Point(12, 9);
-            this.lbDetalhe.Name = "lbDetalhe";
-            this.lbDetalhe.Size = new System.Drawing.Size(115, 31);
-            this.lbDetalhe.TabIndex = 52;
-            this.lbDetalhe.Text = "Detalhe";
             // 
             // Data
             // 
@@ -88,6 +78,16 @@
             // 
             this.Check.HeaderText = "Check";
             this.Check.Name = "Check";
+            // 
+            // lbDetalhe
+            // 
+            this.lbDetalhe.AutoSize = true;
+            this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lbDetalhe.Location = new System.Drawing.Point(12, 9);
+            this.lbDetalhe.Name = "lbDetalhe";
+            this.lbDetalhe.Size = new System.Drawing.Size(115, 31);
+            this.lbDetalhe.TabIndex = 52;
+            this.lbDetalhe.Text = "Detalhe";
             // 
             // btExcluir
             // 
@@ -116,8 +116,10 @@
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lbDetalhe);
+            this.KeyPreview = true;
             this.Name = "TelaUsuarioDetalhe";
             this.Text = "TelaUsuarioDetalhe";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaUsuarioDetalhe_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

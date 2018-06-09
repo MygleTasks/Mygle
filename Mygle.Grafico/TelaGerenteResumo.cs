@@ -34,5 +34,24 @@ namespace Mygle.Grafico
             TelaGerenteCategorias tela = new TelaGerenteCategorias();
             tela.Show();
         }
+
+        private void TelaGerenteResumo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
+        private void Logout()
+        {
+            TelaGerenteResumo tela = new TelaGerenteResumo();
+            this.Close();
+        }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            Logout();
+        }
     }
 }

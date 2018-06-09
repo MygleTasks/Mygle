@@ -102,8 +102,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.lbCategorias);
+            this.KeyPreview = true;
             this.Name = "TelaCadastroCategorias";
             this.Text = "TelaCadastroCategorias";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaCadastroCategorias_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

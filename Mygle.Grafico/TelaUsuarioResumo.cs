@@ -16,10 +16,13 @@ namespace Mygle.Grafico
         {
             InitializeComponent();
         }
-
-        private void label7_Click(object sender, EventArgs e)
+        
+        private void TelaUsuarioResumo_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
     }
 }

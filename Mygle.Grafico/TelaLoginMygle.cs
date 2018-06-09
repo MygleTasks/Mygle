@@ -39,6 +39,12 @@ namespace Mygle.Grafico
             }
         }
 
-        
+        private void TelaLoginMygle_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

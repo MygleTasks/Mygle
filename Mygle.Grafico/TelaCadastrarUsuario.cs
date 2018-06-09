@@ -16,6 +16,13 @@ namespace Mygle.Grafico
         {
             InitializeComponent();
         }
-        
+
+        private void TelaCadastrarUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.btNovoUsuario.TabIndex = 51;
             this.btNovoUsuario.Text = "Cadastrar Usuário";
             this.btNovoUsuario.UseVisualStyleBackColor = true;
+            this.btNovoUsuario.Click += new System.EventHandler(this.btNovoUsuario_Click);
             // 
             // lbResumo
             // 

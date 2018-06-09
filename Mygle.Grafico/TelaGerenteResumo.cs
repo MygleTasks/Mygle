@@ -16,5 +16,23 @@ namespace Mygle.Grafico
         {
             InitializeComponent();
         }
+
+        private void btDetalhe_Click(object sender, EventArgs e)
+        {
+            TelaGerenteDetalhe tela = new TelaGerenteDetalhe();
+            tela.Show();
+        }
+
+        private void btUsuarios_Click(object sender, EventArgs e)
+        {
+            TelaGerenteUsuarios tela = new TelaGerenteUsuarios();
+            tela.Show();
+        }
+
+        private void btCategorias_Click(object sender, EventArgs e)
+        {
+            TelaGerenteCategorias tela = new TelaGerenteCategorias();
+            tela.Show();
+        }
     }
 }

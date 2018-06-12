@@ -150,5 +150,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mygle.Negocio\Mygle.Negocio.csproj">
+      <Project>{4f4968bb-bc8e-4832-b865-8b60f62ddb29}</Project>
+      <Name>Mygle.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mygle.Negocio;
+using Mygle.Negocio.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +24,29 @@ namespace Mygle.Grafico
             if (e.KeyCode == Keys.Escape)
             {
                 this.Close();
+            }
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+            Usuario novoUsuario = new Usuario();
+            novoUsuario.Id = Convert.ToInt64(tbCodigo.Text);
+            novoUsuario.Nome = Convert.ToString(tbNome.Text);
+            novoUsuario.NomeUsuario = Convert.ToString(tbUsuario.Text);
+            novoUsuario.Senha = Convert.ToString(tbSenha.Text);
+;           novoUsuario.Senha2 = Convert.ToString(tbSenha2.Text);
+            Validacao validacao = Program.Gerenciador.AdicionarUsuario(novoUsuario);
+
+            String mensagemValidacao = "";
+            if (!validacao.Valido)
+            {
+                foreach(var chave in validacao.Mensagens.Keys)
+                {
+                    String msg = validacao.Mensagens[chave];
+                    mensagemValidacao += msg;
+                    mensagemValidacao += Environment.NewLine;
+                }
+                MessageBox.Show(mensagemValidacao);
             }
         }
     }

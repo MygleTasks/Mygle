@@ -10,25 +10,84 @@ namespace Mygle.Negocio
     public class Gerenciador
     {
         private List<Usuario> Usuarios;
-        private List<Venda> Vendas; 
+        private List<Venda> Vendas;
+        private List<Categoria> Categorias;
 
         public Gerenciador()
         {
             this.Usuarios = new List<Usuario>();
             this.Vendas = new List<Venda>();
+            this.Categorias = new List<Categoria>();
         }
 
-        public void AdicionarUsuario(Usuario usuarioAdicionado)
+        public Validacao AdicionarUsuario(Usuario usuarioAdicionado)
         {
-            if (String.IsNullOrEmpty(usuarioAdicionado.nome))
+            Validacao validacao = new Validacao();
+
+            if (this.Usuarios.Where(c=>c.NomeUsuario == usuarioAdicionado.NomeUsuario).Any())
             {
-                return;
+                validacao.Mensagens.Add("Nome de Usuário", "Nome de usuário não disponível");
             }
-            if (String.IsNullOrEmpty(usuarioAdicionado.matricula))
+            if (String.IsNullOrEmpty(usuarioAdicionado.Nome))
             {
-                return;
+                validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
             }
-            this.Usuarios.Add(usuarioAdicionado);
+            if (String.IsNullOrEmpty(usuarioAdicionado.NomeUsuario))
+            {
+                validacao.Mensagens.Add("Nome de usuário", "O nome de usuário não pode ser nulo ou vazio");
+            }
+            if (String.IsNullOrEmpty(usuarioAdicionado.Senha))
+            {
+                validacao.Mensagens.Add("Senha", "A senha não pode ser nula ou vazia");
+            }
+            if (usuarioAdicionado.Senha != usuarioAdicionado.Senha2)
+            {
+                validacao.Mensagens.Add("Senha", "As senhas não conferem");
+            }
+            if (validacao.Valido)
+            {
+                this.Usuarios.Add(usuarioAdicionado);
+            }
+            return validacao;
+        }
+
+        public Validacao AdicionarVenda(Venda vendaAdicionada)
+        {
+            Validacao validacao = new Validacao();
+
+            if (String.IsNullOrEmpty(vendaAdicionada.Nome))
+            {
+                validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
+            }
+            if (vendaAdicionada.Quantidade<1)
+            {
+                validacao.Mensagens.Add("Quantidade", "A quantidade não pode ser menor do que 1");
+            }
+            if (vendaAdicionada.ValUnit<1)
+            {
+                validacao.Mensagens.Add("Valor Unitário", "O valor não pode ser menor do que 1");
+            }
+            
+            if (validacao.Valido)
+            {
+                this.Vendas.Add(vendaAdicionada);
+            }
+            return validacao;
+        }
+
+        public Validacao AdicionarCategoria(Categoria categoriaAdicionada)
+        {
+            Validacao validacao = new Validacao();
+
+            if (String.IsNullOrEmpty(categoriaAdicionada.Nome))
+            {
+                validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
+            }
+            if (validacao.Valido)
+            {
+                this.Categorias.Add(categoriaAdicionada);
+            }
+            return validacao;
         }
 
         public List<Usuario> TodosOsUsuarios()
@@ -36,9 +95,15 @@ namespace Mygle.Negocio
             return this.Usuarios.ToList();
         }
 
-        public void AdicionarVenda(Venda vendaAdicionada)
+        public List<Venda> TodasAsVendas()
         {
-            this.Vendas.Add(vendaAdicionada);
+            return this.Vendas.ToList();
         }
+
+        public List<Categoria> TodasAsCategorias()
+        {
+            return this.Categorias.ToList();
+        }
+        
     }
 }

@@ -9,14 +9,14 @@ namespace Mygle.Negocio.Models
     public class Venda
     {
         public long Id { get; set; }
-        public string nome { get; set; }
-        public int quantidade { get; set; }
-        public double valUnit { get; set; }
-        public DateTime data { get; set; }
+        public string Nome { get; set; }
+        public int Quantidade { get; set; }
+        public double ValUnit { get; set; }
+        public DateTime Data { get; set; }
 
         public double ValorTotal()
         {
-            return quantidade * valUnit;
+            return Quantidade * ValUnit;
         }
     }
 }

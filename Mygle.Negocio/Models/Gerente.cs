@@ -38,7 +38,7 @@ namespace Mygle.Negocio.Models
                         RemoverUsuarios();
                         break;
                     case "3":
-                        ListarUsuarios();
+                        
                         break;
                 }
             } while (opcao != "0");
@@ -55,30 +55,34 @@ namespace Mygle.Negocio.Models
             Usuario novoUsuario = new Usuario();
             Console.Write("Informe o ID: ");
             novoUsuario.Id = Convert.ToInt64(Console.ReadLine());
-            Console.Write("Informe o nome do usuário: ");
-            novoUsuario.nome = Console.ReadLine();
-            Console.Write("Informe a matrícula do usuário: ");
-            novoUsuario.matricula = Console.ReadLine();
+            Console.Write("Informe o nome: ");
+            novoUsuario.Nome = Console.ReadLine();
+            Console.Write("Informe a nome de usuário: ");
+            novoUsuario.NomeUsuario = Console.ReadLine();
+            Console.Write("Informe a senha: ");
+            novoUsuario.Senha = Console.ReadLine();
+            Console.Write("Informe a senha novamente: ");
+            novoUsuario.Senha2 = Console.ReadLine();
 
-            gerenciador.AdicionarUsuario(novoUsuario);
-            Console.WriteLine("Usuario cadastrado com sucesso!");
+            Validacao validacao = gerenciador.AdicionarUsuario(novoUsuario);
+            if (validacao.Valido)
+            {
+                Console.WriteLine("Usuario cadastrado com sucesso!");
+            }
+            else
+            {
+                foreach(var key in validacao.Mensagens.Keys)
+                {
+                    String mensagem = validacao.Mensagens[key];
+                    Console.WriteLine($"{key}: {mensagem}");
+                }
+            }
             Console.ReadKey();
         }
 
         public void RemoverUsuarios()
         {
             //codigo
-        }
-
-        public void ListarUsuarios()
-        {
-            Console.Clear();
-            List<Usuario> usuariosCadastrados = gerenciador.TodosOsUsuarios();
-            foreach(Usuario usuario in usuariosCadastrados)
-            {
-                Console.WriteLine(usuario.Descrever());
-            }
-            Console.ReadKey();
         }
     }
 }

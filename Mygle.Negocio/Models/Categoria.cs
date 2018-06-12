@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Mygle.Negocio.Models
 {
-    public class Usuario
+    public class Categoria
     {
         public long Id { get; set; }
         public string Nome { get; set; }
-        public string NomeUsuario { get; set; }
-        public string Senha { get; set; }
-        public string Senha2 { get; set; }
+        public string TipoMeta { get; set; }
     }
 }

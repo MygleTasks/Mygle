@@ -8,6 +8,7 @@ namespace Mygle.Negocio
 {
     public class Validacao
     {
+        //Dicionário que armazena e mostra as mensagens de erro
         public Dictionary<String, String> Mensagens { get; set; }
         public Boolean Valido
         {

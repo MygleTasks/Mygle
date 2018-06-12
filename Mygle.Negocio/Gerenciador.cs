@@ -4,27 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Mygle.Negocio.Persistencia;
 
 namespace Mygle.Negocio
 {
     public class Gerenciador
     {
-        private List<Usuario> Usuarios;
-        private List<Venda> Vendas;
-        private List<Categoria> Categorias;
+        private Banco banco = new Banco();
 
-        public Gerenciador()
-        {
-            this.Usuarios = new List<Usuario>();
-            this.Vendas = new List<Venda>();
-            this.Categorias = new List<Categoria>();
-        }
-
+        //Validação de novo usuário
         public Validacao AdicionarUsuario(Usuario usuarioAdicionado)
         {
             Validacao validacao = new Validacao();
 
-            if (this.Usuarios.Where(c=>c.NomeUsuario == usuarioAdicionado.NomeUsuario).Any())
+            if (this.banco.Usuarios.Where(c=>c.NomeUsuario == usuarioAdicionado.NomeUsuario).Any())
             {
                 validacao.Mensagens.Add("Nome de Usuário", "Nome de usuário não disponível");
             }
@@ -44,13 +37,17 @@ namespace Mygle.Negocio
             {
                 validacao.Mensagens.Add("Senha", "As senhas não conferem");
             }
+
+            //Gravação de dados no banco
             if (validacao.Valido)
             {
-                this.Usuarios.Add(usuarioAdicionado);
+                this.banco.Usuarios.Add(usuarioAdicionado);
+                this.banco.SalvarDados();
             }
             return validacao;
         }
 
+        //Validação de nova venda
         public Validacao AdicionarVenda(Venda vendaAdicionada)
         {
             Validacao validacao = new Validacao();
@@ -68,13 +65,16 @@ namespace Mygle.Negocio
                 validacao.Mensagens.Add("Valor Unitário", "O valor não pode ser menor do que 1");
             }
             
+            //Gravação de dados no banco
             if (validacao.Valido)
             {
-                this.Vendas.Add(vendaAdicionada);
+                this.banco.Vendas.Add(vendaAdicionada);
+                this.banco.SalvarDados();
             }
             return validacao;
         }
 
+        //Validação de nova categoria
         public Validacao AdicionarCategoria(Categoria categoriaAdicionada)
         {
             Validacao validacao = new Validacao();
@@ -83,27 +83,30 @@ namespace Mygle.Negocio
             {
                 validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
             }
+
+            //Gravação de dados no banco
             if (validacao.Valido)
             {
-                this.Categorias.Add(categoriaAdicionada);
+                this.banco.Categorias.Add(categoriaAdicionada);
+                this.banco.SalvarDados();
             }
             return validacao;
         }
 
+        //Métodos para listagem de usuários, vendas e categorias
         public List<Usuario> TodosOsUsuarios()
         {
-            return this.Usuarios.ToList();
+            return this.banco.Usuarios.ToList();
         }
 
         public List<Venda> TodasAsVendas()
         {
-            return this.Vendas.ToList();
+            return this.banco.Vendas.ToList();
         }
 
         public List<Categoria> TodasAsCategorias()
         {
-            return this.Categorias.ToList();
+            return this.banco.Categorias.ToList();
         }
-        
     }
 }

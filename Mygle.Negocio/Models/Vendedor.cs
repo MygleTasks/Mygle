@@ -19,17 +19,17 @@ namespace Mygle.Negocio.Models
             novaVenda.Id = Convert.ToInt64(Console.ReadLine());
 
             Console.Write("Nome: ");
-            novaVenda.nome = Console.ReadLine();
+            novaVenda.Nome = Console.ReadLine();
 
             Console.Write("Quantidade: ");
-            novaVenda.quantidade = Convert.ToInt32(Console.ReadLine());
+            novaVenda.Quantidade = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Valor Unitário: ");
-            novaVenda.valUnit = Convert.ToDouble(Console.ReadLine());
+            novaVenda.ValUnit = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Data: ");
             string evento = Console.ReadLine();
-            novaVenda.data = Convert.ToDateTime(evento);
+            novaVenda.Data = Convert.ToDateTime(evento);
 
             vendas.Add(novaVenda);
             Console.WriteLine("Venda cadastrada com sucesso!");
@@ -46,7 +46,7 @@ namespace Mygle.Negocio.Models
             Console.Clear();
             foreach (Venda venda in vendas)
             {
-                Console.WriteLine("ID: {0}\nNome: {1}\nQuantidade: {2}\nValor Unitário: {3}\nValor Total: {4}\nData: {5}\n", venda.Id, venda.nome, venda.quantidade, venda.valUnit, venda.ValorTotal(), venda.data.ToString("dd/MM/yyyy"));
+                Console.WriteLine("ID: {0}\nNome: {1}\nQuantidade: {2}\nValor Unitário: {3}\nValor Total: {4}\nData: {5}\n", venda.Id, venda.Nome, venda.Quantidade, venda.ValUnit, venda.ValorTotal(), venda.Data.ToString("dd/MM/yyyy"));
             }
             Console.ReadKey();
         }

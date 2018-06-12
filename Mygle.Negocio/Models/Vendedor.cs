@@ -8,7 +8,7 @@ namespace Mygle.Negocio.Models
 {
     public class Vendedor
     {
-        List<Venda> vendas = new List<Venda>();
+        static Gerenciador gerenciador = new Gerenciador();
 
         public void AdicionarVenda()
         {
@@ -31,24 +31,30 @@ namespace Mygle.Negocio.Models
             string evento = Console.ReadLine();
             novaVenda.Data = Convert.ToDateTime(evento);
 
-            vendas.Add(novaVenda);
-            Console.WriteLine("Venda cadastrada com sucesso!");
+            Validacao validacao = gerenciador.AdicionarVenda(novaVenda);
+            if (validacao.Valido)
+            {
+                Console.WriteLine("Usuario cadastrado com sucesso!");
+            }
+            else
+            {
+                foreach (var key in validacao.Mensagens.Keys)
+                {
+                    String mensagem = validacao.Mensagens[key];
+                    Console.WriteLine($"{key}: {mensagem}");
+                }
+            }
             Console.ReadKey();
         }
 
         public void Resumo()
         {
-            throw new NotImplementedException();
+            //...
         }
 
         public void Detalhes()
         {
-            Console.Clear();
-            foreach (Venda venda in vendas)
-            {
-                Console.WriteLine("ID: {0}\nNome: {1}\nQuantidade: {2}\nValor Unitário: {3}\nValor Total: {4}\nData: {5}\n", venda.Id, venda.Nome, venda.Quantidade, venda.ValUnit, venda.ValorTotal(), venda.Data.ToString("dd/MM/yyyy"));
-            }
-            Console.ReadKey();
+            //...
         }
     }
 }

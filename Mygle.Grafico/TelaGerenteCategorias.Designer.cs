@@ -28,35 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgCategorias = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lbCategorias = new System.Windows.Forms.Label();
-            this.btExcluir = new System.Windows.Forms.Button();
+            this.btAdicionar = new System.Windows.Forms.Button();
             this.btRemover = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCategorias)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgCategorias
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgCategorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCategorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
             this.Item,
             this.Tipo,
             this.Check});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(345, 268);
-            this.dataGridView1.TabIndex = 53;
+            this.dgCategorias.Location = new System.Drawing.Point(18, 65);
+            this.dgCategorias.Name = "dgCategorias";
+            this.dgCategorias.Size = new System.Drawing.Size(462, 268);
+            this.dgCategorias.TabIndex = 53;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
             // 
             // Item
             // 
+            this.Item.DataPropertyName = "Nome";
             this.Item.HeaderText = "Item";
             this.Item.Name = "Item";
             // 
             // Tipo
             // 
+            this.Tipo.DataPropertyName = "Tipo";
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
             // 
@@ -75,39 +87,41 @@
             this.lbCategorias.TabIndex = 52;
             this.lbCategorias.Text = "Categorias";
             // 
-            // btExcluir
+            // btAdicionar
             // 
-            this.btExcluir.Location = new System.Drawing.Point(293, 17);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(68, 27);
-            this.btExcluir.TabIndex = 58;
-            this.btExcluir.Text = "Adicionar";
-            this.btExcluir.UseVisualStyleBackColor = true;
-            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            this.btAdicionar.Location = new System.Drawing.Point(412, 17);
+            this.btAdicionar.Name = "btAdicionar";
+            this.btAdicionar.Size = new System.Drawing.Size(68, 27);
+            this.btAdicionar.TabIndex = 58;
+            this.btAdicionar.Text = "Adicionar";
+            this.btAdicionar.UseVisualStyleBackColor = true;
+            this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
             // btRemover
             // 
-            this.btRemover.Location = new System.Drawing.Point(219, 17);
+            this.btRemover.Location = new System.Drawing.Point(338, 17);
             this.btRemover.Name = "btRemover";
             this.btRemover.Size = new System.Drawing.Size(68, 27);
             this.btRemover.TabIndex = 59;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
+            this.btRemover.Click += new System.EventHandler(this.btRemover_Click);
             // 
             // TelaGerenteCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 343);
+            this.ClientSize = new System.Drawing.Size(492, 343);
             this.Controls.Add(this.btRemover);
-            this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btAdicionar);
+            this.Controls.Add(this.dgCategorias);
             this.Controls.Add(this.lbCategorias);
             this.KeyPreview = true;
             this.Name = "TelaGerenteCategorias";
             this.Text = "TelaGerenteCategorias";
+            this.Load += new System.EventHandler(this.TelaGerenteCategorias_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteCategorias_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCategorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,12 +129,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgCategorias;
+        private System.Windows.Forms.Label lbCategorias;
+        private System.Windows.Forms.Button btAdicionar;
+        private System.Windows.Forms.Button btRemover;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Item;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
-        private System.Windows.Forms.Label lbCategorias;
-        private System.Windows.Forms.Button btExcluir;
-        private System.Windows.Forms.Button btRemover;
     }
 }

@@ -18,19 +18,19 @@ namespace Mygle.Negocio.Models
             Console.Write("ID: ");
             novaVenda.Id = Convert.ToInt64(Console.ReadLine());
 
-            Console.Write("Nome: ");
-            novaVenda.Nome = Console.ReadLine();
+            Console.Write("Categoria: ");
+            novaVenda.Categoria = Console.ReadLine();
 
             Console.Write("Quantidade: ");
             novaVenda.Quantidade = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Valor Unitário: ");
-            novaVenda.ValUnit = Convert.ToDouble(Console.ReadLine());
-
+            novaVenda.ValorUnitario = Convert.ToDecimal(Console.ReadLine());
+            
             Console.Write("Data: ");
             string evento = Console.ReadLine();
             novaVenda.Data = Convert.ToDateTime(evento);
-
+            
             Validacao validacao = gerenciador.AdicionarVenda(novaVenda);
             if (validacao.Valido)
             {

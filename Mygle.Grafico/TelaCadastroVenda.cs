@@ -12,29 +12,21 @@ using System.Windows.Forms;
 
 namespace Mygle.Grafico
 {
-    public partial class TelaCadastroCategorias : Form
+    public partial class TelaCadastroVenda : Form
     {
-        public TelaCadastroCategorias()
+        public TelaCadastroVenda()
         {
             InitializeComponent();
         }
 
-        private void TelaCadastroCategorias_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
-        }
-
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Categoria novaCategoria = new Categoria();
-            novaCategoria.Id = Convert.ToInt64(tbId.Text);
-            novaCategoria.Nome = Convert.ToString(tbNome.Text);
-            novaCategoria.TipoMeta = Convert.ToString(cbTipo.Text);
-            Validacao validacao = Program.Gerenciador.AdicionarCategoria(novaCategoria);
-
+            Venda novaVenda = new Venda();
+            novaVenda.Categoria = Convert.ToString(tbCategoria.Text);
+            novaVenda.ValorUnitario = Convert.ToDecimal(tbValorVenda.Text);
+            novaVenda.Quantidade = Convert.ToInt32(tbQtd.Text);
+            Validacao validacao = Program.Gerenciador.AdicionarVenda(novaVenda);
+            
             String mensagemValidacao = "";
             if (!validacao.Valido)
             {
@@ -46,7 +38,6 @@ namespace Mygle.Grafico
                 }
                 MessageBox.Show(mensagemValidacao);
             }
-            this.Close();
         }
 
         private void btCancelar_Click(object sender, EventArgs e)

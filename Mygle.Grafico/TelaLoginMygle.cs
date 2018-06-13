@@ -23,6 +23,7 @@ namespace Mygle.Grafico
         private void Logar()
         {
             TelaGerenteResumo tela = new TelaGerenteResumo();
+            // tela.MdiParent = this.MdiParent;
             tela.Show();
         }
 
@@ -46,5 +47,20 @@ namespace Mygle.Grafico
                 this.Close();
             }
         }
+
+
+
+        private void Logar2()
+        {
+            TelaUsuarioResumo tela = new TelaUsuarioResumo();
+            tela.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Logar2();
+        }
+
+        
     }
 }

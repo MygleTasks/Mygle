@@ -59,6 +59,12 @@
     <Compile Include="TelaCadastroCategorias.Designer.cs">
       <DependentUpon>TelaCadastroCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCadastroVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCadastroVenda.Designer.cs">
+      <DependentUpon>TelaCadastroVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaGerenteCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <EmbeddedResource Include="TelaCadastrarUsuario.resx">
       <DependentUpon>TelaCadastrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadastroVenda.resx">
+      <DependentUpon>TelaCadastroVenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaGerenteCategorias.resx">
       <DependentUpon>TelaGerenteCategorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,9 +136,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLoginMygle.resx">
       <DependentUpon>TelaLoginMygle.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaGerenteResumo.resx">
       <DependentUpon>TelaGerenteResumo.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaUsuarioDetalhe.resx">
       <DependentUpon>TelaUsuarioDetalhe.cs</DependentUpon>
@@ -137,6 +148,7 @@
     <EmbeddedResource Include="TelaUsuarioResumo.resx">
       <DependentUpon>TelaUsuarioResumo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\TelaCadastroCategorias.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

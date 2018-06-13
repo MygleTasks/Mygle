@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mygle.Negocio.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,25 @@ namespace Mygle.Grafico
             {
                 this.Close();
             }
+        }
+
+        private void CarregarDetalhes()
+        {
+            dgDetalhes.AutoGenerateColumns = false;
+            dgDetalhes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgDetalhes.MultiSelect = false;
+            List<Venda> vendas = Program.Gerenciador.TodasAsVendas();
+            dgDetalhes.DataSource = vendas;
+        }
+
+        private void Tela_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            CarregarDetalhes();
+        }
+        
+        private void TelaGerenteDetalhe_Load(object sender, EventArgs e)
+        {
+            CarregarDetalhes();
         }
     }
 }

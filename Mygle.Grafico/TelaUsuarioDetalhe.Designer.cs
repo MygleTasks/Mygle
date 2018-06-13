@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgVendas = new System.Windows.Forms.DataGridView();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,22 +37,22 @@
             this.lbDetalhe = new System.Windows.Forms.Label();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btAlterar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgVendas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgVendas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgVendas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Data,
             this.CategoriaItem,
             this.Valor,
             this.Quantidade,
             this.Check});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 268);
-            this.dataGridView1.TabIndex = 53;
+            this.dgVendas.Location = new System.Drawing.Point(18, 65);
+            this.dgVendas.Name = "dgVendas";
+            this.dgVendas.Size = new System.Drawing.Size(545, 268);
+            this.dgVendas.TabIndex = 53;
             // 
             // Data
             // 
@@ -97,6 +97,7 @@
             this.btExcluir.TabIndex = 57;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btAlterar
             // 
@@ -114,13 +115,14 @@
             this.ClientSize = new System.Drawing.Size(580, 348);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgVendas);
             this.Controls.Add(this.lbDetalhe);
             this.KeyPreview = true;
             this.Name = "TelaUsuarioDetalhe";
             this.Text = "TelaUsuarioDetalhe";
+            this.Load += new System.EventHandler(this.TelaUsuarioDetalhe_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaUsuarioDetalhe_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgVendas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,7 +130,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgVendas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;

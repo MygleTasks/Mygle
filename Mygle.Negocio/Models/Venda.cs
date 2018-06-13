@@ -14,9 +14,17 @@ namespace Mygle.Negocio.Models
         public Decimal ValorUnitario { get; set; }
         public DateTime Data { get; set; }
         
-        public Decimal ValorTotal()
+        public Decimal ValorTotal
         {
-            return Quantidade * ValorUnitario;
+            get
+            {
+                return Quantidade * ValorUnitario;
+            }
+        }
+
+        public Venda()
+        {
+            this.Data = DateTime.Now;
         }
     }
 }

@@ -69,6 +69,7 @@
             // 
             // Data
             // 
+            this.Data.DataPropertyName = "Data";
             this.Data.HeaderText = "Data";
             this.Data.Name = "Data";
             // 
@@ -79,13 +80,13 @@
             // 
             // CategoriaItem
             // 
-            this.CategoriaItem.DataPropertyName = "Nome";
+            this.CategoriaItem.DataPropertyName = "Categoria";
             this.CategoriaItem.HeaderText = "Cat. Item";
             this.CategoriaItem.Name = "CategoriaItem";
             // 
             // Valor
             // 
-            this.Valor.DataPropertyName = "ValorUnitario";
+            this.Valor.DataPropertyName = "ValorTotal";
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 

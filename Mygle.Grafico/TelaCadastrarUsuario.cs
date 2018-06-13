@@ -48,6 +48,10 @@ namespace Mygle.Grafico
                 }
                 MessageBox.Show(mensagemValidacao);
             }
+            else
+            {
+                MessageBox.Show("Cadastrado com sucesso!");
+            }
             this.Close();
         }
 

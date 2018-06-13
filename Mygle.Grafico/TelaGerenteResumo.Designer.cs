@@ -46,6 +46,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btResumo = new System.Windows.Forms.Button();
             this.btCategorias = new System.Windows.Forms.Button();
+            this.lbValorVendido = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,9 +55,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(313, 406);
+            this.pictureBox3.Location = new System.Drawing.Point(417, 500);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(162, 155);
+            this.pictureBox3.Size = new System.Drawing.Size(216, 191);
             this.pictureBox3.TabIndex = 58;
             this.pictureBox3.TabStop = false;
             // 
@@ -64,9 +66,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label5.Location = new System.Drawing.Point(578, 433);
+            this.label5.Location = new System.Drawing.Point(771, 533);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 18);
+            this.label5.Size = new System.Drawing.Size(83, 24);
             this.label5.TabIndex = 55;
             this.label5.Text = "Restante";
             // 
@@ -74,9 +77,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label6.Location = new System.Drawing.Point(578, 406);
+            this.label6.Location = new System.Drawing.Point(771, 500);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 18);
+            this.label6.Size = new System.Drawing.Size(82, 24);
             this.label6.TabIndex = 54;
             this.label6.Text = "Vendido";
             // 
@@ -84,9 +88,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label4.Location = new System.Drawing.Point(578, 209);
+            this.label4.Location = new System.Drawing.Point(771, 257);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 18);
+            this.label4.Size = new System.Drawing.Size(83, 24);
             this.label4.TabIndex = 53;
             this.label4.Text = "Restante";
             // 
@@ -94,9 +99,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label3.Location = new System.Drawing.Point(578, 182);
+            this.label3.Location = new System.Drawing.Point(771, 224);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 52;
             this.label3.Text = "Vendido";
             // 
@@ -104,9 +110,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(263, 365);
+            this.label2.Location = new System.Drawing.Point(351, 449);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(321, 25);
+            this.label2.Size = new System.Drawing.Size(403, 29);
             this.label2.TabIndex = 51;
             this.label2.Text = "Meta de Valor de Venda por Dia";
             // 
@@ -114,35 +121,39 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(263, 141);
+            this.label1.Location = new System.Drawing.Point(351, 174);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 25);
+            this.label1.Size = new System.Drawing.Size(398, 29);
             this.label1.TabIndex = 50;
             this.label1.Text = "Meta de Venda de Itens por Dia";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(313, 182);
+            this.pictureBox2.Location = new System.Drawing.Point(417, 224);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(162, 155);
+            this.pictureBox2.Size = new System.Drawing.Size(216, 191);
             this.pictureBox2.TabIndex = 49;
             this.pictureBox2.TabStop = false;
             // 
             // btDia
             // 
-            this.btDia.Location = new System.Drawing.Point(513, 44);
+            this.btDia.Location = new System.Drawing.Point(684, 54);
+            this.btDia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDia.Name = "btDia";
-            this.btDia.Size = new System.Drawing.Size(74, 31);
+            this.btDia.Size = new System.Drawing.Size(99, 38);
             this.btDia.TabIndex = 48;
             this.btDia.Text = "Dia";
             this.btDia.UseVisualStyleBackColor = true;
             // 
             // btMes
             // 
-            this.btMes.Location = new System.Drawing.Point(593, 44);
+            this.btMes.Location = new System.Drawing.Point(791, 54);
+            this.btMes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btMes.Name = "btMes";
-            this.btMes.Size = new System.Drawing.Size(74, 31);
+            this.btMes.Size = new System.Drawing.Size(99, 38);
             this.btMes.TabIndex = 47;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
@@ -151,17 +162,19 @@
             // 
             this.lbResumo.AutoSize = true;
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbResumo.Location = new System.Drawing.Point(194, 44);
+            this.lbResumo.Location = new System.Drawing.Point(259, 54);
+            this.lbResumo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbResumo.Name = "lbResumo";
-            this.lbResumo.Size = new System.Drawing.Size(234, 31);
+            this.lbResumo.Size = new System.Drawing.Size(289, 39);
             this.lbResumo.TabIndex = 46;
             this.lbResumo.Text = "Resumo Gerente";
             // 
             // btLogout
             // 
-            this.btLogout.Location = new System.Drawing.Point(12, 594);
+            this.btLogout.Location = new System.Drawing.Point(16, 731);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(120, 40);
+            this.btLogout.Size = new System.Drawing.Size(160, 49);
             this.btLogout.TabIndex = 45;
             this.btLogout.Text = "Logout";
             this.btLogout.UseVisualStyleBackColor = true;
@@ -169,9 +182,10 @@
             // 
             // btUsuarios
             // 
-            this.btUsuarios.Location = new System.Drawing.Point(12, 255);
+            this.btUsuarios.Location = new System.Drawing.Point(16, 314);
+            this.btUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btUsuarios.Name = "btUsuarios";
-            this.btUsuarios.Size = new System.Drawing.Size(120, 40);
+            this.btUsuarios.Size = new System.Drawing.Size(160, 49);
             this.btUsuarios.TabIndex = 44;
             this.btUsuarios.Text = "Usuários";
             this.btUsuarios.UseVisualStyleBackColor = true;
@@ -179,9 +193,10 @@
             // 
             // btDetalhe
             // 
-            this.btDetalhe.Location = new System.Drawing.Point(12, 209);
+            this.btDetalhe.Location = new System.Drawing.Point(16, 257);
+            this.btDetalhe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDetalhe.Name = "btDetalhe";
-            this.btDetalhe.Size = new System.Drawing.Size(120, 40);
+            this.btDetalhe.Size = new System.Drawing.Size(160, 49);
             this.btDetalhe.TabIndex = 43;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
@@ -190,36 +205,49 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 123);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
             // btResumo
             // 
-            this.btResumo.Location = new System.Drawing.Point(12, 163);
+            this.btResumo.Location = new System.Drawing.Point(16, 201);
+            this.btResumo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btResumo.Name = "btResumo";
-            this.btResumo.Size = new System.Drawing.Size(120, 40);
+            this.btResumo.Size = new System.Drawing.Size(160, 49);
             this.btResumo.TabIndex = 41;
             this.btResumo.Text = "Resumo";
             this.btResumo.UseVisualStyleBackColor = true;
             // 
             // btCategorias
             // 
-            this.btCategorias.Location = new System.Drawing.Point(12, 301);
+            this.btCategorias.Location = new System.Drawing.Point(16, 370);
+            this.btCategorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btCategorias.Name = "btCategorias";
-            this.btCategorias.Size = new System.Drawing.Size(120, 40);
+            this.btCategorias.Size = new System.Drawing.Size(160, 49);
             this.btCategorias.TabIndex = 59;
             this.btCategorias.Text = "Categorias";
             this.btCategorias.UseVisualStyleBackColor = true;
             this.btCategorias.Click += new System.EventHandler(this.btCategorias_Click);
             // 
+            // lbValorVendido
+            // 
+            this.lbValorVendido.AutoSize = true;
+            this.lbValorVendido.Location = new System.Drawing.Point(860, 505);
+            this.lbValorVendido.Name = "lbValorVendido";
+            this.lbValorVendido.Size = new System.Drawing.Size(0, 17);
+            this.lbValorVendido.TabIndex = 60;
+            this.lbValorVendido.Click += new System.EventHandler(this.lbValorVendido_Click);
+            // 
             // TelaGerenteResumo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 650);
+            this.ClientSize = new System.Drawing.Size(940, 800);
+            this.Controls.Add(this.lbValorVendido);
             this.Controls.Add(this.btCategorias);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
@@ -238,6 +266,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btResumo);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaGerenteResumo";
             this.Text = "TelaResumoGerente";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteResumo_KeyDown);
@@ -268,5 +297,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btResumo;
         private System.Windows.Forms.Button btCategorias;
+        private System.Windows.Forms.Label lbValorVendido;
     }
 }

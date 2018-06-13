@@ -38,6 +38,10 @@ namespace Mygle.Grafico
                 }
                 MessageBox.Show(mensagemValidacao);
             }
+            else
+            {
+                MessageBox.Show("Cadastrado com sucesso!");
+            }
         }
 
         private void btCancelar_Click(object sender, EventArgs e)

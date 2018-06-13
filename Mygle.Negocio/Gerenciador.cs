@@ -130,7 +130,7 @@ namespace Mygle.Negocio
         {
             return this.banco.Vendas.ToList();
         }
-
+        
         public List<Categoria> TodasAsCategorias()
         {
             return this.banco.Categorias.ToList();

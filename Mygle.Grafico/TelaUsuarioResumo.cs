@@ -48,5 +48,15 @@ namespace Mygle.Grafico
         {
             Logout();
         }
+
+        private void TelaUsuarioResumo_Shown(object sender, EventArgs e)
+        {
+            Decimal Total = 0;
+            foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
+            {
+                Total+=venda.ValorTotal;
+            }
+            this.lbValorVendido.Text = Total.ToString();
+        }  
     }
 }

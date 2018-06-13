@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mygle.Negocio.Models;
 
 namespace Mygle.Grafico
 {
@@ -52,6 +53,16 @@ namespace Mygle.Grafico
         private void btLogout_Click(object sender, EventArgs e)
         {
             Logout();
+        }
+
+        private void lbValorVendido_Click(object sender, EventArgs e)
+        {
+            Decimal Total = 0;
+            foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
+            {
+                Total += venda.ValorTotal;
+            }
+            this.lbValorVendido.Text = Total.ToString();
         }
     }
 }

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lbDetalhe = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgDetalhes = new System.Windows.Forms.DataGridView();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDetalhes)).BeginInit();
             this.SuspendLayout();
             // 
             // lbDetalhe
@@ -49,20 +49,23 @@
             this.lbDetalhe.TabIndex = 50;
             this.lbDetalhe.Text = "Detalhe";
             // 
-            // dataGridView1
+            // dgDetalhes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgDetalhes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgDetalhes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgDetalhes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Data,
             this.Vendedor,
             this.CategoriaItem,
             this.Valor,
             this.Quantidade,
             this.Check});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 268);
-            this.dataGridView1.TabIndex = 51;
+            this.dgDetalhes.Location = new System.Drawing.Point(18, 65);
+            this.dgDetalhes.Name = "dgDetalhes";
+            this.dgDetalhes.Size = new System.Drawing.Size(643, 268);
+            this.dgDetalhes.TabIndex = 51;
             // 
             // Data
             // 
@@ -76,16 +79,19 @@
             // 
             // CategoriaItem
             // 
+            this.CategoriaItem.DataPropertyName = "Nome";
             this.CategoriaItem.HeaderText = "Cat. Item";
             this.CategoriaItem.Name = "CategoriaItem";
             // 
             // Valor
             // 
+            this.Valor.DataPropertyName = "ValorUnitario";
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 
             // Quantidade
             // 
+            this.Quantidade.DataPropertyName = "Quantidade";
             this.Quantidade.HeaderText = "Quantidade";
             this.Quantidade.Name = "Quantidade";
             // 
@@ -99,13 +105,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 345);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgDetalhes);
             this.Controls.Add(this.lbDetalhe);
             this.KeyPreview = true;
             this.Name = "TelaGerenteDetalhe";
             this.Text = "TelaGerenteDetalhe";
+            this.Load += new System.EventHandler(this.TelaGerenteDetalhe_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteDetalhe_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgDetalhes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,7 +121,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbDetalhe;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgDetalhes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vendedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaItem;

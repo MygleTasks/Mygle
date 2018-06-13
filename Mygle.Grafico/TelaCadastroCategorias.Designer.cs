@@ -34,6 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbNome = new System.Windows.Forms.TextBox();
             this.cbTipo = new System.Windows.Forms.ComboBox();
+            this.tbId = new System.Windows.Forms.TextBox();
+            this.tbCodigo = new System.Windows.Forms.Label();
+            this.btCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbCategorias
@@ -48,17 +51,18 @@
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(303, 7);
+            this.btSalvar.Location = new System.Drawing.Point(174, 170);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(68, 27);
+            this.btSalvar.Size = new System.Drawing.Size(71, 34);
             this.btSalvar.TabIndex = 58;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 64);
+            this.label1.Location = new System.Drawing.Point(17, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 59;
@@ -67,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 88);
+            this.label2.Location = new System.Drawing.Point(17, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 60;
@@ -75,9 +79,9 @@
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(56, 61);
+            this.tbNome.Location = new System.Drawing.Point(61, 92);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(121, 20);
+            this.tbNome.Size = new System.Drawing.Size(184, 20);
             this.tbNome.TabIndex = 61;
             // 
             // cbTipo
@@ -86,16 +90,45 @@
             this.cbTipo.Items.AddRange(new object[] {
             "Valor",
             "Item"});
-            this.cbTipo.Location = new System.Drawing.Point(56, 85);
+            this.cbTipo.Location = new System.Drawing.Point(61, 116);
             this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cbTipo.Size = new System.Drawing.Size(184, 21);
             this.cbTipo.TabIndex = 62;
+            // 
+            // tbId
+            // 
+            this.tbId.Location = new System.Drawing.Point(61, 66);
+            this.tbId.Name = "tbId";
+            this.tbId.Size = new System.Drawing.Size(184, 20);
+            this.tbId.TabIndex = 64;
+            // 
+            // tbCodigo
+            // 
+            this.tbCodigo.AutoSize = true;
+            this.tbCodigo.Location = new System.Drawing.Point(17, 69);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.Size = new System.Drawing.Size(43, 13);
+            this.tbCodigo.TabIndex = 63;
+            this.tbCodigo.Text = "Código:";
+            // 
+            // btCancelar
+            // 
+            this.btCancelar.Location = new System.Drawing.Point(97, 170);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(71, 34);
+            this.btCancelar.TabIndex = 65;
+            this.btCancelar.Text = "Cancelar";
+            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // TelaCadastroCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 216);
+            this.ClientSize = new System.Drawing.Size(269, 216);
+            this.Controls.Add(this.btCancelar);
+            this.Controls.Add(this.tbId);
+            this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.tbNome);
             this.Controls.Add(this.label2);
@@ -119,5 +152,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.ComboBox cbTipo;
+        private System.Windows.Forms.TextBox tbId;
+        private System.Windows.Forms.Label tbCodigo;
+        private System.Windows.Forms.Button btCancelar;
     }
 }

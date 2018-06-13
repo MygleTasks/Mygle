@@ -12,6 +12,33 @@ namespace Mygle.Negocio
     {
         private Banco banco = new Banco();
 
+        //RemoverCategoria
+        public Validacao RemoverCategoria(Categoria categoria)
+        {
+            Validacao validacao = new Validacao();
+            banco.Categorias.Remove(categoria);
+            banco.SalvarDados();
+            return validacao;
+        }
+
+        //RemoverUsuario
+        public Validacao RemoverUsuario(Usuario usuario)
+        {
+            Validacao validacao = new Validacao();
+            banco.Usuarios.Remove(usuario);
+            banco.SalvarDados();
+            return validacao;
+        }
+
+        //RemoverDetalhe
+        public Validacao RemoverVenda(Venda venda)
+        {
+            Validacao validacao = new Validacao();
+            banco.Vendas.Remove(venda);
+            banco.SalvarDados();
+            return validacao;
+        }
+
         //Validação de novo usuário
         public Validacao AdicionarUsuario(Usuario usuarioAdicionado)
         {
@@ -52,15 +79,15 @@ namespace Mygle.Negocio
         {
             Validacao validacao = new Validacao();
 
-            if (String.IsNullOrEmpty(vendaAdicionada.Nome))
+            if (String.IsNullOrEmpty(vendaAdicionada.Categoria))
             {
-                validacao.Mensagens.Add("Nome", "O nome não pode ser nulo ou vazio");
+                validacao.Mensagens.Add("Nome", "A categoria não pode ser nulo ou vazio");
             }
             if (vendaAdicionada.Quantidade<1)
             {
                 validacao.Mensagens.Add("Quantidade", "A quantidade não pode ser menor do que 1");
             }
-            if (vendaAdicionada.ValUnit<1)
+            if (vendaAdicionada.ValorUnitario < 1)
             {
                 validacao.Mensagens.Add("Valor Unitário", "O valor não pode ser menor do que 1");
             }

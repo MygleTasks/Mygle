@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mygle.Negocio.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,29 @@ namespace Mygle.Grafico
             {
                 this.Close();
             }
+        }
+
+        private void btCadastrarVenda_Click(object sender, EventArgs e)
+        {
+            TelaCadastroVenda tela = new TelaCadastroVenda();
+            tela.Show();
+        }
+
+        private void btDetalhe_Click(object sender, EventArgs e)
+        {
+            TelaUsuarioDetalhe tela = new TelaUsuarioDetalhe();
+            tela.Show();
+        }
+
+        private void Logout()
+        {
+            TelaGerenteResumo tela = new TelaGerenteResumo();
+            this.Close();
+        }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            Logout();
         }
     }
 }

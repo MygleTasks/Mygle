@@ -153,9 +153,9 @@
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.lbResumo.Location = new System.Drawing.Point(194, 44);
             this.lbResumo.Name = "lbResumo";
-            this.lbResumo.Size = new System.Drawing.Size(121, 31);
+            this.lbResumo.Size = new System.Drawing.Size(234, 31);
             this.lbResumo.TabIndex = 46;
-            this.lbResumo.Text = "Resumo";
+            this.lbResumo.Text = "Resumo Gerente";
             // 
             // btLogout
             // 

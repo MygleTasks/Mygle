@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Mygle.Grafico
 {
@@ -53,7 +54,19 @@ namespace Mygle.Grafico
         private void Logar2()
         {
             TelaUsuarioResumo tela = new TelaUsuarioResumo();
-            tela.Show();
+            SqlConnection log = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From dbo.Usuarios where Nome='" + tbUsuario.Text +"' and Senha ='" + tbSenha.Text +"'",log);
+            DataTable dtlogin = new DataTable();
+            sda.Fill(dtlogin);
+            if ( dtlogin.Rows[0][0].ToString() == "1")
+            {
+                tela.Show();
+            }
+            else
+            {
+                MessageBox.Show("Verifique o Usuário e a senha");
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

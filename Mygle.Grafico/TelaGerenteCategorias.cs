@@ -75,6 +75,7 @@ namespace Mygle.Grafico
                 CarregarCategorias();
             }
         }
+        
     }
 }
 

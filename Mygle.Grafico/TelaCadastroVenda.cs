@@ -48,5 +48,10 @@ namespace Mygle.Grafico
         {
             this.Close();
         }
+
+        private void TelaCadastroVenda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

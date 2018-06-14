@@ -59,5 +59,10 @@ namespace Mygle.Grafico
         {
             this.Close();
         }
+
+        private void TelaCadastrarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

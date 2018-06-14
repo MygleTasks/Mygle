@@ -68,5 +68,10 @@ namespace Mygle.Grafico
                 CarregarVendas();
             }
         }
+
+        private void dgVendas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

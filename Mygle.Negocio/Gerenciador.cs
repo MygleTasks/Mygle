@@ -17,7 +17,7 @@ namespace Mygle.Negocio
         {
             Validacao validacao = new Validacao();
             banco.Categorias.Remove(categoria);
-            banco.SalvarDados();
+            banco.SaveChanges();
             return validacao;
         }
 
@@ -26,7 +26,7 @@ namespace Mygle.Negocio
         {
             Validacao validacao = new Validacao();
             banco.Usuarios.Remove(usuario);
-            banco.SalvarDados();
+            banco.SaveChanges();
             return validacao;
         }
 
@@ -35,7 +35,7 @@ namespace Mygle.Negocio
         {
             Validacao validacao = new Validacao();
             banco.Vendas.Remove(venda);
-            banco.SalvarDados();
+            banco.SaveChanges();
             return validacao;
         }
 
@@ -69,7 +69,7 @@ namespace Mygle.Negocio
             if (validacao.Valido)
             {
                 this.banco.Usuarios.Add(usuarioAdicionado);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
@@ -96,7 +96,7 @@ namespace Mygle.Negocio
             if (validacao.Valido)
             {
                 this.banco.Vendas.Add(vendaAdicionada);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
@@ -115,23 +115,23 @@ namespace Mygle.Negocio
             if (validacao.Valido)
             {
                 this.banco.Categorias.Add(categoriaAdicionada);
-                this.banco.SalvarDados();
+                this.banco.SaveChanges();
             }
             return validacao;
         }
 
         //Métodos para listagem de usuários, vendas e categorias
-        public List<Usuario> TodosOsUsuarios()
+        public virtual List<Usuario> TodosOsUsuarios()
         {
             return this.banco.Usuarios.ToList();
         }
 
-        public List<Venda> TodasAsVendas()
+        public virtual List<Venda> TodasAsVendas()
         {
             return this.banco.Vendas.ToList();
         }
         
-        public List<Categoria> TodasAsCategorias()
+        public virtual List<Categoria> TodasAsCategorias()
         {
             return this.banco.Categorias.ToList();
         }

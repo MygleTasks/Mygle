@@ -26,6 +26,15 @@ namespace Mygle.Grafico
             }
         }
 
+        private void AbreTelaInclusaoAlteracao(Venda vendaSelecionada)
+        {
+            TelaCadastroVenda tela = new TelaCadastroVenda();
+            tela.MdiParent = this.MdiParent;
+            tela.VendaSelecionada = vendaSelecionada;
+            tela.FormClosed += Tela_FormClosed;
+            tela.Show();
+        }
+
         private void CarregarVendas()
         {
             dgVendas.AutoGenerateColumns = false;
@@ -33,6 +42,16 @@ namespace Mygle.Grafico
             dgVendas.MultiSelect = false;
             List<Venda> categorias = Program.Gerenciador.TodasAsVendas();
             dgVendas.DataSource = categorias;
+        }
+
+        private bool VerificarSelecao()
+        {
+            if (dgVendas.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Selecione uma linha");
+                return false;
+            }
+            return true;
         }
 
         private void Tela_FormClosed(object sender, FormClosedEventArgs e)
@@ -47,25 +66,24 @@ namespace Mygle.Grafico
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
-            if (dgVendas.SelectedRows.Count <= 0)
+            if (VerificarSelecao())
             {
-                MessageBox.Show("Selecione uma linha.");
-                return;
-            }
-            else
-            {
-                Venda vendaSelecionada = (Venda)dgVendas.SelectedRows[0].DataBoundItem;
-                var validacao = Program.Gerenciador.RemoverVenda(vendaSelecionada);
-                if (validacao.Valido)
+                DialogResult resultado = MessageBox.Show("Tem certeza?", "Quer remover?", MessageBoxButtons.OKCancel);
+                if (resultado == DialogResult.OK)
                 {
-                    MessageBox.Show("Venda removida com sucesso!");
-                }
-                else
-                {
-                    MessageBox.Show("Ocorreu um erro, contate o administrador.");
+                    Venda vendaSelecionada = (Venda)dgVendas.SelectedRows[0].DataBoundItem;
+                    var validacao = Program.Gerenciador.RemoverVenda(vendaSelecionada);
+                    if (validacao.Valido)
+                    {
+                        MessageBox.Show("Venda removida com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocorreu um erro, contate o administrador.");
 
+                    }
+                    CarregarVendas();
                 }
-                CarregarVendas();
             }
         }
 
@@ -73,5 +91,16 @@ namespace Mygle.Grafico
         {
 
         }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+            if (VerificarSelecao())
+            {
+                Venda vendaSelecionada = (Venda)dgVendas.SelectedRows[0].DataBoundItem;
+                AbreTelaInclusaoAlteracao(vendaSelecionada);
+            }
+        }
+
+
     }
 }

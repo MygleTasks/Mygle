@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tbQtd = new System.Windows.Forms.TextBox();
-            this.tbQuantidade = new System.Windows.Forms.Label();
+            this.tbQuantidade = new System.Windows.Forms.TextBox();
+            this.lbQuantidade = new System.Windows.Forms.Label();
             this.lbCadastro = new System.Windows.Forms.Label();
             this.btCancelar = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
-            this.cbCategoria = new System.Windows.Forms.Label();
-            this.tbValorVenda = new System.Windows.Forms.TextBox();
-            this.tbValor = new System.Windows.Forms.Label();
+            this.lbCategoria = new System.Windows.Forms.Label();
+            this.tbValor = new System.Windows.Forms.TextBox();
+            this.lbValor = new System.Windows.Forms.Label();
             this.tbCodigo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbCodigo = new System.Windows.Forms.Label();
             this.tbCategoria = new System.Windows.Forms.TextBox();
             this.telaCadastroCategoriasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.telaCadastroCategoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -48,110 +48,100 @@
             ((System.ComponentModel.ISupportInitialize)(this.telaCadastroCategoriasBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tbQtd
-            // 
-            this.tbQtd.Location = new System.Drawing.Point(38, 408);
-            this.tbQtd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tbQtd.Name = "tbQtd";
-            this.tbQtd.Size = new System.Drawing.Size(484, 31);
-            this.tbQtd.TabIndex = 66;
-            // 
             // tbQuantidade
             // 
-            this.tbQuantidade.AutoSize = true;
-            this.tbQuantidade.Location = new System.Drawing.Point(38, 377);
-            this.tbQuantidade.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.tbQuantidade.Location = new System.Drawing.Point(19, 212);
             this.tbQuantidade.Name = "tbQuantidade";
-            this.tbQuantidade.Size = new System.Drawing.Size(129, 25);
-            this.tbQuantidade.TabIndex = 72;
-            this.tbQuantidade.Text = "Quantidade:";
+            this.tbQuantidade.Size = new System.Drawing.Size(244, 20);
+            this.tbQuantidade.TabIndex = 4;
+            // 
+            // lbQuantidade
+            // 
+            this.lbQuantidade.AutoSize = true;
+            this.lbQuantidade.Location = new System.Drawing.Point(19, 196);
+            this.lbQuantidade.Name = "lbQuantidade";
+            this.lbQuantidade.Size = new System.Drawing.Size(65, 13);
+            this.lbQuantidade.TabIndex = 72;
+            this.lbQuantidade.Text = "Quantidade:";
             // 
             // lbCadastro
             // 
             this.lbCadastro.AutoSize = true;
             this.lbCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.lbCadastro.Location = new System.Drawing.Point(24, 17);
-            this.lbCadastro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbCadastro.Location = new System.Drawing.Point(12, 9);
             this.lbCadastro.Name = "lbCadastro";
-            this.lbCadastro.Size = new System.Drawing.Size(380, 46);
+            this.lbCadastro.Size = new System.Drawing.Size(199, 25);
             this.lbCadastro.TabIndex = 71;
             this.lbCadastro.Text = "Cadastro de Venda";
+            this.lbCadastro.Click += new System.EventHandler(this.lbCadastro_Click);
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(230, 542);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCancelar.Location = new System.Drawing.Point(115, 282);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(142, 65);
-            this.btCancelar.TabIndex = 70;
+            this.btCancelar.Size = new System.Drawing.Size(71, 34);
+            this.btCancelar.TabIndex = 6;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(384, 542);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btSalvar.Location = new System.Drawing.Point(192, 282);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(142, 65);
-            this.btSalvar.TabIndex = 69;
+            this.btSalvar.Size = new System.Drawing.Size(71, 34);
+            this.btSalvar.TabIndex = 5;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
-            // cbCategoria
+            // lbCategoria
             // 
-            this.cbCategoria.AutoSize = true;
-            this.cbCategoria.Location = new System.Drawing.Point(38, 188);
-            this.cbCategoria.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(111, 25);
-            this.cbCategoria.TabIndex = 67;
-            this.cbCategoria.Text = "Categoria:";
-            // 
-            // tbValorVenda
-            // 
-            this.tbValorVenda.Location = new System.Drawing.Point(38, 315);
-            this.tbValorVenda.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tbValorVenda.Name = "tbValorVenda";
-            this.tbValorVenda.Size = new System.Drawing.Size(484, 31);
-            this.tbValorVenda.TabIndex = 65;
+            this.lbCategoria.AutoSize = true;
+            this.lbCategoria.Location = new System.Drawing.Point(19, 98);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(55, 13);
+            this.lbCategoria.TabIndex = 67;
+            this.lbCategoria.Text = "Categoria:";
             // 
             // tbValor
             // 
-            this.tbValor.AutoSize = true;
-            this.tbValor.Location = new System.Drawing.Point(38, 285);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.tbValor.Location = new System.Drawing.Point(19, 164);
             this.tbValor.Name = "tbValor";
-            this.tbValor.Size = new System.Drawing.Size(68, 25);
-            this.tbValor.TabIndex = 64;
-            this.tbValor.Text = "Valor:";
+            this.tbValor.Size = new System.Drawing.Size(244, 20);
+            this.tbValor.TabIndex = 3;
+            // 
+            // lbValor
+            // 
+            this.lbValor.AutoSize = true;
+            this.lbValor.Location = new System.Drawing.Point(19, 148);
+            this.lbValor.Name = "lbValor";
+            this.lbValor.Size = new System.Drawing.Size(34, 13);
+            this.lbValor.TabIndex = 64;
+            this.lbValor.Text = "Valor:";
             // 
             // tbCodigo
             // 
-            this.tbCodigo.Location = new System.Drawing.Point(38, 129);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCodigo.Location = new System.Drawing.Point(19, 67);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(484, 31);
-            this.tbCodigo.TabIndex = 62;
+            this.tbCodigo.Size = new System.Drawing.Size(244, 20);
+            this.tbCodigo.TabIndex = 1;
             // 
-            // label1
+            // lbCodigo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 98);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 25);
-            this.label1.TabIndex = 61;
-            this.label1.Text = "Código:";
+            this.lbCodigo.AutoSize = true;
+            this.lbCodigo.Location = new System.Drawing.Point(19, 51);
+            this.lbCodigo.Name = "lbCodigo";
+            this.lbCodigo.Size = new System.Drawing.Size(43, 13);
+            this.lbCodigo.TabIndex = 61;
+            this.lbCodigo.Text = "Código:";
             // 
             // tbCategoria
             // 
-            this.tbCategoria.Location = new System.Drawing.Point(38, 219);
-            this.tbCategoria.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCategoria.Location = new System.Drawing.Point(19, 114);
             this.tbCategoria.Name = "tbCategoria";
-            this.tbCategoria.Size = new System.Drawing.Size(484, 31);
-            this.tbCategoria.TabIndex = 73;
+            this.tbCategoria.Size = new System.Drawing.Size(244, 20);
+            this.tbCategoria.TabIndex = 2;
             // 
             // telaCadastroCategoriasBindingSource2
             // 
@@ -167,24 +157,24 @@
             // 
             // TelaCadastroVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 631);
+            this.ClientSize = new System.Drawing.Size(277, 328);
             this.Controls.Add(this.tbCategoria);
-            this.Controls.Add(this.tbQtd);
             this.Controls.Add(this.tbQuantidade);
+            this.Controls.Add(this.lbQuantidade);
             this.Controls.Add(this.lbCadastro);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.cbCategoria);
-            this.Controls.Add(this.tbValorVenda);
+            this.Controls.Add(this.lbCategoria);
             this.Controls.Add(this.tbValor);
+            this.Controls.Add(this.lbValor);
             this.Controls.Add(this.tbCodigo);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Controls.Add(this.lbCodigo);
             this.Name = "TelaCadastroVenda";
             this.Text = "TelaCadastroVenda";
             this.Load += new System.EventHandler(this.TelaCadastroVenda_Load);
+            this.Shown += new System.EventHandler(this.TelaCadastroVenda_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.telaCadastroCategoriasBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.telaCadastroCategoriasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.telaCadastroCategoriasBindingSource1)).EndInit();
@@ -195,16 +185,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbQtd;
-        private System.Windows.Forms.Label tbQuantidade;
+        private System.Windows.Forms.TextBox tbQuantidade;
+        private System.Windows.Forms.Label lbQuantidade;
         private System.Windows.Forms.Label lbCadastro;
         private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btSalvar;
-        private System.Windows.Forms.Label cbCategoria;
-        private System.Windows.Forms.TextBox tbValorVenda;
-        private System.Windows.Forms.Label tbValor;
+        private System.Windows.Forms.Label lbCategoria;
+        private System.Windows.Forms.TextBox tbValor;
+        private System.Windows.Forms.Label lbValor;
         private System.Windows.Forms.TextBox tbCodigo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbCodigo;
         private System.Windows.Forms.BindingSource telaCadastroCategoriasBindingSource;
         private System.Windows.Forms.BindingSource telaCadastroCategoriasBindingSource2;
         private System.Windows.Forms.BindingSource telaCadastroCategoriasBindingSource1;

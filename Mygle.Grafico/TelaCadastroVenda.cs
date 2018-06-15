@@ -14,6 +14,8 @@ namespace Mygle.Grafico
 {
     public partial class TelaCadastroVenda : Form
     {
+        public Venda VendaSelecionada { get; set; }
+
         public TelaCadastroVenda()
         {
             InitializeComponent();
@@ -23,8 +25,8 @@ namespace Mygle.Grafico
         {
             Venda novaVenda = new Venda();
             novaVenda.Categoria = Convert.ToString(tbCategoria.Text);
-            novaVenda.ValorUnitario = Convert.ToDecimal(tbValorVenda.Text);
-            novaVenda.Quantidade = Convert.ToInt32(tbQtd.Text);
+            novaVenda.ValorUnitario = Convert.ToDecimal(tbValor.Text);
+            novaVenda.Quantidade = Convert.ToInt32(tbQuantidade.Text);
             Validacao validacao = Program.Gerenciador.AdicionarVenda(novaVenda);
             
             String mensagemValidacao = "";
@@ -52,6 +54,22 @@ namespace Mygle.Grafico
         private void TelaCadastroVenda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaCadastroVenda_Shown(object sender, EventArgs e)
+        {
+            if(VendaSelecionada !=null)
+            {
+                this.tbCodigo.Text = VendaSelecionada.Id.ToString();
+                this.tbCategoria.Text = VendaSelecionada.Categoria.ToString();
+                this.tbValor.Text = VendaSelecionada.ValorTotal.ToString();
+                this.tbQuantidade.Text = VendaSelecionada.Quantidade.ToString();
+            }
         }
     }
 }

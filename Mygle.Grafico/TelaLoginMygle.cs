@@ -53,27 +53,23 @@ namespace Mygle.Grafico
 
         private void Logar2()
         {
+            var usuario = tbUsuario.Text;
+            var senha = tbSenha.Text;
             TelaUsuarioResumo tela = new TelaUsuarioResumo();
-            SqlConnection log = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From dbo.Usuarios where Nome='" + tbUsuario.Text +"' and Senha ='" + tbSenha.Text +"'",log);
-            DataTable dtlogin = new DataTable();
-            sda.Fill(dtlogin);
-            if ( dtlogin.Rows[0][0].ToString() == "1")
+
+            if (Program.Gerenciador.ValidaUsuarioSenha(usuario, senha))
             {
                 tela.Show();
             }
             else
             {
-                MessageBox.Show("Verifique o Usuário e a senha");
-            }
-            
+                MessageBox.Show("Usuário e senha incorretos");
+            }            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Logar2();
         }
-
-        
     }
 }

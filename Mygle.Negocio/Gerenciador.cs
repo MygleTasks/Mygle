@@ -31,6 +31,18 @@ namespace Mygle.Negocio
             return validacao;
         }
 
+        //AlterarVenda
+        public Validacao AlterarUsuario(Usuario UsuarioAlterado)
+        {
+            Validacao validacao = new Validacao();
+            Usuario usuarioBanco = BuscaUsuarioPorId(UsuarioAlterado.Id);
+            usuarioBanco.Nome = UsuarioAlterado.Nome;
+            usuarioBanco.NomeUsuario = UsuarioAlterado.NomeUsuario;
+            usuarioBanco.Senha = UsuarioAlterado.Senha;
+            usuarioBanco.Senha2 = UsuarioAlterado.Senha2;
+            this.banco.SaveChanges();
+            return validacao;
+        }
         //RemoverUsuario
         public Validacao RemoverUsuario(Usuario usuario)
         {

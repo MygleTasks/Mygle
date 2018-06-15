@@ -30,6 +30,17 @@ namespace Mygle.Negocio
             return validacao;
         }
 
+        //AlterarDetalhe
+        public Validacao AlterarVenda(Venda VendaAlterada)
+        {
+            Validacao validacao = new Validacao();
+            Venda vendaBanco = BuscaVendaPorId(VendaAlterada.Id);
+            vendaBanco.Categoria = VendaAlterada.Categoria;
+            vendaBanco.ValorUnitario = VendaAlterada.ValorUnitario;
+            vendaBanco.Quantidade = VendaAlterada.Quantidade;
+            this.banco.SaveChanges();
+            return validacao;
+        }
         //RemoverDetalhe
         public Validacao RemoverVenda(Venda venda)
         {
@@ -136,6 +147,11 @@ namespace Mygle.Negocio
             return this.banco.Categorias.ToList();
         }
 
+        //Buscar Informações do Banco
+        public Venda BuscaVendaPorId(long id)
+        {
+            return this.banco.Vendas.Where(c => c.Id == id).FirstOrDefault();
+        }
         public bool ValidaUsuarioSenha(String usuario, String senha)
         {
             var usuarioDb = this.banco.Usuarios.Where(m => m.NomeUsuario == usuario).FirstOrDefault();

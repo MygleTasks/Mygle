@@ -24,14 +24,25 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Venda novaVenda = new Venda();
+            novaVenda.Id = Convert.ToInt64(tbCodigo.Text);
             novaVenda.Categoria = Convert.ToString(tbCategoria.Text);
-            novaVenda.ValorUnitario = Convert.ToDecimal(tbValor.Text);
-            novaVenda.Quantidade = Convert.ToInt32(tbQuantidade.Text);
-            Validacao validacao = Program.Gerenciador.AdicionarVenda(novaVenda);
+            novaVenda.ValorUnitario = Convert.ToDouble(tbValor.Text);
+            novaVenda.Quantidade = Convert.ToDouble(tbQuantidade.Text);
+
+            Validacao validacao;
+            if (VendaSelecionada == null)
+            {
+                validacao = Program.Gerenciador.AdicionarVenda(novaVenda);
+            }
+            else
+            {
+                validacao = Program.Gerenciador.AlterarVenda(novaVenda);
+            }
             
-            String mensagemValidacao = "";
+
             if (!validacao.Valido)
             {
+                String mensagemValidacao = "";
                 foreach (var chave in validacao.Mensagens.Keys)
                 {
                     String msg = validacao.Mensagens[chave];
@@ -67,7 +78,7 @@ namespace Mygle.Grafico
             {
                 this.tbCodigo.Text = VendaSelecionada.Id.ToString();
                 this.tbCategoria.Text = VendaSelecionada.Categoria.ToString();
-                this.tbValor.Text = VendaSelecionada.ValorTotal.ToString();
+                this.tbValor.Text = VendaSelecionada.ValorUnitario.ToString();
                 this.tbQuantidade.Text = VendaSelecionada.Quantidade.ToString();
             }
         }

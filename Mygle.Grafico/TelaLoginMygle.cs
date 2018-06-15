@@ -73,5 +73,10 @@ namespace Mygle.Grafico
             TelaUsuarioResumo tela = new TelaUsuarioResumo();
             tela.Show();
         }
+
+        private void TelaLoginMygle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

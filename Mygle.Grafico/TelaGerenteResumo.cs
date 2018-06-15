@@ -57,7 +57,7 @@ namespace Mygle.Grafico
 
         private void lbValorVendido_Click(object sender, EventArgs e)
         {
-            Decimal Total = 0;
+            Double Total = 0;
             foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
             {
                 Total += venda.ValorTotal;

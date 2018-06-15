@@ -36,6 +36,7 @@
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btRemoverUsuario = new System.Windows.Forms.Button();
             this.btAlterarMeta = new System.Windows.Forms.Button();
+            this.btAlterarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.btNovoUsuario.Location = new System.Drawing.Point(18, 65);
             this.btNovoUsuario.Name = "btNovoUsuario";
-            this.btNovoUsuario.Size = new System.Drawing.Size(124, 35);
+            this.btNovoUsuario.Size = new System.Drawing.Size(79, 35);
             this.btNovoUsuario.TabIndex = 51;
             this.btNovoUsuario.Text = "Cadastrar Usuário";
             this.btNovoUsuario.UseVisualStyleBackColor = true;
@@ -111,11 +112,21 @@
             this.btAlterarMeta.Text = "Alterar Meta";
             this.btAlterarMeta.UseVisualStyleBackColor = true;
             // 
+            // btAlterarUsuario
+            // 
+            this.btAlterarUsuario.Location = new System.Drawing.Point(114, 64);
+            this.btAlterarUsuario.Name = "btAlterarUsuario";
+            this.btAlterarUsuario.Size = new System.Drawing.Size(76, 36);
+            this.btAlterarUsuario.TabIndex = 55;
+            this.btAlterarUsuario.Text = "Alterar Usuario";
+            this.btAlterarUsuario.UseVisualStyleBackColor = true;
+            // 
             // TelaGerenteUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 420);
+            this.Controls.Add(this.btAlterarUsuario);
             this.Controls.Add(this.btAlterarMeta);
             this.Controls.Add(this.btRemoverUsuario);
             this.Controls.Add(this.dgUsuarios);
@@ -142,5 +153,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Matrícula;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuário;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
+        private System.Windows.Forms.Button btAlterarUsuario;
     }
 }

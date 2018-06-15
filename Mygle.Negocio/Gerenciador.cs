@@ -135,5 +135,18 @@ namespace Mygle.Negocio
         {
             return this.banco.Categorias.ToList();
         }
+
+        public bool ValidaUsuarioSenha(String usuario, String senha)
+        {
+            var usuarioDb = this.banco.Usuarios.Where(m => m.NomeUsuario == usuario).FirstOrDefault();
+            if(usuarioDb != null)
+            {
+                if (usuarioDb.Senha == senha)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

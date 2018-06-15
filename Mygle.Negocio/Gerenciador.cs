@@ -152,10 +152,12 @@ namespace Mygle.Negocio
         {
             return this.banco.Vendas.Where(c => c.Id == id).FirstOrDefault();
         }
+
+        //Login
         public bool ValidaUsuarioSenha(String usuario, String senha)
         {
             var usuarioDb = this.banco.Usuarios.Where(m => m.NomeUsuario == usuario).FirstOrDefault();
-            if(usuarioDb != null)
+            if (usuarioDb != null)
             {
                 if (usuarioDb.Senha == senha)
                 {

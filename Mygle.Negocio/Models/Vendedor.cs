@@ -22,10 +22,10 @@ namespace Mygle.Negocio.Models
             novaVenda.Categoria = Console.ReadLine();
 
             Console.Write("Quantidade: ");
-            novaVenda.Quantidade = Convert.ToInt32(Console.ReadLine());
+            novaVenda.Quantidade = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Valor Unitário: ");
-            novaVenda.ValorUnitario = Convert.ToDecimal(Console.ReadLine());
+            novaVenda.ValorUnitario = Convert.ToDouble(Console.ReadLine());
             
             Console.Write("Data: ");
             string evento = Console.ReadLine();

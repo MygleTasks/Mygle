@@ -10,11 +10,11 @@ namespace Mygle.Negocio.Models
     {
         public virtual long Id { get; set; }
         public virtual string Categoria { get; set; }
-        public virtual Decimal Quantidade { get; set; }
-        public virtual Decimal ValorUnitario { get; set; }
+        public virtual Double Quantidade { get; set; }
+        public virtual Double ValorUnitario { get; set; }
         public virtual DateTime Data { get; set; }
         
-        public Decimal ValorTotal
+        public Double ValorTotal
         {
             get
             {

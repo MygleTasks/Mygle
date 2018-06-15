@@ -12,6 +12,16 @@ namespace Mygle.Negocio
     {
         private Banco banco = new Banco();
 
+        ////Criar Usuário Administrador
+        //public void CriarAdministrador()
+        //{
+        //    Usuario novoUsuario = new Usuario();
+        //    novoUsuario.Id = Convert.ToInt64("0");
+        //    novoUsuario.Nome = Convert.ToString("Administrador");
+        //    novoUsuario.NomeUsuario = Convert.ToString("admin");
+        //    novoUsuario.Senha = Convert.ToString("admin");
+        //}
+
         //RemoverCategoria
         public Validacao RemoverCategoria(Categoria categoria)
         {
@@ -151,6 +161,10 @@ namespace Mygle.Negocio
         public Venda BuscaVendaPorId(long id)
         {
             return this.banco.Vendas.Where(c => c.Id == id).FirstOrDefault();
+        }
+        public Usuario BuscaUsuarioPorId(long id)
+        {
+            return this.banco.Usuarios.Where(c => c.Id == id).FirstOrDefault();
         }
 
         //Login

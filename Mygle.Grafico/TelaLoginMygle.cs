@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Mygle.Negocio.Persistencia;
+using Mygle.Negocio.Models;
+using Mygle.Negocio;
 
 namespace Mygle.Grafico
 {
@@ -42,12 +44,12 @@ namespace Mygle.Grafico
                 this.Close();
             }
         }
-        
+
         private void Logar()
         {
             var usuario = tbUsuario.Text;
             var senha = tbSenha.Text;
-            
+
             TelaGerenteResumo tela = new TelaGerenteResumo();
             TelaUsuarioResumo tela2 = new TelaUsuarioResumo();
 
@@ -61,17 +63,37 @@ namespace Mygle.Grafico
                 {
                     tela2.Show();
                 }
-                
+
             }
             else
             {
                 MessageBox.Show("Usuário e senha incorretos");
-            }            
+            }
         }
 
         private void TelaLoginMygle_Load(object sender, EventArgs e)
         {
-
+            if (BuscaUsuarioPorId(0) == null)
+            {
+                CriarAdministrador();
+            }
         }
+        //Criar Usuário Administrador
+        public void CriarAdministrador()
+        {
+            Usuario novoUsuario = new Usuario();
+            novoUsuario.Id = Convert.ToInt64("0");
+            novoUsuario.Nome = Convert.ToString("Administrador");
+            novoUsuario.NomeUsuario = Convert.ToString("admin");
+            novoUsuario.Senha = Convert.ToString("admin");
+            novoUsuario.Senha2 = Convert.ToString("admin");
+            Validacao validacao = Program.Gerenciador.AdicionarUsuario(novoUsuario);
+        }
+        private Banco banco = new Banco();
+        public Usuario BuscaUsuarioPorId(long id)
+        {
+            return this.banco.Usuarios.Where(c => c.Id == id).FirstOrDefault();
+        }
+
     }
 }

@@ -14,6 +14,8 @@ namespace Mygle.Grafico
 {
     public partial class TelaCadastrarUsuario : Form
     {
+        public Usuario UsuarioSelecionado { get; set; }
+
         public TelaCadastrarUsuario()
         {
             InitializeComponent();
@@ -35,7 +37,16 @@ namespace Mygle.Grafico
             novoUsuario.NomeUsuario = Convert.ToString(tbUsuario.Text);
             novoUsuario.Senha = Convert.ToString(tbSenha.Text);
 ;           novoUsuario.Senha2 = Convert.ToString(tbSenha2.Text);
-            Validacao validacao = Program.Gerenciador.AdicionarUsuario(novoUsuario);
+
+            Validacao validacao;
+            if (UsuarioSelecionado == null)
+            {
+                validacao = Program.Gerenciador.AdicionarUsuario(novoUsuario);
+            }
+            else
+            {
+                validacao = Program.Gerenciador.AlterarUsuario(novoUsuario);
+            }
 
             String mensagemValidacao = "";
             if (!validacao.Valido)
@@ -63,6 +74,16 @@ namespace Mygle.Grafico
         private void TelaCadastrarUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void TelaCadastrarUsuario_Shown(object sender, EventArgs e)
+        {
+            if (UsuarioSelecionado != null)
+            {
+                this.tbCodigo.Text = UsuarioSelecionado.Id.ToString();
+                this.tbNome.Text = UsuarioSelecionado.Nome.ToString();
+                this.tbUsuario.Text = UsuarioSelecionado.NomeUsuario.ToString();
+            }
         }
     }
 }

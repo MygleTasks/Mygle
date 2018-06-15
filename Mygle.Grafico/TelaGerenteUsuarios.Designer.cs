@@ -120,6 +120,7 @@
             this.btAlterarUsuario.TabIndex = 55;
             this.btAlterarUsuario.Text = "Alterar Usuario";
             this.btAlterarUsuario.UseVisualStyleBackColor = true;
+            this.btAlterarUsuario.Click += new System.EventHandler(this.btAlterarUsuario_Click);
             // 
             // TelaGerenteUsuarios
             // 
@@ -136,6 +137,7 @@
             this.Name = "TelaGerenteUsuarios";
             this.Text = "TelaGerenteUsuarios";
             this.Load += new System.EventHandler(this.TelaGerenteUsuarios_Load);
+            this.Shown += new System.EventHandler(this.TelaGerenteUsuarios_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteUsuarios_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
             this.ResumeLayout(false);

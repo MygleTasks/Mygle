@@ -13,6 +13,28 @@ namespace Mygle.Grafico
 {
     public partial class TelaGerenteUsuarios : Form
     {
+
+        //Verificar se tem uma linha selecionada
+        private bool VerificarSelecao()
+        {
+            if (dgUsuarios.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Selecione uma linha");
+                return false;
+            }
+            return true;
+        }
+
+        //Abre a tela para alterar ou adicionar o Usuário
+        private void AbreTelaInclusaoAlteracao(Usuario usuarioSelecionado)
+        {
+            TelaCadastrarUsuario tela = new TelaCadastrarUsuario();
+            tela.MdiParent = this.MdiParent;
+            tela.UsuarioSelecionado = usuarioSelecionado;
+            tela.FormClosed += Tela_FormClosed;
+            tela.Show();
+        }
+
         public TelaGerenteUsuarios()
         {
             InitializeComponent();
@@ -74,6 +96,20 @@ namespace Mygle.Grafico
                 }
                 CarregarUsuarios();
             }
+        }
+
+        private void btAlterarUsuario_Click(object sender, EventArgs e)
+        {
+            if (VerificarSelecao())
+            {
+                Usuario usuarioSelecionado = (Usuario)dgUsuarios.SelectedRows[0].DataBoundItem;
+                AbreTelaInclusaoAlteracao(usuarioSelecionado);
+            }
+        }
+
+        private void TelaGerenteUsuarios_Shown(object sender, EventArgs e)
+        {
+
         }
     }
 }

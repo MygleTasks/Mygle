@@ -141,6 +141,7 @@
             this.KeyPreview = true;
             this.Name = "TelaLoginMygle";
             this.Text = "Mygle";
+            this.Load += new System.EventHandler(this.TelaLoginMygle_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaLoginMygle_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogoTela)).EndInit();
             this.ResumeLayout(false);

@@ -146,11 +146,23 @@ namespace Mygle.Negocio
         {
             return this.banco.Categorias.ToList();
         }
-       
+
         //Buscar Informações do Banco
         public Venda BuscaVendaPorId(long id)
         {
             return this.banco.Vendas.Where(c => c.Id == id).FirstOrDefault();
+        }
+        public bool ValidaUsuarioSenha(String usuario, String senha)
+        {
+            var usuarioDb = this.banco.Usuarios.Where(m => m.NomeUsuario == usuario).FirstOrDefault();
+            if(usuarioDb != null)
+            {
+                if (usuarioDb.Senha == senha)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

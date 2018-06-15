@@ -60,7 +60,7 @@ namespace Mygle.Grafico
             sda.Fill(dtlogin);
             if ( dtlogin.Rows[0][0].ToString() == "1")
             {
-                tela.Show();
+                //tela.Show();
             }
             else
             {
@@ -71,7 +71,9 @@ namespace Mygle.Grafico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Logar2();
+            //  Logar2();
+            TelaUsuarioResumo tela = new TelaUsuarioResumo();
+            tela.Show();
         }
 
         

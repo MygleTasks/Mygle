@@ -95,5 +95,9 @@ namespace Mygle.Grafico
             return this.banco.Usuarios.Where(c => c.Id == id).FirstOrDefault();
         }
 
+        private void llbRecuperarSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Entre em contato com o seu Gerente.");
+        }
     }
 }

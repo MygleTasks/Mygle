@@ -135,7 +135,7 @@
             this.btDia.Location = new System.Drawing.Point(513, 44);
             this.btDia.Name = "btDia";
             this.btDia.Size = new System.Drawing.Size(74, 31);
-            this.btDia.TabIndex = 48;
+            this.btDia.TabIndex = 5;
             this.btDia.Text = "Dia";
             this.btDia.UseVisualStyleBackColor = true;
             // 
@@ -144,7 +144,7 @@
             this.btMes.Location = new System.Drawing.Point(593, 44);
             this.btMes.Name = "btMes";
             this.btMes.Size = new System.Drawing.Size(74, 31);
-            this.btMes.TabIndex = 47;
+            this.btMes.TabIndex = 6;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +173,7 @@
             this.btUsuarios.Location = new System.Drawing.Point(12, 255);
             this.btUsuarios.Name = "btUsuarios";
             this.btUsuarios.Size = new System.Drawing.Size(120, 40);
-            this.btUsuarios.TabIndex = 44;
+            this.btUsuarios.TabIndex = 3;
             this.btUsuarios.Text = "Usuários";
             this.btUsuarios.UseVisualStyleBackColor = true;
             this.btUsuarios.Click += new System.EventHandler(this.btUsuarios_Click);
@@ -183,7 +183,7 @@
             this.btDetalhe.Location = new System.Drawing.Point(12, 209);
             this.btDetalhe.Name = "btDetalhe";
             this.btDetalhe.Size = new System.Drawing.Size(120, 40);
-            this.btDetalhe.TabIndex = 43;
+            this.btDetalhe.TabIndex = 2;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
             this.btDetalhe.Click += new System.EventHandler(this.btDetalhe_Click);
@@ -204,7 +204,7 @@
             this.btResumo.Location = new System.Drawing.Point(12, 163);
             this.btResumo.Name = "btResumo";
             this.btResumo.Size = new System.Drawing.Size(120, 40);
-            this.btResumo.TabIndex = 41;
+            this.btResumo.TabIndex = 1;
             this.btResumo.Text = "Resumo";
             this.btResumo.UseVisualStyleBackColor = true;
             // 
@@ -213,7 +213,7 @@
             this.btCategorias.Location = new System.Drawing.Point(12, 301);
             this.btCategorias.Name = "btCategorias";
             this.btCategorias.Size = new System.Drawing.Size(120, 40);
-            this.btCategorias.TabIndex = 59;
+            this.btCategorias.TabIndex = 4;
             this.btCategorias.Text = "Categorias";
             this.btCategorias.UseVisualStyleBackColor = true;
             this.btCategorias.Click += new System.EventHandler(this.btCategorias_Click);

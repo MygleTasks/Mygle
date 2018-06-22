@@ -55,7 +55,7 @@
             this.btSalvar.Location = new System.Drawing.Point(174, 170);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(71, 34);
-            this.btSalvar.TabIndex = 58;
+            this.btSalvar.TabIndex = 5;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
@@ -83,7 +83,7 @@
             this.tbNome.Location = new System.Drawing.Point(61, 92);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(184, 20);
-            this.tbNome.TabIndex = 61;
+            this.tbNome.TabIndex = 2;
             // 
             // cbTipo
             // 
@@ -94,14 +94,14 @@
             this.cbTipo.Location = new System.Drawing.Point(61, 116);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(184, 21);
-            this.cbTipo.TabIndex = 62;
+            this.cbTipo.TabIndex = 3;
             // 
             // tbId
             // 
             this.tbId.Location = new System.Drawing.Point(61, 66);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(184, 20);
-            this.tbId.TabIndex = 64;
+            this.tbId.TabIndex = 1;
             // 
             // tbCodigo
             // 
@@ -117,7 +117,7 @@
             this.btCancelar.Location = new System.Drawing.Point(97, 170);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(71, 34);
-            this.btCancelar.TabIndex = 65;
+            this.btCancelar.TabIndex = 4;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);

@@ -18,6 +18,16 @@ namespace Mygle.Grafico
             InitializeComponent();
         }
 
+        private bool VerificarSelecao()
+        {
+            if (dgCategorias.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Selecione uma linha");
+                return false;
+            }
+            return true;
+        }
+
         private void btAdicionar_Click(object sender, EventArgs e)
         {
             TelaCadastroCategorias tela = new TelaCadastroCategorias();
@@ -53,7 +63,7 @@ namespace Mygle.Grafico
         }
 
         private void btRemover_Click(object sender, EventArgs e)
-        {
+        {            
             if(dgCategorias.SelectedRows.Count <= 0)
             {
                 MessageBox.Show("Selecione uma linha.");
@@ -61,18 +71,25 @@ namespace Mygle.Grafico
             }
             else
             {
-                Categoria categoriaSelecionada = (Categoria) dgCategorias.SelectedRows[0].DataBoundItem;
-                var validacao = Program.Gerenciador.RemoverCategoria(categoriaSelecionada);
-                if (validacao.Valido)
+                if (VerificarSelecao())
                 {
-                    MessageBox.Show("Categoria removida com sucesso!");
-                }
-                else
-                {
-                    MessageBox.Show("Ocorreu um erro, contate o administrador.");
+                    DialogResult resultado = MessageBox.Show("Tem certeza?", "Quer remover?", MessageBoxButtons.OKCancel);
+                    if (resultado == DialogResult.OK)
+                    {
+                        Categoria categoriaSelecionada = (Categoria)dgCategorias.SelectedRows[0].DataBoundItem;
+                        var validacao = Program.Gerenciador.RemoverCategoria(categoriaSelecionada);
+                        if (validacao.Valido)
+                        {
+                            MessageBox.Show("Categoria removida com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ocorreu um erro, contate o administrador.");
 
+                        }
+                        CarregarCategorias();
+                    }
                 }
-                CarregarCategorias();
             }
         }
         

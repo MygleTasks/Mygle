@@ -101,7 +101,7 @@
             this.btAdicionar.Location = new System.Drawing.Point(412, 17);
             this.btAdicionar.Name = "btAdicionar";
             this.btAdicionar.Size = new System.Drawing.Size(68, 27);
-            this.btAdicionar.TabIndex = 58;
+            this.btAdicionar.TabIndex = 2;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
             this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
@@ -111,7 +111,7 @@
             this.btRemover.Location = new System.Drawing.Point(338, 17);
             this.btRemover.Name = "btRemover";
             this.btRemover.Size = new System.Drawing.Size(68, 27);
-            this.btRemover.TabIndex = 59;
+            this.btRemover.TabIndex = 1;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
             this.btRemover.Click += new System.EventHandler(this.btRemover_Click);

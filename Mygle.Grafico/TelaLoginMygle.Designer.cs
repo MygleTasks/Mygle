@@ -68,7 +68,7 @@
             this.llbRecuperarSenha.Location = new System.Drawing.Point(411, 160);
             this.llbRecuperarSenha.Name = "llbRecuperarSenha";
             this.llbRecuperarSenha.Size = new System.Drawing.Size(91, 13);
-            this.llbRecuperarSenha.TabIndex = 3;
+            this.llbRecuperarSenha.TabIndex = 4;
             this.llbRecuperarSenha.TabStop = true;
             this.llbRecuperarSenha.Text = "Recuperar Senha";
             this.llbRecuperarSenha.VisitedLinkColor = System.Drawing.Color.Red;
@@ -83,7 +83,7 @@
             this.btLogin.Location = new System.Drawing.Point(463, 208);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(75, 23);
-            this.btLogin.TabIndex = 4;
+            this.btLogin.TabIndex = 3;
             this.btLogin.Text = "Login";
             this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);

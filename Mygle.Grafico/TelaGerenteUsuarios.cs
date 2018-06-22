@@ -83,18 +83,25 @@ namespace Mygle.Grafico
             }
             else
             {
-                Usuario usuarioSelecionado = (Usuario)dgUsuarios.SelectedRows[0].DataBoundItem;
-                var validacao = Program.Gerenciador.RemoverUsuario(usuarioSelecionado);
-                if (validacao.Valido)
+                if (VerificarSelecao())
                 {
-                    MessageBox.Show("Usuário removido com sucesso!");
-                }
-                else
-                {
-                    MessageBox.Show("Ocorreu um erro, contate o administrador.");
+                    DialogResult resultado = MessageBox.Show("Tem certeza?", "Quer remover?", MessageBoxButtons.OKCancel);
+                    if (resultado == DialogResult.OK)
+                    {
+                        Usuario usuarioSelecionado = (Usuario)dgUsuarios.SelectedRows[0].DataBoundItem;
+                        var validacao = Program.Gerenciador.RemoverUsuario(usuarioSelecionado);
+                        if (validacao.Valido)
+                        {
+                            MessageBox.Show("Usuário removido com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ocorreu um erro, contate o administrador.");
 
+                        }
+                        CarregarUsuarios();
+                    }
                 }
-                CarregarUsuarios();
             }
         }
 

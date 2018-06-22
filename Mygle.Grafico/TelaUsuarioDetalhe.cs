@@ -40,7 +40,7 @@ namespace Mygle.Grafico
             dgVendas.AutoGenerateColumns = false;
             dgVendas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgVendas.MultiSelect = false;
-            List<Venda> categorias = Program.Gerenciador.TodasAsVendas();
+            List<Venda> categorias = Program.Gerenciador.VendasDoUsuarioLogado();
             dgVendas.DataSource = categorias;
         }
 

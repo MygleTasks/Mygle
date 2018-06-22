@@ -46,7 +46,7 @@
             this.btNovoUsuario.Location = new System.Drawing.Point(18, 65);
             this.btNovoUsuario.Name = "btNovoUsuario";
             this.btNovoUsuario.Size = new System.Drawing.Size(79, 35);
-            this.btNovoUsuario.TabIndex = 51;
+            this.btNovoUsuario.TabIndex = 1;
             this.btNovoUsuario.Text = "Cadastrar Usuário";
             this.btNovoUsuario.UseVisualStyleBackColor = true;
             this.btNovoUsuario.Click += new System.EventHandler(this.btNovoUsuario_Click);
@@ -99,7 +99,7 @@
             this.btRemoverUsuario.Location = new System.Drawing.Point(313, 66);
             this.btRemoverUsuario.Name = "btRemoverUsuario";
             this.btRemoverUsuario.Size = new System.Drawing.Size(71, 34);
-            this.btRemoverUsuario.TabIndex = 53;
+            this.btRemoverUsuario.TabIndex = 4;
             this.btRemoverUsuario.Text = "Remover Usuário";
             this.btRemoverUsuario.UseVisualStyleBackColor = true;
             this.btRemoverUsuario.Click += new System.EventHandler(this.btRemoverUsuario_Click);
@@ -109,7 +109,7 @@
             this.btAlterarMeta.Location = new System.Drawing.Point(236, 65);
             this.btAlterarMeta.Name = "btAlterarMeta";
             this.btAlterarMeta.Size = new System.Drawing.Size(71, 34);
-            this.btAlterarMeta.TabIndex = 54;
+            this.btAlterarMeta.TabIndex = 3;
             this.btAlterarMeta.Text = "Alterar Meta";
             this.btAlterarMeta.UseVisualStyleBackColor = true;
             // 
@@ -118,7 +118,7 @@
             this.btAlterarUsuario.Location = new System.Drawing.Point(114, 64);
             this.btAlterarUsuario.Name = "btAlterarUsuario";
             this.btAlterarUsuario.Size = new System.Drawing.Size(76, 36);
-            this.btAlterarUsuario.TabIndex = 55;
+            this.btAlterarUsuario.TabIndex = 2;
             this.btAlterarUsuario.Text = "Alterar Usuario";
             this.btAlterarUsuario.UseVisualStyleBackColor = true;
             this.btAlterarUsuario.Click += new System.EventHandler(this.btAlterarUsuario_Click);

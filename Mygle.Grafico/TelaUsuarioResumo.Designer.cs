@@ -58,7 +58,7 @@
             this.btDia.Location = new System.Drawing.Point(822, 44);
             this.btDia.Name = "btDia";
             this.btDia.Size = new System.Drawing.Size(74, 31);
-            this.btDia.TabIndex = 29;
+            this.btDia.TabIndex = 4;
             this.btDia.Text = "Dia";
             this.btDia.UseVisualStyleBackColor = true;
             // 
@@ -67,7 +67,7 @@
             this.btMes.Location = new System.Drawing.Point(902, 44);
             this.btMes.Name = "btMes";
             this.btMes.Size = new System.Drawing.Size(74, 31);
-            this.btMes.TabIndex = 28;
+            this.btMes.TabIndex = 5;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
             // 
@@ -96,7 +96,7 @@
             this.btCadastrarVenda.Location = new System.Drawing.Point(32, 163);
             this.btCadastrarVenda.Name = "btCadastrarVenda";
             this.btCadastrarVenda.Size = new System.Drawing.Size(120, 40);
-            this.btCadastrarVenda.TabIndex = 25;
+            this.btCadastrarVenda.TabIndex = 1;
             this.btCadastrarVenda.Text = "Cadastrar Venda";
             this.btCadastrarVenda.UseVisualStyleBackColor = true;
             this.btCadastrarVenda.Click += new System.EventHandler(this.btCadastrarVenda_Click);
@@ -106,7 +106,7 @@
             this.btDetalhe.Location = new System.Drawing.Point(32, 255);
             this.btDetalhe.Name = "btDetalhe";
             this.btDetalhe.Size = new System.Drawing.Size(120, 40);
-            this.btDetalhe.TabIndex = 23;
+            this.btDetalhe.TabIndex = 3;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
             this.btDetalhe.Click += new System.EventHandler(this.btDetalhe_Click);
@@ -116,7 +116,7 @@
             this.btResumo.Location = new System.Drawing.Point(32, 209);
             this.btResumo.Name = "btResumo";
             this.btResumo.Size = new System.Drawing.Size(120, 40);
-            this.btResumo.TabIndex = 21;
+            this.btResumo.TabIndex = 2;
             this.btResumo.Text = "Resumo";
             this.btResumo.UseVisualStyleBackColor = true;
             // 

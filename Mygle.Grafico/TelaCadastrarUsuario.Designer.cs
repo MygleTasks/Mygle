@@ -81,7 +81,7 @@
             this.btCancelar.Location = new System.Drawing.Point(217, 316);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(71, 34);
-            this.btCancelar.TabIndex = 56;
+            this.btCancelar.TabIndex = 6;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
@@ -91,7 +91,7 @@
             this.btSalvar.Location = new System.Drawing.Point(294, 316);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(71, 34);
-            this.btSalvar.TabIndex = 55;
+            this.btSalvar.TabIndex = 6;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);

@@ -100,8 +100,8 @@
             this.btExcluir.Location = new System.Drawing.Point(495, 17);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(68, 27);
-            this.btExcluir.TabIndex = 57;
-            this.btExcluir.Text = "Excluir";
+            this.btExcluir.TabIndex = 2;
+            this.btExcluir.Text = "Remover";
             this.btExcluir.UseVisualStyleBackColor = true;
             this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
@@ -110,7 +110,7 @@
             this.btAlterar.Location = new System.Drawing.Point(421, 17);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(68, 27);
-            this.btAlterar.TabIndex = 58;
+            this.btAlterar.TabIndex = 1;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseVisualStyleBackColor = true;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);

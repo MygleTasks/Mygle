@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerenteUsuarios));
             this.btNovoUsuario = new System.Windows.Forms.Button();
             this.lbResumo = new System.Windows.Forms.Label();
             this.dgUsuarios = new System.Windows.Forms.DataGridView();
@@ -133,6 +134,7 @@
             this.Controls.Add(this.dgUsuarios);
             this.Controls.Add(this.btNovoUsuario);
             this.Controls.Add(this.lbResumo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "TelaGerenteUsuarios";
             this.Text = "TelaGerenteUsuarios";

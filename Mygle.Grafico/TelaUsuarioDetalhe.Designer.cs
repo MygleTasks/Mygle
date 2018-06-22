@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaUsuarioDetalhe));
             this.dgVendas = new System.Windows.Forms.DataGridView();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,6 +124,7 @@
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.dgVendas);
             this.Controls.Add(this.lbDetalhe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "TelaUsuarioDetalhe";
             this.Text = "TelaUsuarioDetalhe";

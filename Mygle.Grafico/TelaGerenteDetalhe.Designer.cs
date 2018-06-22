@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerenteDetalhe));
             this.lbDetalhe = new System.Windows.Forms.Label();
             this.dgDetalhes = new System.Windows.Forms.DataGridView();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,6 +109,7 @@
             this.ClientSize = new System.Drawing.Size(672, 345);
             this.Controls.Add(this.dgDetalhes);
             this.Controls.Add(this.lbDetalhe);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "TelaGerenteDetalhe";
             this.Text = "TelaGerenteDetalhe";

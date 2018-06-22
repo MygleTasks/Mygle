@@ -46,15 +46,15 @@
             this.pbxLogoTela.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pbxLogoTela.ErrorImage")));
             this.pbxLogoTela.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogoTela.Image")));
             this.pbxLogoTela.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogoTela.InitialImage")));
-            this.pbxLogoTela.Location = new System.Drawing.Point(10, 11);
+            this.pbxLogoTela.Location = new System.Drawing.Point(40, 40);
             this.pbxLogoTela.Name = "pbxLogoTela";
-            this.pbxLogoTela.Size = new System.Drawing.Size(415, 312);
+            this.pbxLogoTela.Size = new System.Drawing.Size(328, 220);
             this.pbxLogoTela.TabIndex = 0;
             this.pbxLogoTela.TabStop = false;
             // 
             // tbSenha
             // 
-            this.tbSenha.Location = new System.Drawing.Point(441, 167);
+            this.tbSenha.Location = new System.Drawing.Point(414, 138);
             this.tbSenha.Name = "tbSenha";
             this.tbSenha.PasswordChar = '*';
             this.tbSenha.Size = new System.Drawing.Size(160, 20);
@@ -64,12 +64,14 @@
             // llbRecuperarSenha
             // 
             this.llbRecuperarSenha.AutoSize = true;
-            this.llbRecuperarSenha.Location = new System.Drawing.Point(438, 189);
+            this.llbRecuperarSenha.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(109)))), ((int)(((byte)(178)))));
+            this.llbRecuperarSenha.Location = new System.Drawing.Point(411, 160);
             this.llbRecuperarSenha.Name = "llbRecuperarSenha";
             this.llbRecuperarSenha.Size = new System.Drawing.Size(91, 13);
             this.llbRecuperarSenha.TabIndex = 3;
             this.llbRecuperarSenha.TabStop = true;
             this.llbRecuperarSenha.Text = "Recuperar Senha";
+            this.llbRecuperarSenha.VisitedLinkColor = System.Drawing.Color.Red;
             this.llbRecuperarSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbRecuperarSenha_LinkClicked);
             // 
             // btLogin
@@ -78,7 +80,7 @@
             this.btLogin.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btLogin.Location = new System.Drawing.Point(490, 237);
+            this.btLogin.Location = new System.Drawing.Point(463, 208);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(75, 23);
             this.btLogin.TabIndex = 4;
@@ -88,7 +90,7 @@
             // 
             // tbUsuario
             // 
-            this.tbUsuario.Location = new System.Drawing.Point(441, 116);
+            this.tbUsuario.Location = new System.Drawing.Point(414, 87);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(160, 20);
             this.tbUsuario.TabIndex = 1;
@@ -96,7 +98,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(438, 101);
+            this.label1.Location = new System.Drawing.Point(411, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 5;
@@ -105,7 +107,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(438, 150);
+            this.label2.Location = new System.Drawing.Point(411, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 6;
@@ -115,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 364);
+            this.ClientSize = new System.Drawing.Size(611, 303);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btLogin);
@@ -123,6 +125,7 @@
             this.Controls.Add(this.tbSenha);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.pbxLogoTela);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "TelaLoginMygle";
             this.Text = "Mygle";

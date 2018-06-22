@@ -10,6 +10,5 @@ namespace Mygle.Negocio.Models
     {
         public long Id { get; set; }
         public string Nome { get; set; }
-        public string TipoMeta { get; set; }
     }
 }

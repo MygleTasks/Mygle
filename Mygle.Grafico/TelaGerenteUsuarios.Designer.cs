@@ -43,9 +43,10 @@
             // 
             // btNovoUsuario
             // 
-            this.btNovoUsuario.Location = new System.Drawing.Point(18, 65);
+            this.btNovoUsuario.Location = new System.Drawing.Point(36, 125);
+            this.btNovoUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btNovoUsuario.Name = "btNovoUsuario";
-            this.btNovoUsuario.Size = new System.Drawing.Size(79, 35);
+            this.btNovoUsuario.Size = new System.Drawing.Size(158, 67);
             this.btNovoUsuario.TabIndex = 51;
             this.btNovoUsuario.Text = "Cadastrar Usuário";
             this.btNovoUsuario.UseVisualStyleBackColor = true;
@@ -55,9 +56,10 @@
             // 
             this.lbResumo.AutoSize = true;
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbResumo.Location = new System.Drawing.Point(12, 9);
+            this.lbResumo.Location = new System.Drawing.Point(24, 17);
+            this.lbResumo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbResumo.Name = "lbResumo";
-            this.lbResumo.Size = new System.Drawing.Size(130, 31);
+            this.lbResumo.Size = new System.Drawing.Size(249, 63);
             this.lbResumo.TabIndex = 49;
             this.lbResumo.Text = "Usuários";
             // 
@@ -71,9 +73,10 @@
             this.Matrícula,
             this.Usuário,
             this.Usuario});
-            this.dgUsuarios.Location = new System.Drawing.Point(18, 130);
+            this.dgUsuarios.Location = new System.Drawing.Point(36, 250);
+            this.dgUsuarios.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgUsuarios.Name = "dgUsuarios";
-            this.dgUsuarios.Size = new System.Drawing.Size(366, 278);
+            this.dgUsuarios.Size = new System.Drawing.Size(732, 535);
             this.dgUsuarios.TabIndex = 52;
             // 
             // Matrícula
@@ -96,9 +99,10 @@
             // 
             // btRemoverUsuario
             // 
-            this.btRemoverUsuario.Location = new System.Drawing.Point(313, 66);
+            this.btRemoverUsuario.Location = new System.Drawing.Point(626, 127);
+            this.btRemoverUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btRemoverUsuario.Name = "btRemoverUsuario";
-            this.btRemoverUsuario.Size = new System.Drawing.Size(71, 34);
+            this.btRemoverUsuario.Size = new System.Drawing.Size(142, 65);
             this.btRemoverUsuario.TabIndex = 53;
             this.btRemoverUsuario.Text = "Remover Usuário";
             this.btRemoverUsuario.UseVisualStyleBackColor = true;
@@ -106,18 +110,21 @@
             // 
             // btAlterarMeta
             // 
-            this.btAlterarMeta.Location = new System.Drawing.Point(236, 65);
+            this.btAlterarMeta.Location = new System.Drawing.Point(472, 125);
+            this.btAlterarMeta.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btAlterarMeta.Name = "btAlterarMeta";
-            this.btAlterarMeta.Size = new System.Drawing.Size(71, 34);
+            this.btAlterarMeta.Size = new System.Drawing.Size(142, 65);
             this.btAlterarMeta.TabIndex = 54;
             this.btAlterarMeta.Text = "Alterar Meta";
             this.btAlterarMeta.UseVisualStyleBackColor = true;
+            this.btAlterarMeta.Click += new System.EventHandler(this.btAlterarMeta_Click);
             // 
             // btAlterarUsuario
             // 
-            this.btAlterarUsuario.Location = new System.Drawing.Point(114, 64);
+            this.btAlterarUsuario.Location = new System.Drawing.Point(228, 123);
+            this.btAlterarUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btAlterarUsuario.Name = "btAlterarUsuario";
-            this.btAlterarUsuario.Size = new System.Drawing.Size(76, 36);
+            this.btAlterarUsuario.Size = new System.Drawing.Size(152, 69);
             this.btAlterarUsuario.TabIndex = 55;
             this.btAlterarUsuario.Text = "Alterar Usuario";
             this.btAlterarUsuario.UseVisualStyleBackColor = true;
@@ -125,9 +132,9 @@
             // 
             // TelaGerenteUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 420);
+            this.ClientSize = new System.Drawing.Size(792, 808);
             this.Controls.Add(this.btAlterarUsuario);
             this.Controls.Add(this.btAlterarMeta);
             this.Controls.Add(this.btRemoverUsuario);
@@ -136,6 +143,7 @@
             this.Controls.Add(this.lbResumo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "TelaGerenteUsuarios";
             this.Text = "TelaGerenteUsuarios";
             this.Load += new System.EventHandler(this.TelaGerenteUsuarios_Load);

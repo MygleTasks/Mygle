@@ -10,17 +10,9 @@ namespace Mygle.Negocio
 {
     public class Gerenciador
     {
-        private Banco banco = new Banco();
+        public Usuario UsuarioLogado { get; set; }
 
-        ////Criar Usuário Administrador
-        //public void CriarAdministrador()
-        //{
-        //    Usuario novoUsuario = new Usuario();
-        //    novoUsuario.Id = Convert.ToInt64("0");
-        //    novoUsuario.Nome = Convert.ToString("Administrador");
-        //    novoUsuario.NomeUsuario = Convert.ToString("admin");
-        //    novoUsuario.Senha = Convert.ToString("admin");
-        //}
+        private Banco banco = new Banco();
 
         //RemoverCategoria
         public Validacao RemoverCategoria(Categoria categoria)
@@ -169,6 +161,15 @@ namespace Mygle.Negocio
             return this.banco.Categorias.ToList();
         }
 
+        public virtual List<Venda> VendasDoUsuarioLogado()
+        {
+            return this.banco
+                          .Vendas
+                          .Include("Usuario")
+                          .Where(m => m.Usuario.Id == this.UsuarioLogado.Id)
+                          .ToList();
+        }
+
         //Buscar Informações do Banco
         public Venda BuscaVendaPorId(long id)
         {
@@ -187,6 +188,7 @@ namespace Mygle.Negocio
             {
                 if (usuarioDb.Senha == senha)
                 {
+                    this.UsuarioLogado = usuarioDb;
                     return true;
                 }
             }

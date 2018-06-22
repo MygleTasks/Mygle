@@ -78,6 +78,7 @@ namespace Mygle.Grafico
                 CriarAdministrador();
             }
         }
+
         //Criar Usuário Administrador
         public void CriarAdministrador()
         {

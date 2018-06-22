@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroVenda));
             this.tbQuantidade = new System.Windows.Forms.TextBox();
             this.lbQuantidade = new System.Windows.Forms.Label();
             this.lbCadastro = new System.Windows.Forms.Label();
@@ -171,6 +172,7 @@
             this.Controls.Add(this.lbValor);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.lbCodigo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadastroVenda";
             this.Text = "TelaCadastroVenda";
             this.Load += new System.EventHandler(this.TelaCadastroVenda_Load);

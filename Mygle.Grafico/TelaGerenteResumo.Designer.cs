@@ -32,6 +32,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,10 +52,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btCategorias = new System.Windows.Forms.Button();
             this.lbValorVendido = new System.Windows.Forms.Label();
+            this.graGerenteMes = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.graGerenteDia = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graGerenteMes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graGerenteDia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,7 +119,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(526, 702);
+            this.label2.Location = new System.Drawing.Point(526, 720);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(619, 46);
@@ -144,20 +149,20 @@
             // 
             // btDia
             // 
-            this.btDia.Location = new System.Drawing.Point(1018, 85);
+            this.btDia.Location = new System.Drawing.Point(979, 83);
             this.btDia.Margin = new System.Windows.Forms.Padding(6);
             this.btDia.Name = "btDia";
-            this.btDia.Size = new System.Drawing.Size(127, 63);
+            this.btDia.Size = new System.Drawing.Size(142, 65);
             this.btDia.TabIndex = 5;
             this.btDia.Text = "Dia";
             this.btDia.UseVisualStyleBackColor = true;
             // 
             // btMes
             // 
-            this.btMes.Location = new System.Drawing.Point(1162, 85);
+            this.btMes.Location = new System.Drawing.Point(1148, 83);
             this.btMes.Margin = new System.Windows.Forms.Padding(6);
             this.btMes.Name = "btMes";
-            this.btMes.Size = new System.Drawing.Size(127, 64);
+            this.btMes.Size = new System.Drawing.Size(142, 65);
             this.btMes.TabIndex = 6;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
@@ -166,7 +171,7 @@
             // 
             this.lbResumo.AutoSize = true;
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbResumo.Location = new System.Drawing.Point(388, 85);
+            this.lbResumo.Location = new System.Drawing.Point(383, 83);
             this.lbResumo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbResumo.Name = "lbResumo";
             this.lbResumo.Size = new System.Drawing.Size(451, 63);
@@ -239,22 +244,40 @@
             this.lbValorVendido.TabIndex = 60;
             this.lbValorVendido.Click += new System.EventHandler(this.lbValorVendido_Click);
             // 
-            // graGerenteDia
+            // graGerenteMes
             // 
             chartArea1.Name = "ChartArea1";
-            this.graGerenteDia.ChartAreas.Add(chartArea1);
+            this.graGerenteMes.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.graGerenteDia.Legends.Add(legend1);
-            this.graGerenteDia.Location = new System.Drawing.Point(534, 337);
-            this.graGerenteDia.Name = "graGerenteDia";
+            this.graGerenteMes.Legends.Add(legend1);
+            this.graGerenteMes.Location = new System.Drawing.Point(534, 781);
+            this.graGerenteMes.Name = "graGerenteMes";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
             series1.Name = "Vendas";
-            this.graGerenteDia.Series.Add(series1);
-            this.graGerenteDia.Size = new System.Drawing.Size(587, 342);
-            this.graGerenteDia.TabIndex = 61;
+            this.graGerenteMes.Series.Add(series1);
+            this.graGerenteMes.Size = new System.Drawing.Size(587, 342);
+            this.graGerenteMes.TabIndex = 61;
+            this.graGerenteMes.Text = "chart1";
+            // 
+            // graGerenteDia
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.graGerenteDia.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.graGerenteDia.Legends.Add(legend2);
+            this.graGerenteDia.Location = new System.Drawing.Point(534, 350);
+            this.graGerenteDia.Name = "graGerenteDia";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "VendasDia";
+            this.graGerenteDia.Series.Add(series2);
+            this.graGerenteDia.Size = new System.Drawing.Size(587, 349);
+            this.graGerenteDia.TabIndex = 62;
             this.graGerenteDia.Text = "chart1";
             // 
             // TelaGerenteResumo
@@ -264,6 +287,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1410, 1250);
             this.Controls.Add(this.graGerenteDia);
+            this.Controls.Add(this.graGerenteMes);
             this.Controls.Add(this.lbValorVendido);
             this.Controls.Add(this.btCategorias);
             this.Controls.Add(this.pictureBox3);
@@ -291,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graGerenteMes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.graGerenteDia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -316,6 +341,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btCategorias;
         private System.Windows.Forms.Label lbValorVendido;
+        private System.Windows.Forms.DataVisualization.Charting.Chart graGerenteMes;
         private System.Windows.Forms.DataVisualization.Charting.Chart graGerenteDia;
     }
 }

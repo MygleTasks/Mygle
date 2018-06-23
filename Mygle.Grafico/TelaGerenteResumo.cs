@@ -57,29 +57,61 @@ namespace Mygle.Grafico
 
         private void lbValorVendido_Click(object sender, EventArgs e)
         {
-            CalculoTotal();
+            ValorDia();
         }
 
-        public double CalculoTotal()
+        public double ValorDia()
         {
             Double Total = 0;
             foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
             {
-                Total += venda.ValorTotal;
+                if (DateTime.Now.Day == venda.Data.Day)
+                {
+                    Total += venda.ValorTotal;
+                }
             }
-            this.lbValorVendido.Text = Total.ToString();
+            return Total;
+        }
+
+        public double ValorMes()
+        {
+            Double Total = 0;
+            foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
+            {
+                if(DateTime.Now.Month == venda.Data.Month)
+                {
+                   Total += venda.ValorTotal;
+                }
+            }
             return Total;
         }
 
         private void TelaGerenteResumo_Load(object sender, EventArgs e)
         {
-            var meta = Program.Gerenciador.BuscaMetaPorId();
-            if(meta != null)
+            var Meta = Program.Gerenciador.BuscaMetaPorId();
+            if(Meta != null)
             {
-                double valorMeta = meta.ValorMeta;
-                graGerenteDia.Series["Vendas"].Points.AddY(CalculoTotal());
-                graGerenteDia.Series["Vendas"].Points.AddY(valorMeta - CalculoTotal());
+                double meta = Program.Gerenciador.BuscaMetaPorId().ValorMeta;
+                double metaMes = meta - ValorMes();
+                double quantidadeDiasMes = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
+                meta = ((meta/quantidadeDiasMes)-ValorDia());
+                meta = Math.Round(meta, 0);
+                if(meta < 0)
+                {
+                    meta = 0;
+                }
+                if(metaMes<0)
+                {
+                    metaMes = 0;
+                }
+                graGerenteMes.Series["Vendas"].Points.AddY(ValorMes());
+                graGerenteMes.Series["Vendas"].Points.AddY(metaMes);
+                graGerenteDia.Series["VendasDia"].Points.AddY(ValorDia());
+                graGerenteDia.Series["VendasDia"].Points.AddY(meta);
             }
+
+
+
             
         }
     }

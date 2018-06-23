@@ -52,9 +52,9 @@
             // btSalvar
             // 
             this.btSalvar.Location = new System.Drawing.Point(344, 234);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(6);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(71, 34);
+            this.btSalvar.Size = new System.Drawing.Size(142, 65);
             this.btSalvar.TabIndex = 5;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             // tbNome
             // 
             this.tbNome.Location = new System.Drawing.Point(122, 177);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(6);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(364, 31);
             this.tbNome.TabIndex = 61;
@@ -81,9 +81,9 @@
             // tbId
             // 
             this.tbId.Location = new System.Drawing.Point(122, 127);
-            this.tbId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbId.Margin = new System.Windows.Forms.Padding(6);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(184, 20);
+            this.tbId.Size = new System.Drawing.Size(184, 31);
             this.tbId.TabIndex = 1;
             // 
             // tbCodigo
@@ -99,9 +99,9 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(190, 234);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(71, 34);
+            this.btCancelar.Size = new System.Drawing.Size(142, 65);
             this.btCancelar.TabIndex = 4;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 334);
+            this.ClientSize = new System.Drawing.Size(517, 328);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.tbCodigo);
@@ -121,7 +121,7 @@
             this.Controls.Add(this.lbCategorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaCadastroCategorias";
             this.Text = "TelaCadastroCategorias";
             this.Load += new System.EventHandler(this.TelaCadastroCategorias_Load);

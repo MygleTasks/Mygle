@@ -17,5 +17,6 @@ namespace Mygle.Negocio.Persistencia
         public virtual DbSet<Usuario> Usuarios { get; set; }
         public virtual DbSet<Venda> Vendas { get; set; }
         public virtual DbSet<Categoria> Categorias { get; set; }
+        public virtual DbSet<Meta> Metas { get; set; }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Mygle.Negocio;
-using Mygle.Negocio.Models;
+﻿using Mygle.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,27 +11,24 @@ using System.Windows.Forms;
 
 namespace Mygle.Grafico
 {
-    public partial class TelaCadastroCategorias : Form
+    public partial class TelaGerenteMeta : Form
     {
-        public TelaCadastroCategorias()
+        public TelaGerenteMeta()
         {
             InitializeComponent();
         }
 
-        private void TelaCadastroCategorias_KeyDown(object sender, KeyEventArgs e)
+        private void lbCategorias_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
+
         }
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Categoria novaCategoria = new Categoria();
-            novaCategoria.Id = Convert.ToInt64(tbId.Text);
-            novaCategoria.Nome = Convert.ToString(tbNome.Text);
-            Validacao validacao = Program.Gerenciador.AdicionarCategoria(novaCategoria);
+            Meta novaMeta = new Meta();
+            novaMeta.Id = Convert.ToInt64(tbId.Text);
+            novaMeta.ValorMeta = Convert.ToDouble(tbValor.Text);
+            Negocio.Validacao validacao = Program.Gerenciador.AdicionarMeta(novaMeta);
 
             String mensagemValidacao = "";
             if (!validacao.Valido)
@@ -50,16 +46,6 @@ namespace Mygle.Grafico
                 MessageBox.Show("Cadastrado com sucesso!");
             }
             this.Close();
-        }
-
-        private void btCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void TelaCadastroCategorias_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

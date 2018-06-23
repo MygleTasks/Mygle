@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Mygle.Negocio.Models
 {
-    class Meta
+    public class Meta
     {
         public long Id { get; set; }
-        public int metaQuant { get; set; }
-        public double metaValor { get; set; }
+        public double ValorMeta { get; set; }
     }
 }

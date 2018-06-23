@@ -64,5 +64,11 @@ namespace Mygle.Grafico
             }
             this.lbValorVendido.Text = Total.ToString();
         }
+
+        private void TelaGerenteResumo_Load(object sender, EventArgs e)
+        {
+            graGerenteDia.Series["Vendas"].Points.AddY(1000);
+            graGerenteDia.Series["Vendas"].Points.AddY(3000);
+        }
     }
 }

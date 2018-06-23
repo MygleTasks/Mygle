@@ -118,5 +118,11 @@ namespace Mygle.Grafico
         {
 
         }
+
+        private void btAlterarMeta_Click(object sender, EventArgs e)
+        {
+            TelaGerenteMeta tela = new TelaGerenteMeta();
+            tela.Show();
+        }
     }
 }

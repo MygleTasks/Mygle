@@ -145,6 +145,19 @@ namespace Mygle.Negocio
             return validacao;
         }
 
+        public Validacao AdicionarMeta(Meta metaAdicionada)
+        {
+            Validacao validacao = new Validacao();
+
+            //Gravação de dados no banco
+            if (validacao.Valido)
+            {
+                this.banco.Metas.Add(metaAdicionada);
+                this.banco.SaveChanges();
+            }
+            return validacao;
+        }
+
         //Métodos para listagem de usuários, vendas e categorias
         public virtual List<Usuario> TodosOsUsuarios()
         {

@@ -54,13 +54,8 @@
             this.btSalvar.Location = new System.Drawing.Point(344, 234);
             this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btSalvar.Name = "btSalvar";
-<<<<<<< HEAD
             this.btSalvar.Size = new System.Drawing.Size(71, 34);
             this.btSalvar.TabIndex = 5;
-=======
-            this.btSalvar.Size = new System.Drawing.Size(142, 65);
-            this.btSalvar.TabIndex = 58;
->>>>>>> Daniel
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);

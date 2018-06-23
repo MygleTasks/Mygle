@@ -61,7 +61,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(626, 781);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(324, 298);
             this.pictureBox3.TabIndex = 58;
@@ -137,7 +137,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(626, 350);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(324, 298);
             this.pictureBox2.TabIndex = 49;
@@ -146,7 +146,7 @@
             // btDia
             // 
             this.btDia.Location = new System.Drawing.Point(1026, 85);
-            this.btDia.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btDia.Margin = new System.Windows.Forms.Padding(6);
             this.btDia.Name = "btDia";
             this.btDia.Size = new System.Drawing.Size(148, 60);
             this.btDia.TabIndex = 48;
@@ -156,7 +156,7 @@
             // btMes
             // 
             this.btMes.Location = new System.Drawing.Point(1186, 85);
-            this.btMes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btMes.Margin = new System.Windows.Forms.Padding(6);
             this.btMes.Name = "btMes";
             this.btMes.Size = new System.Drawing.Size(148, 60);
             this.btMes.TabIndex = 47;
@@ -177,7 +177,7 @@
             // btLogout
             // 
             this.btLogout.Location = new System.Drawing.Point(24, 1142);
-            this.btLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(6);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(240, 77);
             this.btLogout.TabIndex = 45;
@@ -188,7 +188,7 @@
             // btUsuarios
             // 
             this.btUsuarios.Location = new System.Drawing.Point(24, 490);
-            this.btUsuarios.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btUsuarios.Margin = new System.Windows.Forms.Padding(6);
             this.btUsuarios.Name = "btUsuarios";
             this.btUsuarios.Size = new System.Drawing.Size(240, 77);
             this.btUsuarios.TabIndex = 44;
@@ -199,7 +199,7 @@
             // btDetalhe
             // 
             this.btDetalhe.Location = new System.Drawing.Point(24, 402);
-            this.btDetalhe.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btDetalhe.Margin = new System.Windows.Forms.Padding(6);
             this.btDetalhe.Name = "btDetalhe";
             this.btDetalhe.Size = new System.Drawing.Size(240, 77);
             this.btDetalhe.TabIndex = 43;
@@ -213,7 +213,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(24, 40);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(240, 192);
             this.pictureBox1.TabIndex = 42;
@@ -222,7 +222,7 @@
             // btResumo
             // 
             this.btResumo.Location = new System.Drawing.Point(24, 313);
-            this.btResumo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btResumo.Margin = new System.Windows.Forms.Padding(6);
             this.btResumo.Name = "btResumo";
             this.btResumo.Size = new System.Drawing.Size(240, 77);
             this.btResumo.TabIndex = 41;
@@ -232,7 +232,7 @@
             // btCategorias
             // 
             this.btCategorias.Location = new System.Drawing.Point(24, 579);
-            this.btCategorias.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCategorias.Margin = new System.Windows.Forms.Padding(6);
             this.btCategorias.Name = "btCategorias";
             this.btCategorias.Size = new System.Drawing.Size(240, 77);
             this.btCategorias.TabIndex = 59;
@@ -261,7 +261,7 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Vendas";
             this.graGerenteDia.Series.Add(series1);
             this.graGerenteDia.Size = new System.Drawing.Size(587, 342);
             this.graGerenteDia.TabIndex = 61;
@@ -293,9 +293,10 @@
             this.Controls.Add(this.btResumo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaGerenteResumo";
             this.Text = "TelaResumoGerente";
+            this.Load += new System.EventHandler(this.TelaGerenteResumo_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteResumo_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

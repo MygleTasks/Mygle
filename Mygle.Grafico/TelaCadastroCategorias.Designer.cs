@@ -75,38 +75,16 @@
             this.tbNome.Location = new System.Drawing.Point(122, 177);
             this.tbNome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbNome.Name = "tbNome";
-<<<<<<< HEAD
-            this.tbNome.Size = new System.Drawing.Size(184, 20);
-            this.tbNome.TabIndex = 2;
-            // 
-            // cbTipo
-            // 
-            this.cbTipo.FormattingEnabled = true;
-            this.cbTipo.Items.AddRange(new object[] {
-            "Valor",
-            "Quantidade"});
-            this.cbTipo.Location = new System.Drawing.Point(61, 116);
-            this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(184, 21);
-            this.cbTipo.TabIndex = 3;
-            // 
-=======
             this.tbNome.Size = new System.Drawing.Size(364, 31);
             this.tbNome.TabIndex = 61;
             // 
->>>>>>> Daniel
             // tbId
             // 
             this.tbId.Location = new System.Drawing.Point(122, 127);
             this.tbId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbId.Name = "tbId";
-<<<<<<< HEAD
             this.tbId.Size = new System.Drawing.Size(184, 20);
             this.tbId.TabIndex = 1;
-=======
-            this.tbId.Size = new System.Drawing.Size(364, 31);
-            this.tbId.TabIndex = 64;
->>>>>>> Daniel
             // 
             // tbCodigo
             // 
@@ -123,13 +101,8 @@
             this.btCancelar.Location = new System.Drawing.Point(190, 234);
             this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btCancelar.Name = "btCancelar";
-<<<<<<< HEAD
             this.btCancelar.Size = new System.Drawing.Size(71, 34);
             this.btCancelar.TabIndex = 4;
-=======
-            this.btCancelar.Size = new System.Drawing.Size(142, 65);
-            this.btCancelar.TabIndex = 65;
->>>>>>> Daniel
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);

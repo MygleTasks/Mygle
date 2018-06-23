@@ -46,13 +46,8 @@
             this.btNovoUsuario.Location = new System.Drawing.Point(36, 125);
             this.btNovoUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btNovoUsuario.Name = "btNovoUsuario";
-<<<<<<< HEAD
             this.btNovoUsuario.Size = new System.Drawing.Size(79, 35);
             this.btNovoUsuario.TabIndex = 1;
-=======
-            this.btNovoUsuario.Size = new System.Drawing.Size(158, 67);
-            this.btNovoUsuario.TabIndex = 51;
->>>>>>> Daniel
             this.btNovoUsuario.Text = "Cadastrar Usuário";
             this.btNovoUsuario.UseVisualStyleBackColor = true;
             this.btNovoUsuario.Click += new System.EventHandler(this.btNovoUsuario_Click);
@@ -107,13 +102,8 @@
             this.btRemoverUsuario.Location = new System.Drawing.Point(626, 127);
             this.btRemoverUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btRemoverUsuario.Name = "btRemoverUsuario";
-<<<<<<< HEAD
             this.btRemoverUsuario.Size = new System.Drawing.Size(71, 34);
             this.btRemoverUsuario.TabIndex = 4;
-=======
-            this.btRemoverUsuario.Size = new System.Drawing.Size(142, 65);
-            this.btRemoverUsuario.TabIndex = 53;
->>>>>>> Daniel
             this.btRemoverUsuario.Text = "Remover Usuário";
             this.btRemoverUsuario.UseVisualStyleBackColor = true;
             this.btRemoverUsuario.Click += new System.EventHandler(this.btRemoverUsuario_Click);
@@ -123,13 +113,8 @@
             this.btAlterarMeta.Location = new System.Drawing.Point(472, 125);
             this.btAlterarMeta.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btAlterarMeta.Name = "btAlterarMeta";
-<<<<<<< HEAD
             this.btAlterarMeta.Size = new System.Drawing.Size(71, 34);
             this.btAlterarMeta.TabIndex = 3;
-=======
-            this.btAlterarMeta.Size = new System.Drawing.Size(142, 65);
-            this.btAlterarMeta.TabIndex = 54;
->>>>>>> Daniel
             this.btAlterarMeta.Text = "Alterar Meta";
             this.btAlterarMeta.UseVisualStyleBackColor = true;
             this.btAlterarMeta.Click += new System.EventHandler(this.btAlterarMeta_Click);
@@ -139,13 +124,8 @@
             this.btAlterarUsuario.Location = new System.Drawing.Point(228, 123);
             this.btAlterarUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btAlterarUsuario.Name = "btAlterarUsuario";
-<<<<<<< HEAD
             this.btAlterarUsuario.Size = new System.Drawing.Size(76, 36);
             this.btAlterarUsuario.TabIndex = 2;
-=======
-            this.btAlterarUsuario.Size = new System.Drawing.Size(152, 69);
-            this.btAlterarUsuario.TabIndex = 55;
->>>>>>> Daniel
             this.btAlterarUsuario.Text = "Alterar Usuario";
             this.btAlterarUsuario.UseVisualStyleBackColor = true;
             this.btAlterarUsuario.Click += new System.EventHandler(this.btAlterarUsuario_Click);

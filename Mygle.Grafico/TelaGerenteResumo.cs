@@ -57,18 +57,30 @@ namespace Mygle.Grafico
 
         private void lbValorVendido_Click(object sender, EventArgs e)
         {
+            CalculoTotal();
+        }
+
+        public double CalculoTotal()
+        {
             Double Total = 0;
             foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
             {
                 Total += venda.ValorTotal;
             }
             this.lbValorVendido.Text = Total.ToString();
+            return Total;
         }
 
         private void TelaGerenteResumo_Load(object sender, EventArgs e)
         {
-            graGerenteDia.Series["Vendas"].Points.AddY(1000);
-            graGerenteDia.Series["Vendas"].Points.AddY(3000);
+            var meta = Program.Gerenciador.BuscaMetaPorId();
+            if(meta != null)
+            {
+                double valorMeta = meta.ValorMeta;
+                graGerenteDia.Series["Vendas"].Points.AddY(CalculoTotal());
+                graGerenteDia.Series["Vendas"].Points.AddY(valorMeta - CalculoTotal());
+            }
+            
         }
     }
 }

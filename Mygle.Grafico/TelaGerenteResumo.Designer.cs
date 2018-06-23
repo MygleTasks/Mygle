@@ -47,7 +47,6 @@
             this.btUsuarios = new System.Windows.Forms.Button();
             this.btDetalhe = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btResumo = new System.Windows.Forms.Button();
             this.btCategorias = new System.Windows.Forms.Button();
             this.lbValorVendido = new System.Windows.Forms.Label();
             this.graGerenteDia = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -145,20 +144,20 @@
             // 
             // btDia
             // 
-            this.btDia.Location = new System.Drawing.Point(1026, 85);
+            this.btDia.Location = new System.Drawing.Point(1018, 85);
             this.btDia.Margin = new System.Windows.Forms.Padding(6);
             this.btDia.Name = "btDia";
-            this.btDia.Size = new System.Drawing.Size(74, 31);
+            this.btDia.Size = new System.Drawing.Size(127, 63);
             this.btDia.TabIndex = 5;
             this.btDia.Text = "Dia";
             this.btDia.UseVisualStyleBackColor = true;
             // 
             // btMes
             // 
-            this.btMes.Location = new System.Drawing.Point(1186, 85);
+            this.btMes.Location = new System.Drawing.Point(1162, 85);
             this.btMes.Margin = new System.Windows.Forms.Padding(6);
             this.btMes.Name = "btMes";
-            this.btMes.Size = new System.Drawing.Size(74, 31);
+            this.btMes.Size = new System.Drawing.Size(127, 64);
             this.btMes.TabIndex = 6;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
@@ -176,7 +175,7 @@
             // 
             // btLogout
             // 
-            this.btLogout.Location = new System.Drawing.Point(24, 1142);
+            this.btLogout.Location = new System.Drawing.Point(15, 1158);
             this.btLogout.Margin = new System.Windows.Forms.Padding(6);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(240, 77);
@@ -187,10 +186,10 @@
             // 
             // btUsuarios
             // 
-            this.btUsuarios.Location = new System.Drawing.Point(24, 490);
+            this.btUsuarios.Location = new System.Drawing.Point(15, 426);
             this.btUsuarios.Margin = new System.Windows.Forms.Padding(6);
             this.btUsuarios.Name = "btUsuarios";
-            this.btUsuarios.Size = new System.Drawing.Size(120, 40);
+            this.btUsuarios.Size = new System.Drawing.Size(240, 77);
             this.btUsuarios.TabIndex = 3;
             this.btUsuarios.Text = "Usuários";
             this.btUsuarios.UseVisualStyleBackColor = true;
@@ -198,10 +197,10 @@
             // 
             // btDetalhe
             // 
-            this.btDetalhe.Location = new System.Drawing.Point(24, 402);
+            this.btDetalhe.Location = new System.Drawing.Point(15, 337);
             this.btDetalhe.Margin = new System.Windows.Forms.Padding(6);
             this.btDetalhe.Name = "btDetalhe";
-            this.btDetalhe.Size = new System.Drawing.Size(120, 40);
+            this.btDetalhe.Size = new System.Drawing.Size(240, 77);
             this.btDetalhe.TabIndex = 2;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
@@ -212,29 +211,19 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 15);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(240, 192);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
-            // btResumo
-            // 
-            this.btResumo.Location = new System.Drawing.Point(24, 313);
-            this.btResumo.Margin = new System.Windows.Forms.Padding(6);
-            this.btResumo.Name = "btResumo";
-            this.btResumo.Size = new System.Drawing.Size(120, 40);
-            this.btResumo.TabIndex = 1;
-            this.btResumo.Text = "Resumo";
-            this.btResumo.UseVisualStyleBackColor = true;
-            // 
             // btCategorias
             // 
-            this.btCategorias.Location = new System.Drawing.Point(24, 579);
+            this.btCategorias.Location = new System.Drawing.Point(15, 515);
             this.btCategorias.Margin = new System.Windows.Forms.Padding(6);
             this.btCategorias.Name = "btCategorias";
-            this.btCategorias.Size = new System.Drawing.Size(120, 40);
+            this.btCategorias.Size = new System.Drawing.Size(240, 77);
             this.btCategorias.TabIndex = 4;
             this.btCategorias.Text = "Categorias";
             this.btCategorias.UseVisualStyleBackColor = true;
@@ -260,6 +249,7 @@
             this.graGerenteDia.Name = "graGerenteDia";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
             series1.Name = "Vendas";
             this.graGerenteDia.Series.Add(series1);
@@ -271,6 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1410, 1250);
             this.Controls.Add(this.graGerenteDia);
             this.Controls.Add(this.lbValorVendido);
@@ -290,7 +281,6 @@
             this.Controls.Add(this.btUsuarios);
             this.Controls.Add(this.btDetalhe);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btResumo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -324,7 +314,6 @@
         private System.Windows.Forms.Button btUsuarios;
         private System.Windows.Forms.Button btDetalhe;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btResumo;
         private System.Windows.Forms.Button btCategorias;
         private System.Windows.Forms.Label lbValorVendido;
         private System.Windows.Forms.DataVisualization.Charting.Chart graGerenteDia;

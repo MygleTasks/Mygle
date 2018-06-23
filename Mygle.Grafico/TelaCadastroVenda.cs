@@ -28,6 +28,7 @@ namespace Mygle.Grafico
             novaVenda.Categoria = Convert.ToString(tbCategoria.Text);
             novaVenda.ValorUnitario = Convert.ToDouble(tbValor.Text);
             novaVenda.Quantidade = Convert.ToDouble(tbQuantidade.Text);
+            novaVenda.Usuario = Program.Gerenciador.UsuarioLogado;
 
             Validacao validacao;
             if (VendaSelecionada == null)

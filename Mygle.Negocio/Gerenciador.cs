@@ -192,6 +192,10 @@ namespace Mygle.Negocio
         {
             return this.banco.Usuarios.Where(c => c.Id == id).FirstOrDefault();
         }
+        public Meta BuscaMetaPorId()
+        {
+            return this.banco.Metas.FirstOrDefault();
+        }
 
         //Login
         public bool ValidaUsuarioSenha(String usuario, String senha)

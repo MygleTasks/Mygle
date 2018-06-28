@@ -36,7 +36,6 @@
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetalhes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,9 +43,10 @@
             // 
             this.lbDetalhe.AutoSize = true;
             this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbDetalhe.Location = new System.Drawing.Point(12, 9);
+            this.lbDetalhe.Location = new System.Drawing.Point(16, 11);
+            this.lbDetalhe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDetalhe.Name = "lbDetalhe";
-            this.lbDetalhe.Size = new System.Drawing.Size(115, 31);
+            this.lbDetalhe.Size = new System.Drawing.Size(142, 39);
             this.lbDetalhe.TabIndex = 50;
             this.lbDetalhe.Text = "Detalhe";
             // 
@@ -61,11 +61,11 @@
             this.Vendedor,
             this.CategoriaItem,
             this.Valor,
-            this.Quantidade,
-            this.Check});
-            this.dgDetalhes.Location = new System.Drawing.Point(18, 65);
+            this.Quantidade});
+            this.dgDetalhes.Location = new System.Drawing.Point(24, 80);
+            this.dgDetalhes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgDetalhes.Name = "dgDetalhes";
-            this.dgDetalhes.Size = new System.Drawing.Size(643, 268);
+            this.dgDetalhes.Size = new System.Drawing.Size(857, 330);
             this.dgDetalhes.TabIndex = 51;
             // 
             // Data
@@ -76,6 +76,7 @@
             // 
             // Vendedor
             // 
+            this.Vendedor.DataPropertyName = "Usuario";
             this.Vendedor.HeaderText = "Vendedor";
             this.Vendedor.Name = "Vendedor";
             // 
@@ -97,20 +98,16 @@
             this.Quantidade.HeaderText = "Quantidade";
             this.Quantidade.Name = "Quantidade";
             // 
-            // Check
-            // 
-            this.Check.HeaderText = "Check";
-            this.Check.Name = "Check";
-            // 
             // TelaGerenteDetalhe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 345);
+            this.ClientSize = new System.Drawing.Size(896, 425);
             this.Controls.Add(this.dgDetalhes);
             this.Controls.Add(this.lbDetalhe);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaGerenteDetalhe";
             this.Text = "TelaGerenteDetalhe";
             this.Load += new System.EventHandler(this.TelaGerenteDetalhe_Load);
@@ -130,6 +127,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
     }
 }

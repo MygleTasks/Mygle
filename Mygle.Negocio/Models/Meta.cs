@@ -10,5 +10,6 @@ namespace Mygle.Negocio.Models
     {
         public long Id { get; set; }
         public double ValorMeta { get; set; }
+        public int PercComissao { get; set; }
     }
 }

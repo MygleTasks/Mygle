@@ -1,4 +1,5 @@
 ﻿using Mygle.Negocio.Models;
+using Mygle.Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,20 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Meta novaMeta = new Meta();
+            var meta = Program.Gerenciador.BuscaMetaPorId();
             novaMeta.Id = Convert.ToInt64(tbId.Text);
             novaMeta.ValorMeta = Convert.ToDouble(tbValor.Text);
-            Negocio.Validacao validacao = Program.Gerenciador.AdicionarMeta(novaMeta);
+            novaMeta.PercComissao = Convert.ToInt32(tbComissao.Text);
+            
+            Validacao validacao;
+            if (meta == null)
+            {
+                validacao = Program.Gerenciador.AdicionarMeta(novaMeta);
+            }
+            else
+            {
+                validacao = Program.Gerenciador.AlterarMeta(novaMeta);
+            }
 
             String mensagemValidacao = "";
             if (!validacao.Valido)
@@ -46,6 +58,22 @@ namespace Mygle.Grafico
                 MessageBox.Show("Cadastrado com sucesso!");
             }
             this.Close();
+        }
+
+        private void btCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TelaGerenteMeta_Shown(object sender, EventArgs e)
+        {
+            var meta = Program.Gerenciador.BuscaMetaPorId();
+            if (meta != null)
+            {
+                this.tbId.Text =meta.Id.ToString();
+                this.tbValor.Text = meta.ValorMeta.ToString();
+                this.tbComissao.Text = meta.PercComissao.ToString();
+            }
         }
     }
 }

@@ -14,6 +14,16 @@ namespace Mygle.Negocio
 
         private Banco banco = new Banco();
 
+        //Alterar Meta
+        public Validacao AlterarMeta(Meta MetaAlterada)
+        {
+            Validacao validacao = new Validacao();
+            Meta metaBanco = BuscaMetaPorId();
+            metaBanco.ValorMeta = MetaAlterada.ValorMeta;
+            metaBanco.PercComissao = MetaAlterada.PercComissao;
+            this.banco.SaveChanges();
+            return validacao;
+        }
         //RemoverCategoria
         public Validacao RemoverCategoria(Categoria categoria)
         {

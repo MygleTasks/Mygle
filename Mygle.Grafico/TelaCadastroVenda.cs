@@ -55,6 +55,7 @@ namespace Mygle.Grafico
             else
             {
                 MessageBox.Show("Cadastrado com sucesso!");
+                this.Close();
             }
         }
 

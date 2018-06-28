@@ -51,12 +51,18 @@ namespace Mygle.Grafico
 
         private void TelaUsuarioResumo_Shown(object sender, EventArgs e)
         {
-            Double Total = 0;
-            foreach (Venda venda in Program.Gerenciador.TodasAsVendas())
+            var ok = Program.Gerenciador.BuscaMetaPorId();
+            if (ok != null)
             {
-                Total += venda.ValorTotal;
+                Double Total = 0;
+                int comissao = Program.Gerenciador.BuscaMetaPorId().PercComissao;
+                foreach (Venda venda in Program.Gerenciador.VendasDoUsuarioLogado())
+                {
+                    Total += venda.ValorTotal;
+                }
+                double valorComissao = Total * comissao / 100;
+                this.lbComissao.Text = valorComissao.ToString();
             }
-            this.lbValorVendido.Text = Total.ToString();
         }  
     }
 }

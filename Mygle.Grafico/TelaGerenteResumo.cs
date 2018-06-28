@@ -109,10 +109,12 @@ namespace Mygle.Grafico
                 graGerenteDia.Series["VendasDia"].Points.AddY(ValorDia());
                 graGerenteDia.Series["VendasDia"].Points.AddY(meta);
             }
+        }
 
-
-
-            
+        private void btMeta_Click(object sender, EventArgs e)
+        {
+            TelaGerenteMeta tela = new TelaGerenteMeta();
+            tela.Show();
         }
     }
 }

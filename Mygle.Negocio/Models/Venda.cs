@@ -14,7 +14,6 @@ namespace Mygle.Negocio.Models
         public virtual Double ValorUnitario { get; set; }
         public virtual DateTime Data { get; set; }
         public virtual Usuario Usuario { get; set; }
-
         public Double ValorTotal
         {
             get

@@ -51,17 +51,19 @@
             // 
             // tbQuantidade
             // 
-            this.tbQuantidade.Location = new System.Drawing.Point(13, 216);
+            this.tbQuantidade.Location = new System.Drawing.Point(26, 415);
+            this.tbQuantidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbQuantidade.Name = "tbQuantidade";
-            this.tbQuantidade.Size = new System.Drawing.Size(244, 20);
+            this.tbQuantidade.Size = new System.Drawing.Size(484, 31);
             this.tbQuantidade.TabIndex = 4;
             // 
             // lbQuantidade
             // 
             this.lbQuantidade.AutoSize = true;
-            this.lbQuantidade.Location = new System.Drawing.Point(10, 200);
+            this.lbQuantidade.Location = new System.Drawing.Point(20, 385);
+            this.lbQuantidade.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbQuantidade.Name = "lbQuantidade";
-            this.lbQuantidade.Size = new System.Drawing.Size(65, 13);
+            this.lbQuantidade.Size = new System.Drawing.Size(129, 25);
             this.lbQuantidade.TabIndex = 72;
             this.lbQuantidade.Text = "Quantidade:";
             // 
@@ -69,18 +71,20 @@
             // 
             this.lbCadastro.AutoSize = true;
             this.lbCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.lbCadastro.Location = new System.Drawing.Point(10, 10);
+            this.lbCadastro.Location = new System.Drawing.Point(20, 19);
+            this.lbCadastro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCadastro.Name = "lbCadastro";
-            this.lbCadastro.Size = new System.Drawing.Size(199, 25);
+            this.lbCadastro.Size = new System.Drawing.Size(380, 46);
             this.lbCadastro.TabIndex = 71;
             this.lbCadastro.Text = "Cadastro de Venda";
             this.lbCadastro.Click += new System.EventHandler(this.lbCadastro_Click);
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(115, 266);
+            this.btCancelar.Location = new System.Drawing.Point(230, 512);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(71, 34);
+            this.btCancelar.Size = new System.Drawing.Size(142, 65);
             this.btCancelar.TabIndex = 5;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -88,9 +92,10 @@
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(192, 266);
+            this.btSalvar.Location = new System.Drawing.Point(384, 512);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(71, 34);
+            this.btSalvar.Size = new System.Drawing.Size(142, 65);
             this.btSalvar.TabIndex = 6;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -99,72 +104,65 @@
             // lbCategoria
             // 
             this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Location = new System.Drawing.Point(10, 100);
+            this.lbCategoria.Location = new System.Drawing.Point(20, 192);
+            this.lbCategoria.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(55, 13);
+            this.lbCategoria.Size = new System.Drawing.Size(111, 25);
             this.lbCategoria.TabIndex = 67;
             this.lbCategoria.Text = "Categoria:";
             // 
             // tbValor
             // 
-            this.tbValor.Location = new System.Drawing.Point(13, 166);
+            this.tbValor.Location = new System.Drawing.Point(26, 319);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbValor.Name = "tbValor";
-            this.tbValor.Size = new System.Drawing.Size(244, 20);
+            this.tbValor.Size = new System.Drawing.Size(484, 31);
             this.tbValor.TabIndex = 3;
             // 
             // lbValor
             // 
             this.lbValor.AutoSize = true;
-            this.lbValor.Location = new System.Drawing.Point(10, 150);
+            this.lbValor.Location = new System.Drawing.Point(20, 288);
+            this.lbValor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbValor.Name = "lbValor";
-            this.lbValor.Size = new System.Drawing.Size(34, 13);
+            this.lbValor.Size = new System.Drawing.Size(68, 25);
             this.lbValor.TabIndex = 64;
             this.lbValor.Text = "Valor:";
             // 
             // tbCodigo
             // 
             this.tbCodigo.Enabled = false;
-            this.tbCodigo.Location = new System.Drawing.Point(13, 66);
+            this.tbCodigo.Location = new System.Drawing.Point(26, 127);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(244, 20);
+            this.tbCodigo.Size = new System.Drawing.Size(484, 31);
             this.tbCodigo.TabIndex = 1;
             // 
             // lbCodigo
             // 
             this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Location = new System.Drawing.Point(10, 50);
+            this.lbCodigo.Location = new System.Drawing.Point(20, 96);
+            this.lbCodigo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCodigo.Name = "lbCodigo";
-            this.lbCodigo.Size = new System.Drawing.Size(43, 13);
+            this.lbCodigo.Size = new System.Drawing.Size(86, 25);
             this.lbCodigo.TabIndex = 61;
             this.lbCodigo.Text = "Código:";
             // 
             // cbCategoria
             // 
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(13, 115);
-            this.cbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbCategoria.Location = new System.Drawing.Point(26, 221);
+            this.cbCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(244, 21);
-            this.cbCategoria.TabIndex = 73;
-            // 
-            // telaCadastroCategoriasBindingSource2
-            // 
-            this.telaCadastroCategoriasBindingSource2.DataSource = typeof(Mygle.Grafico.TelaCadastroCategorias);
-            // 
-            // telaCadastroCategoriasBindingSource
-            // 
-            this.telaCadastroCategoriasBindingSource.DataSource = typeof(Mygle.Grafico.TelaCadastroCategorias);
-            // 
-            // telaCadastroCategoriasBindingSource1
-            // 
-            this.telaCadastroCategoriasBindingSource1.DataSource = typeof(Mygle.Grafico.TelaCadastroCategorias);
+            this.cbCategoria.Size = new System.Drawing.Size(484, 33);
+            this.cbCategoria.TabIndex = 2;
             // 
             // TelaCadastroVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(277, 313);
+            this.ClientSize = new System.Drawing.Size(554, 602);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.tbQuantidade);
             this.Controls.Add(this.lbQuantidade);
@@ -177,6 +175,7 @@
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.lbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "TelaCadastroVenda";
             this.Text = "TelaCadastroVenda";
             this.Load += new System.EventHandler(this.TelaCadastroVenda_Load);

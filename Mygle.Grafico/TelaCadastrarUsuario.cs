@@ -34,11 +34,11 @@ namespace Mygle.Grafico
             Usuario novoUsuario = new Usuario();
             if (UsuarioSelecionado == null)
             {
-                novoUsuario.Id = Convert.ToInt64(tbCodigo.Text);
+                novoUsuario.Id = Convert.ToInt64("1");
             }
             else
             {
-                novoUsuario.Id = Convert.ToInt64("1");
+                novoUsuario.Id = Convert.ToInt64(tbCodigo.Text);
             }          
             novoUsuario.Nome = Convert.ToString(tbNome.Text);
             novoUsuario.NomeUsuario = Convert.ToString(tbUsuario.Text);

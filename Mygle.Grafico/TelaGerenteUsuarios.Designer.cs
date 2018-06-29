@@ -43,7 +43,7 @@
             // btNovoUsuario
             // 
             this.btNovoUsuario.Location = new System.Drawing.Point(36, 125);
-            this.btNovoUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btNovoUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.btNovoUsuario.Name = "btNovoUsuario";
             this.btNovoUsuario.Size = new System.Drawing.Size(142, 66);
             this.btNovoUsuario.TabIndex = 1;
@@ -73,7 +73,7 @@
             this.Usuário,
             this.Usuario});
             this.dgUsuarios.Location = new System.Drawing.Point(36, 250);
-            this.dgUsuarios.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dgUsuarios.Margin = new System.Windows.Forms.Padding(6);
             this.dgUsuarios.Name = "dgUsuarios";
             this.dgUsuarios.Size = new System.Drawing.Size(732, 534);
             this.dgUsuarios.TabIndex = 52;
@@ -99,10 +99,10 @@
             // btRemoverUsuario
             // 
             this.btRemoverUsuario.Location = new System.Drawing.Point(626, 125);
-            this.btRemoverUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btRemoverUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.btRemoverUsuario.Name = "btRemoverUsuario";
             this.btRemoverUsuario.Size = new System.Drawing.Size(142, 66);
-            this.btRemoverUsuario.TabIndex = 4;
+            this.btRemoverUsuario.TabIndex = 3;
             this.btRemoverUsuario.Text = "Remover Usuário";
             this.btRemoverUsuario.UseVisualStyleBackColor = true;
             this.btRemoverUsuario.Click += new System.EventHandler(this.btRemoverUsuario_Click);
@@ -110,7 +110,7 @@
             // btAlterarUsuario
             // 
             this.btAlterarUsuario.Location = new System.Drawing.Point(190, 125);
-            this.btAlterarUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btAlterarUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.btAlterarUsuario.Name = "btAlterarUsuario";
             this.btAlterarUsuario.Size = new System.Drawing.Size(142, 66);
             this.btAlterarUsuario.TabIndex = 2;
@@ -131,7 +131,7 @@
             this.Controls.Add(this.lbResumo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaGerenteUsuarios";
             this.Text = "TelaGerenteUsuarios";
             this.Load += new System.EventHandler(this.TelaGerenteUsuarios_Load);

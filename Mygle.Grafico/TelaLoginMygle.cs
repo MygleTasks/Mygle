@@ -77,7 +77,7 @@ namespace Mygle.Grafico
             {
                 CriarAdministrador();
             }
-            CriarMetaInicial();
+            //CriarMetaInicial();
         }
 
         //Criar Usuário Administrador
@@ -102,7 +102,7 @@ namespace Mygle.Grafico
         {
             MessageBox.Show("Entre em contato com o seu Gerente.");
         }
-
+        /*
         //Criar Meta Inicial
         public void CriarMetaInicial()
         {
@@ -112,6 +112,6 @@ namespace Mygle.Grafico
             novaMeta.PercComissao = Convert.ToInt32("0");
             Validacao validacao;
             validacao = Program.Gerenciador.AdicionarMeta(novaMeta);
-        }
+        }*/
     }
 }

@@ -30,14 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaUsuarioDetalhe));
             this.dgVendas = new System.Windows.Forms.DataGridView();
+            this.lbDetalhe = new System.Windows.Forms.Label();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btAlterar = new System.Windows.Forms.Button();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoriaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.lbDetalhe = new System.Windows.Forms.Label();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btAlterar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgVendas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,13 +47,46 @@
             this.Data,
             this.CategoriaItem,
             this.Valor,
-            this.Quantidade,
-            this.Check});
-            this.dgVendas.Location = new System.Drawing.Point(10, 65);
+            this.Quantidade});
+            this.dgVendas.Location = new System.Drawing.Point(20, 125);
+            this.dgVendas.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgVendas.Name = "dgVendas";
-            this.dgVendas.Size = new System.Drawing.Size(577, 252);
+            this.dgVendas.Size = new System.Drawing.Size(1154, 485);
             this.dgVendas.TabIndex = 53;
             this.dgVendas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgVendas_CellContentClick);
+            // 
+            // lbDetalhe
+            // 
+            this.lbDetalhe.AutoSize = true;
+            this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lbDetalhe.Location = new System.Drawing.Point(20, 31);
+            this.lbDetalhe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbDetalhe.Name = "lbDetalhe";
+            this.lbDetalhe.Size = new System.Drawing.Size(221, 63);
+            this.lbDetalhe.TabIndex = 52;
+            this.lbDetalhe.Text = "Detalhe";
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Location = new System.Drawing.Point(1032, 31);
+            this.btExcluir.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(142, 65);
+            this.btExcluir.TabIndex = 2;
+            this.btExcluir.Text = "Remover";
+            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            // 
+            // btAlterar
+            // 
+            this.btAlterar.Location = new System.Drawing.Point(878, 31);
+            this.btAlterar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btAlterar.Name = "btAlterar";
+            this.btAlterar.Size = new System.Drawing.Size(142, 65);
+            this.btAlterar.TabIndex = 1;
+            this.btAlterar.Text = "Alterar";
+            this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // Data
             // 
@@ -80,53 +112,19 @@
             this.Quantidade.HeaderText = "Quantidade";
             this.Quantidade.Name = "Quantidade";
             // 
-            // Check
-            // 
-            this.Check.HeaderText = "Check";
-            this.Check.Name = "Check";
-            // 
-            // lbDetalhe
-            // 
-            this.lbDetalhe.AutoSize = true;
-            this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbDetalhe.Location = new System.Drawing.Point(10, 16);
-            this.lbDetalhe.Name = "lbDetalhe";
-            this.lbDetalhe.Size = new System.Drawing.Size(115, 31);
-            this.lbDetalhe.TabIndex = 52;
-            this.lbDetalhe.Text = "Detalhe";
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Location = new System.Drawing.Point(516, 16);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(71, 34);
-            this.btExcluir.TabIndex = 2;
-            this.btExcluir.Text = "Remover";
-            this.btExcluir.UseVisualStyleBackColor = true;
-            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
-            // 
-            // btAlterar
-            // 
-            this.btAlterar.Location = new System.Drawing.Point(439, 16);
-            this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(71, 34);
-            this.btAlterar.TabIndex = 1;
-            this.btAlterar.Text = "Alterar";
-            this.btAlterar.UseVisualStyleBackColor = true;
-            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
-            // 
             // TelaUsuarioDetalhe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(599, 329);
+            this.ClientSize = new System.Drawing.Size(1198, 633);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.dgVendas);
             this.Controls.Add(this.lbDetalhe);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "TelaUsuarioDetalhe";
             this.Text = "TelaUsuarioDetalhe";
             this.Load += new System.EventHandler(this.TelaUsuarioDetalhe_Load);
@@ -147,6 +145,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoriaItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
     }
 }

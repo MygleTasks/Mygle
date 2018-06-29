@@ -47,7 +47,7 @@
             this.pbxLogoTela.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogoTela.Image")));
             this.pbxLogoTela.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbxLogoTela.InitialImage")));
             this.pbxLogoTela.Location = new System.Drawing.Point(80, 77);
-            this.pbxLogoTela.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pbxLogoTela.Margin = new System.Windows.Forms.Padding(6);
             this.pbxLogoTela.Name = "pbxLogoTela";
             this.pbxLogoTela.Size = new System.Drawing.Size(656, 423);
             this.pbxLogoTela.TabIndex = 0;
@@ -56,7 +56,7 @@
             // tbSenha
             // 
             this.tbSenha.Location = new System.Drawing.Point(828, 265);
-            this.tbSenha.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbSenha.Margin = new System.Windows.Forms.Padding(6);
             this.tbSenha.Name = "tbSenha";
             this.tbSenha.PasswordChar = '*';
             this.tbSenha.Size = new System.Drawing.Size(316, 31);
@@ -84,7 +84,7 @@
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btLogin.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btLogin.Location = new System.Drawing.Point(926, 400);
-            this.btLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(6);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(142, 65);
             this.btLogin.TabIndex = 3;
@@ -95,7 +95,7 @@
             // tbUsuario
             // 
             this.tbUsuario.Location = new System.Drawing.Point(828, 167);
-            this.tbUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(316, 31);
             this.tbUsuario.TabIndex = 1;
@@ -124,6 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1222, 583);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,7 +135,7 @@
             this.Controls.Add(this.pbxLogoTela);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaLoginMygle";
             this.Text = "Mygle";
             this.Load += new System.EventHandler(this.TelaLoginMygle_Load);

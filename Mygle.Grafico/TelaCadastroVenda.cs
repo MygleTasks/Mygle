@@ -24,8 +24,8 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Venda novaVenda = new Venda();
-            novaVenda.Id = Convert.ToInt64(tbCodigo.Text);
-            novaVenda.Categoria = Convert.ToString(tbCategoria.Text);
+            novaVenda.Id = Convert.ToInt64("1");
+            novaVenda.Categoria = Convert.ToString(cbCategoria.SelectedItem);
             novaVenda.ValorUnitario = Convert.ToDouble(tbValor.Text);
             novaVenda.Quantidade = Convert.ToDouble(tbQuantidade.Text);
             novaVenda.Usuario = Program.Gerenciador.UsuarioLogado;
@@ -66,7 +66,9 @@ namespace Mygle.Grafico
 
         private void TelaCadastroVenda_Load(object sender, EventArgs e)
         {
-
+            cbCategoria.DisplayMember = "Nome";
+            cbCategoria.ValueMember = "Id";
+            cbCategoria.DataSource = Program.Gerenciador.TodasAsCategorias();
         }
 
         private void lbCadastro_Click(object sender, EventArgs e)
@@ -79,7 +81,7 @@ namespace Mygle.Grafico
             if(VendaSelecionada !=null)
             {
                 this.tbCodigo.Text = VendaSelecionada.Id.ToString();
-                this.tbCategoria.Text = VendaSelecionada.Categoria.ToString();
+                this.cbCategoria.SelectedItem = VendaSelecionada.Categoria.ToString();
                 this.tbValor.Text = VendaSelecionada.ValorUnitario.ToString();
                 this.tbQuantidade.Text = VendaSelecionada.Quantidade.ToString();
             }

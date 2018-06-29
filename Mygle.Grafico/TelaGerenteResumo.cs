@@ -104,6 +104,8 @@ namespace Mygle.Grafico
                 {
                     metaMes = 0;
                 }
+                
+                graGerenteMes.Series["Vendas"].LegendText = "Teste";
                 graGerenteMes.Series["Vendas"].Points.AddY(ValorMes());
                 graGerenteMes.Series["Vendas"].Points.AddY(metaMes);
                 graGerenteDia.Series["VendasDia"].Points.AddY(ValorDia());
@@ -115,6 +117,11 @@ namespace Mygle.Grafico
         {
             TelaGerenteMeta tela = new TelaGerenteMeta();
             tela.Show();
+        }
+
+        private void graGerenteDia_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,5 +17,12 @@ namespace Mygle.Negocio.Models
 
         [NotMapped]
         public string Senha2 { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
+
+
 }

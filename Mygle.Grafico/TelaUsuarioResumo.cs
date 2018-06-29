@@ -63,6 +63,58 @@ namespace Mygle.Grafico
                 double valorComissao = Total * comissao / 100;
                 this.lbComissao.Text = valorComissao.ToString();
             }
-        }  
+        }
+
+        public double ValorDiaUsuario()
+        {
+            Double Total = 0;
+            foreach (Venda venda in Program.Gerenciador.VendasDoUsuarioLogado())
+            {
+                if (DateTime.Now.Day == venda.Data.Day)
+                {
+                    Total += venda.ValorTotal;
+                }
+            }
+            return Total;
+        }
+
+        public double ValorMesUsuario()
+        {
+            Double Total = 0;
+            foreach (Venda venda in Program.Gerenciador.VendasDoUsuarioLogado())
+            {
+                if (DateTime.Now.Month == venda.Data.Month)
+                {
+                    Total += venda.ValorTotal;
+                }
+            }
+            return Total;
+        }
+
+        private void TelaUsuarioResumo_Load(object sender, EventArgs e)
+        {
+            var Meta = Program.Gerenciador.BuscaMetaPorId();
+            if (Meta != null)
+            {
+                double meta = Program.Gerenciador.BuscaMetaPorId().ValorMeta;
+                double metaMes = meta - ValorMesUsuario();
+                double quantidadeDiasMes = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
+                meta = ((meta / quantidadeDiasMes) - ValorDiaUsuario());
+                meta = Math.Round(meta, 0);
+                if (meta < 0)
+                {
+                    meta = 0;
+                }
+                if (metaMes < 0)
+                {
+                    metaMes = 0;
+                }
+                graUsuarioMes.Series["VendasMes"].Points.AddY(ValorMesUsuario());
+                graUsuarioMes.Series["VendasMes"].Points.AddY(metaMes);
+                graUsuarioDia.Series["VendasDia"].Points.AddY(ValorDiaUsuario());
+                graUsuarioDia.Series["VendasDia"].Points.AddY(meta);
+            }
+
+        }
     }
 }

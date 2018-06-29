@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerenteResumo));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,10 +59,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(417, 500);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(626, 781);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(216, 191);
+            this.pictureBox3.Size = new System.Drawing.Size(324, 298);
             this.pictureBox3.TabIndex = 58;
             this.pictureBox3.TabStop = false;
             // 
@@ -70,31 +70,31 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(351, 461);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(526, 720);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(403, 29);
+            this.label2.Size = new System.Drawing.Size(448, 46);
             this.label2.TabIndex = 51;
-            this.label2.Text = "Meta de Valor de Venda por Dia";
+            this.label2.Text = "Meta de Venda Mensal";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(351, 173);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(526, 270);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 29);
+            this.label1.Size = new System.Drawing.Size(424, 46);
             this.label1.TabIndex = 50;
-            this.label1.Text = "Meta de Venda de Itens por Dia";
+            this.label1.Text = "Meta de Venda Diária";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(417, 224);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(626, 350);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 191);
+            this.pictureBox2.Size = new System.Drawing.Size(324, 298);
             this.pictureBox2.TabIndex = 49;
             this.pictureBox2.TabStop = false;
             // 
@@ -102,19 +102,19 @@
             // 
             this.lbResumo.AutoSize = true;
             this.lbResumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbResumo.Location = new System.Drawing.Point(255, 53);
-            this.lbResumo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbResumo.Location = new System.Drawing.Point(382, 83);
+            this.lbResumo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbResumo.Name = "lbResumo";
-            this.lbResumo.Size = new System.Drawing.Size(289, 39);
+            this.lbResumo.Size = new System.Drawing.Size(451, 63);
             this.lbResumo.TabIndex = 46;
             this.lbResumo.Text = "Resumo Gerente";
             // 
             // btLogout
             // 
-            this.btLogout.Location = new System.Drawing.Point(10, 444);
-            this.btLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btLogout.Location = new System.Drawing.Point(15, 694);
+            this.btLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(160, 49);
+            this.btLogout.Size = new System.Drawing.Size(240, 77);
             this.btLogout.TabIndex = 45;
             this.btLogout.Text = "Logout";
             this.btLogout.UseVisualStyleBackColor = true;
@@ -122,10 +122,10 @@
             // 
             // btUsuarios
             // 
-            this.btUsuarios.Location = new System.Drawing.Point(10, 273);
-            this.btUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btUsuarios.Location = new System.Drawing.Point(15, 427);
+            this.btUsuarios.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btUsuarios.Name = "btUsuarios";
-            this.btUsuarios.Size = new System.Drawing.Size(160, 49);
+            this.btUsuarios.Size = new System.Drawing.Size(240, 77);
             this.btUsuarios.TabIndex = 3;
             this.btUsuarios.Text = "Usuários";
             this.btUsuarios.UseVisualStyleBackColor = true;
@@ -133,10 +133,10 @@
             // 
             // btDetalhe
             // 
-            this.btDetalhe.Location = new System.Drawing.Point(10, 216);
-            this.btDetalhe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDetalhe.Location = new System.Drawing.Point(15, 338);
+            this.btDetalhe.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btDetalhe.Name = "btDetalhe";
-            this.btDetalhe.Size = new System.Drawing.Size(160, 49);
+            this.btDetalhe.Size = new System.Drawing.Size(240, 77);
             this.btDetalhe.TabIndex = 2;
             this.btDetalhe.Text = "Detalhe";
             this.btDetalhe.UseVisualStyleBackColor = true;
@@ -147,19 +147,19 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 123);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 192);
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
             // btCategorias
             // 
-            this.btCategorias.Location = new System.Drawing.Point(10, 330);
-            this.btCategorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCategorias.Location = new System.Drawing.Point(15, 516);
+            this.btCategorias.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btCategorias.Name = "btCategorias";
-            this.btCategorias.Size = new System.Drawing.Size(160, 49);
+            this.btCategorias.Size = new System.Drawing.Size(240, 77);
             this.btCategorias.TabIndex = 4;
             this.btCategorias.Text = "Categorias";
             this.btCategorias.UseVisualStyleBackColor = true;
@@ -168,56 +168,56 @@
             // lbValorVendido
             // 
             this.lbValorVendido.AutoSize = true;
-            this.lbValorVendido.Location = new System.Drawing.Point(860, 504);
+            this.lbValorVendido.Location = new System.Drawing.Point(1290, 788);
+            this.lbValorVendido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbValorVendido.Name = "lbValorVendido";
-            this.lbValorVendido.Size = new System.Drawing.Size(0, 17);
+            this.lbValorVendido.Size = new System.Drawing.Size(0, 25);
             this.lbValorVendido.TabIndex = 60;
             this.lbValorVendido.Click += new System.EventHandler(this.lbValorVendido_Click);
             // 
             // graGerenteMes
             // 
-            chartArea3.Name = "ChartArea1";
-            this.graGerenteMes.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.graGerenteMes.Legends.Add(legend3);
-            this.graGerenteMes.Location = new System.Drawing.Point(356, 500);
-            this.graGerenteMes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            chartArea11.Name = "ChartArea1";
+            this.graGerenteMes.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.graGerenteMes.Legends.Add(legend11);
+            this.graGerenteMes.Location = new System.Drawing.Point(534, 781);
             this.graGerenteMes.Name = "graGerenteMes";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.IsValueShownAsLabel = true;
-            series3.Legend = "Legend1";
-            series3.Name = "Vendas";
-            this.graGerenteMes.Series.Add(series3);
-            this.graGerenteMes.Size = new System.Drawing.Size(391, 219);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series11.IsValueShownAsLabel = true;
+            series11.Legend = "Legend1";
+            series11.Name = "Vendas";
+            this.graGerenteMes.Series.Add(series11);
+            this.graGerenteMes.Size = new System.Drawing.Size(586, 342);
             this.graGerenteMes.TabIndex = 61;
             this.graGerenteMes.Text = "chart1";
             // 
             // graGerenteDia
             // 
-            chartArea4.Name = "ChartArea1";
-            this.graGerenteDia.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.graGerenteDia.Legends.Add(legend4);
-            this.graGerenteDia.Location = new System.Drawing.Point(356, 224);
-            this.graGerenteDia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            chartArea12.Name = "ChartArea1";
+            this.graGerenteDia.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.graGerenteDia.Legends.Add(legend12);
+            this.graGerenteDia.Location = new System.Drawing.Point(534, 350);
             this.graGerenteDia.Name = "graGerenteDia";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.IsValueShownAsLabel = true;
-            series4.Legend = "Legend1";
-            series4.Name = "VendasDia";
-            this.graGerenteDia.Series.Add(series4);
-            this.graGerenteDia.Size = new System.Drawing.Size(391, 223);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series12.IsValueShownAsLabel = true;
+            series12.Legend = "Legend1";
+            series12.Name = "VendasDia";
+            this.graGerenteDia.Series.Add(series12);
+            this.graGerenteDia.Size = new System.Drawing.Size(586, 348);
             this.graGerenteDia.TabIndex = 62;
             this.graGerenteDia.Text = "chart1";
+            this.graGerenteDia.Click += new System.EventHandler(this.graGerenteDia_Click);
             // 
             // btMeta
             // 
-            this.btMeta.Location = new System.Drawing.Point(10, 387);
-            this.btMeta.Margin = new System.Windows.Forms.Padding(4);
+            this.btMeta.Location = new System.Drawing.Point(15, 605);
+            this.btMeta.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btMeta.Name = "btMeta";
-            this.btMeta.Size = new System.Drawing.Size(160, 49);
+            this.btMeta.Size = new System.Drawing.Size(240, 77);
             this.btMeta.TabIndex = 63;
             this.btMeta.Text = "Meta";
             this.btMeta.UseVisualStyleBackColor = true;
@@ -225,10 +225,12 @@
             // 
             // TelaGerenteResumo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(940, 823);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1182, 1162);
             this.Controls.Add(this.btMeta);
             this.Controls.Add(this.graGerenteDia);
             this.Controls.Add(this.graGerenteMes);
@@ -245,8 +247,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "TelaGerenteResumo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaResumoGerente";
             this.Load += new System.EventHandler(this.TelaGerenteResumo_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaGerenteResumo_KeyDown);

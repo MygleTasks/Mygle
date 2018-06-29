@@ -117,10 +117,12 @@
             // 
             // tbCodigo
             // 
+            this.tbCodigo.Enabled = false;
             this.tbCodigo.Location = new System.Drawing.Point(13, 66);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(348, 20);
             this.tbCodigo.TabIndex = 1;
+            this.tbCodigo.TextChanged += new System.EventHandler(this.tbCodigo_TextChanged);
             // 
             // tbSenha2
             // 

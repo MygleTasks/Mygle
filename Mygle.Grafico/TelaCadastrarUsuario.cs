@@ -32,7 +32,14 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Usuario novoUsuario = new Usuario();
-            novoUsuario.Id = Convert.ToInt64(tbCodigo.Text);
+            if (UsuarioSelecionado == null)
+            {
+                novoUsuario.Id = Convert.ToInt64(tbCodigo.Text);
+            }
+            else
+            {
+                novoUsuario.Id = Convert.ToInt64("1");
+            }          
             novoUsuario.Nome = Convert.ToString(tbNome.Text);
             novoUsuario.NomeUsuario = Convert.ToString(tbUsuario.Text);
             novoUsuario.Senha = Convert.ToString(tbSenha.Text);
@@ -84,6 +91,11 @@ namespace Mygle.Grafico
                 this.tbNome.Text = UsuarioSelecionado.Nome.ToString();
                 this.tbUsuario.Text = UsuarioSelecionado.NomeUsuario.ToString();
             }
+        }
+
+        private void tbCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

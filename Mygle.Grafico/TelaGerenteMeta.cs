@@ -28,7 +28,14 @@ namespace Mygle.Grafico
         {
             Meta novaMeta = new Meta();
             var meta = Program.Gerenciador.BuscaMetaPorId();
-            novaMeta.Id = Convert.ToInt64(tbId.Text);
+            if (meta == null)
+            {
+                novaMeta.Id = Convert.ToInt64("1");
+            }
+            else
+            {
+                novaMeta.Id = Convert.ToInt64(tbId.Text);
+            }
             novaMeta.ValorMeta = Convert.ToDouble(tbValor.Text);
             novaMeta.PercComissao = Convert.ToInt32(tbComissao.Text);
             

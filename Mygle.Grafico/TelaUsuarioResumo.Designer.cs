@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaUsuarioResumo));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbResumo = new System.Windows.Forms.Label();
             this.btLogout = new System.Windows.Forms.Button();
             this.btCadastrarVenda = new System.Windows.Forms.Button();
@@ -47,6 +47,10 @@
             this.lbComissao = new System.Windows.Forms.Label();
             this.graUsuarioDia = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.graUsuarioMes = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graUsuarioDia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graUsuarioMes)).BeginInit();
@@ -156,41 +160,77 @@
             // 
             // graUsuarioDia
             // 
-            chartArea9.Name = "ChartArea1";
-            this.graUsuarioDia.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.graUsuarioDia.Legends.Add(legend9);
+            chartArea1.Name = "ChartArea1";
+            this.graUsuarioDia.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.graUsuarioDia.Legends.Add(legend1);
             this.graUsuarioDia.Location = new System.Drawing.Point(263, 182);
-            this.graUsuarioDia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.graUsuarioDia.Margin = new System.Windows.Forms.Padding(2);
             this.graUsuarioDia.Name = "graUsuarioDia";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series9.IsValueShownAsLabel = true;
-            series9.Legend = "Legend1";
-            series9.Name = "VendasDia";
-            this.graUsuarioDia.Series.Add(series9);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "VendasDia";
+            this.graUsuarioDia.Series.Add(series1);
             this.graUsuarioDia.Size = new System.Drawing.Size(270, 164);
             this.graUsuarioDia.TabIndex = 71;
             this.graUsuarioDia.Text = "chart1";
             // 
             // graUsuarioMes
             // 
-            chartArea10.Name = "ChartArea1";
-            this.graUsuarioMes.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.graUsuarioMes.Legends.Add(legend10);
+            chartArea2.Name = "ChartArea1";
+            this.graUsuarioMes.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.graUsuarioMes.Legends.Add(legend2);
             this.graUsuarioMes.Location = new System.Drawing.Point(263, 406);
-            this.graUsuarioMes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.graUsuarioMes.Margin = new System.Windows.Forms.Padding(2);
             this.graUsuarioMes.Name = "graUsuarioMes";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series10.IsValueShownAsLabel = true;
-            series10.Legend = "Legend1";
-            series10.Name = "VendasMes";
-            this.graUsuarioMes.Series.Add(series10);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "VendasMes";
+            this.graUsuarioMes.Series.Add(series2);
             this.graUsuarioMes.Size = new System.Drawing.Size(270, 164);
             this.graUsuarioMes.TabIndex = 72;
             this.graUsuarioMes.Text = "graGerenteMes";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(501, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "Restante";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(501, 429);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.TabIndex = 74;
+            this.label3.Text = "Restante";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(502, 190);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 75;
+            this.label5.Text = "Vendido";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(502, 416);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 76;
+            this.label6.Text = "Vendido";
             // 
             // TelaUsuarioResumo
             // 
@@ -199,6 +239,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(584, 636);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.graUsuarioMes);
             this.Controls.Add(this.graUsuarioDia);
             this.Controls.Add(this.lbComissao);
@@ -239,5 +283,9 @@
         private System.Windows.Forms.Label lbComissao;
         private System.Windows.Forms.DataVisualization.Charting.Chart graUsuarioDia;
         private System.Windows.Forms.DataVisualization.Charting.Chart graUsuarioMes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

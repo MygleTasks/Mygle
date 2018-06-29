@@ -51,6 +51,7 @@
             // 
             // tbId
             // 
+            this.tbId.Enabled = false;
             this.tbId.Location = new System.Drawing.Point(58, 47);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(199, 20);
@@ -133,7 +134,7 @@
             this.Controls.Add(this.tbValor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btSalvar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaGerenteMeta";
             this.Text = "TelaGerenteMeta";
             this.Shown += new System.EventHandler(this.TelaGerenteMeta_Shown);

@@ -24,7 +24,14 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Venda novaVenda = new Venda();
-            novaVenda.Id = Convert.ToInt64("1");
+            if (VendaSelecionada == null)
+            {
+                novaVenda.Id = Convert.ToInt64("1");
+            }
+            else
+            {
+                novaVenda.Id = Convert.ToInt64(tbCodigo.Text);
+            }            
             novaVenda.Categoria = Convert.ToString(cbCategoria.SelectedItem);
             novaVenda.ValorUnitario = Convert.ToDouble(tbValor.Text);
             novaVenda.Quantidade = Convert.ToDouble(tbQuantidade.Text);

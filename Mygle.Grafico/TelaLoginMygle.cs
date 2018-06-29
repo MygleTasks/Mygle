@@ -77,6 +77,7 @@ namespace Mygle.Grafico
             {
                 CriarAdministrador();
             }
+            CriarMetaInicial();
         }
 
         //Criar Usuário Administrador
@@ -96,9 +97,21 @@ namespace Mygle.Grafico
             return this.banco.Usuarios.Where(c => c.Id == id).FirstOrDefault();
         }
 
+        //Recuperação de Senha
         private void llbRecuperarSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MessageBox.Show("Entre em contato com o seu Gerente.");
+        }
+
+        //Criar Meta Inicial
+        public void CriarMetaInicial()
+        {
+            Meta novaMeta = new Meta();
+            novaMeta.Id = Convert.ToInt64("1");
+            novaMeta.ValorMeta = Convert.ToDouble("0");
+            novaMeta.PercComissao = Convert.ToInt32("0");
+            Validacao validacao;
+            validacao = Program.Gerenciador.AdicionarMeta(novaMeta);
         }
     }
 }

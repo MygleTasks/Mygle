@@ -106,10 +106,10 @@ namespace Mygle.Grafico
                     metaMes = 0;
                 }
                 
-                graGerenteMes.Series["Vendas"].LegendText = "Venda";
+                graGerenteMes.Series["Vendas"].LegendText = " ";
                 graGerenteMes.Series["Vendas"].Points.AddY(ValorMes());
                 graGerenteMes.Series["Vendas"].Points.AddY(metaMes);
-                graGerenteDia.Series["VendasDia"].LegendText = "Venda";
+                graGerenteDia.Series["VendasDia"].LegendText = " ";
                 graGerenteDia.Series["VendasDia"].Points.AddY(ValorDia());
                 graGerenteDia.Series["VendasDia"].Points.AddY(meta);
             }

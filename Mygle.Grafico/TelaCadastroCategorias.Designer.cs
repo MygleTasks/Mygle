@@ -76,10 +76,12 @@
             // 
             // tbId
             // 
+            this.tbId.Enabled = false;
             this.tbId.Location = new System.Drawing.Point(53, 47);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(100, 20);
             this.tbId.TabIndex = 1;
+            this.tbId.TextChanged += new System.EventHandler(this.tbId_TextChanged);
             // 
             // tbCodigo
             // 

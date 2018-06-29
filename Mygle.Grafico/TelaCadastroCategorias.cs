@@ -30,7 +30,7 @@ namespace Mygle.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Categoria novaCategoria = new Categoria();
-            novaCategoria.Id = Convert.ToInt64(tbId.Text);
+            novaCategoria.Id = Convert.ToInt64("1");
             novaCategoria.Nome = Convert.ToString(tbNome.Text);
             Validacao validacao = Program.Gerenciador.AdicionarCategoria(novaCategoria);
 
@@ -57,8 +57,9 @@ namespace Mygle.Grafico
             this.Close();
         }
 
-        
+        private void tbId_TextChanged(object sender, EventArgs e)
+        {
 
-        
+        }
     }
 }

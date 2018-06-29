@@ -41,20 +41,18 @@
             // lbCategorias
             // 
             this.lbCategorias.AutoSize = true;
-            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lbCategorias.Location = new System.Drawing.Point(16, 17);
-            this.lbCategorias.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lbCategorias.Location = new System.Drawing.Point(10, 10);
             this.lbCategorias.Name = "lbCategorias";
-            this.lbCategorias.Size = new System.Drawing.Size(361, 37);
+            this.lbCategorias.Size = new System.Drawing.Size(230, 25);
             this.lbCategorias.TabIndex = 53;
             this.lbCategorias.Text = "Cadastro de Categoria";
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(344, 234);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6);
+            this.btSalvar.Location = new System.Drawing.Point(182, 123);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(142, 65);
+            this.btSalvar.Size = new System.Drawing.Size(71, 34);
             this.btSalvar.TabIndex = 5;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -63,45 +61,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 183);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(10, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 59;
             this.label1.Text = "Nome:";
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(122, 177);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(6);
+            this.tbNome.Location = new System.Drawing.Point(53, 73);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(364, 31);
+            this.tbNome.Size = new System.Drawing.Size(200, 20);
             this.tbNome.TabIndex = 61;
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(122, 127);
-            this.tbId.Margin = new System.Windows.Forms.Padding(6);
+            this.tbId.Location = new System.Drawing.Point(53, 47);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(184, 31);
+            this.tbId.Size = new System.Drawing.Size(100, 20);
             this.tbId.TabIndex = 1;
             // 
             // tbCodigo
             // 
             this.tbCodigo.AutoSize = true;
-            this.tbCodigo.Location = new System.Drawing.Point(34, 133);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.tbCodigo.Location = new System.Drawing.Point(10, 50);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(86, 25);
+            this.tbCodigo.Size = new System.Drawing.Size(43, 13);
             this.tbCodigo.TabIndex = 63;
             this.tbCodigo.Text = "Código:";
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(190, 234);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
+            this.btCancelar.Location = new System.Drawing.Point(105, 123);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(142, 65);
+            this.btCancelar.Size = new System.Drawing.Size(71, 34);
             this.btCancelar.TabIndex = 4;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -109,10 +102,10 @@
             // 
             // TelaCadastroCategorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(517, 328);
+            this.ClientSize = new System.Drawing.Size(269, 171);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.tbCodigo);
@@ -122,10 +115,8 @@
             this.Controls.Add(this.lbCategorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaCadastroCategorias";
             this.Text = "TelaCadastroCategorias";
-            this.Load += new System.EventHandler(this.TelaCadastroCategorias_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaCadastroCategorias_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

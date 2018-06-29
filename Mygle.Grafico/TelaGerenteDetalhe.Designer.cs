@@ -43,10 +43,9 @@
             // 
             this.lbDetalhe.AutoSize = true;
             this.lbDetalhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbDetalhe.Location = new System.Drawing.Point(24, 17);
-            this.lbDetalhe.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbDetalhe.Location = new System.Drawing.Point(12, 9);
             this.lbDetalhe.Name = "lbDetalhe";
-            this.lbDetalhe.Size = new System.Drawing.Size(221, 63);
+            this.lbDetalhe.Size = new System.Drawing.Size(115, 31);
             this.lbDetalhe.TabIndex = 50;
             this.lbDetalhe.Text = "Detalhe";
             // 
@@ -62,10 +61,9 @@
             this.CategoriaItem,
             this.Valor,
             this.Quantidade});
-            this.dgDetalhes.Location = new System.Drawing.Point(36, 125);
-            this.dgDetalhes.Margin = new System.Windows.Forms.Padding(6);
+            this.dgDetalhes.Location = new System.Drawing.Point(10, 65);
             this.dgDetalhes.Name = "dgDetalhes";
-            this.dgDetalhes.Size = new System.Drawing.Size(1286, 516);
+            this.dgDetalhes.Size = new System.Drawing.Size(577, 252);
             this.dgDetalhes.TabIndex = 51;
             // 
             // Data
@@ -100,15 +98,14 @@
             // 
             // TelaGerenteDetalhe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1344, 664);
+            this.ClientSize = new System.Drawing.Size(599, 329);
             this.Controls.Add(this.dgDetalhes);
             this.Controls.Add(this.lbDetalhe);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaGerenteDetalhe";
             this.Text = "TelaGerenteDetalhe";
             this.Load += new System.EventHandler(this.TelaGerenteDetalhe_Load);

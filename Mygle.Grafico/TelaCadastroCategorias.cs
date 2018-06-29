@@ -57,9 +57,8 @@ namespace Mygle.Grafico
             this.Close();
         }
 
-        private void TelaCadastroCategorias_Load(object sender, EventArgs e)
-        {
+        
 
-        }
+        
     }
 }

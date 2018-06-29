@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using Mygle.Negocio.Models;
 
 namespace Mygle.Grafico
@@ -105,9 +106,10 @@ namespace Mygle.Grafico
                     metaMes = 0;
                 }
                 
-                graGerenteMes.Series["Vendas"].LegendText = "Teste";
+                graGerenteMes.Series["Vendas"].LegendText = "Venda";
                 graGerenteMes.Series["Vendas"].Points.AddY(ValorMes());
                 graGerenteMes.Series["Vendas"].Points.AddY(metaMes);
+                graGerenteDia.Series["VendasDia"].LegendText = "Venda";
                 graGerenteDia.Series["VendasDia"].Points.AddY(ValorDia());
                 graGerenteDia.Series["VendasDia"].Points.AddY(meta);
             }

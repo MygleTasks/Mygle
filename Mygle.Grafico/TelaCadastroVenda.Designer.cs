@@ -51,19 +51,17 @@
             // 
             // tbQuantidade
             // 
-            this.tbQuantidade.Location = new System.Drawing.Point(38, 408);
-            this.tbQuantidade.Margin = new System.Windows.Forms.Padding(6);
+            this.tbQuantidade.Location = new System.Drawing.Point(13, 216);
             this.tbQuantidade.Name = "tbQuantidade";
-            this.tbQuantidade.Size = new System.Drawing.Size(484, 31);
+            this.tbQuantidade.Size = new System.Drawing.Size(244, 20);
             this.tbQuantidade.TabIndex = 4;
             // 
             // lbQuantidade
             // 
             this.lbQuantidade.AutoSize = true;
-            this.lbQuantidade.Location = new System.Drawing.Point(38, 377);
-            this.lbQuantidade.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbQuantidade.Location = new System.Drawing.Point(10, 200);
             this.lbQuantidade.Name = "lbQuantidade";
-            this.lbQuantidade.Size = new System.Drawing.Size(129, 25);
+            this.lbQuantidade.Size = new System.Drawing.Size(65, 13);
             this.lbQuantidade.TabIndex = 72;
             this.lbQuantidade.Text = "Quantidade:";
             // 
@@ -71,20 +69,18 @@
             // 
             this.lbCadastro.AutoSize = true;
             this.lbCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.lbCadastro.Location = new System.Drawing.Point(24, 17);
-            this.lbCadastro.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbCadastro.Location = new System.Drawing.Point(10, 10);
             this.lbCadastro.Name = "lbCadastro";
-            this.lbCadastro.Size = new System.Drawing.Size(380, 46);
+            this.lbCadastro.Size = new System.Drawing.Size(199, 25);
             this.lbCadastro.TabIndex = 71;
             this.lbCadastro.Text = "Cadastro de Venda";
             this.lbCadastro.Click += new System.EventHandler(this.lbCadastro_Click);
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(230, 542);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
+            this.btCancelar.Location = new System.Drawing.Point(115, 266);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(142, 65);
+            this.btCancelar.Size = new System.Drawing.Size(71, 34);
             this.btCancelar.TabIndex = 5;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -92,10 +88,9 @@
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(384, 542);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6);
+            this.btSalvar.Location = new System.Drawing.Point(192, 266);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(142, 65);
+            this.btSalvar.Size = new System.Drawing.Size(71, 34);
             this.btSalvar.TabIndex = 6;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -104,56 +99,52 @@
             // lbCategoria
             // 
             this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Location = new System.Drawing.Point(38, 188);
-            this.lbCategoria.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbCategoria.Location = new System.Drawing.Point(10, 100);
             this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(111, 25);
+            this.lbCategoria.Size = new System.Drawing.Size(55, 13);
             this.lbCategoria.TabIndex = 67;
             this.lbCategoria.Text = "Categoria:";
             // 
             // tbValor
             // 
-            this.tbValor.Location = new System.Drawing.Point(38, 315);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(6);
+            this.tbValor.Location = new System.Drawing.Point(13, 166);
             this.tbValor.Name = "tbValor";
-            this.tbValor.Size = new System.Drawing.Size(484, 31);
+            this.tbValor.Size = new System.Drawing.Size(244, 20);
             this.tbValor.TabIndex = 3;
             // 
             // lbValor
             // 
             this.lbValor.AutoSize = true;
-            this.lbValor.Location = new System.Drawing.Point(38, 285);
-            this.lbValor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbValor.Location = new System.Drawing.Point(10, 150);
             this.lbValor.Name = "lbValor";
-            this.lbValor.Size = new System.Drawing.Size(68, 25);
+            this.lbValor.Size = new System.Drawing.Size(34, 13);
             this.lbValor.TabIndex = 64;
             this.lbValor.Text = "Valor:";
             // 
             // tbCodigo
             // 
             this.tbCodigo.Enabled = false;
-            this.tbCodigo.Location = new System.Drawing.Point(38, 129);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6);
+            this.tbCodigo.Location = new System.Drawing.Point(13, 66);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(484, 31);
+            this.tbCodigo.Size = new System.Drawing.Size(244, 20);
             this.tbCodigo.TabIndex = 1;
             // 
             // lbCodigo
             // 
             this.lbCodigo.AutoSize = true;
-            this.lbCodigo.Location = new System.Drawing.Point(38, 98);
-            this.lbCodigo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbCodigo.Location = new System.Drawing.Point(10, 50);
             this.lbCodigo.Name = "lbCodigo";
-            this.lbCodigo.Size = new System.Drawing.Size(86, 25);
+            this.lbCodigo.Size = new System.Drawing.Size(43, 13);
             this.lbCodigo.TabIndex = 61;
             this.lbCodigo.Text = "Código:";
             // 
             // cbCategoria
             // 
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(38, 236);
+            this.cbCategoria.Location = new System.Drawing.Point(13, 115);
+            this.cbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(484, 33);
+            this.cbCategoria.Size = new System.Drawing.Size(244, 21);
             this.cbCategoria.TabIndex = 73;
             // 
             // telaCadastroCategoriasBindingSource2
@@ -170,10 +161,10 @@
             // 
             // TelaCadastroVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(554, 631);
+            this.ClientSize = new System.Drawing.Size(277, 313);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.tbQuantidade);
             this.Controls.Add(this.lbQuantidade);
@@ -186,7 +177,6 @@
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.lbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaCadastroVenda";
             this.Text = "TelaCadastroVenda";
             this.Load += new System.EventHandler(this.TelaCadastroVenda_Load);

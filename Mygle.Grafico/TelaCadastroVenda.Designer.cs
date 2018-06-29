@@ -52,7 +52,7 @@
             // tbQuantidade
             // 
             this.tbQuantidade.Location = new System.Drawing.Point(38, 408);
-            this.tbQuantidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbQuantidade.Margin = new System.Windows.Forms.Padding(6);
             this.tbQuantidade.Name = "tbQuantidade";
             this.tbQuantidade.Size = new System.Drawing.Size(484, 31);
             this.tbQuantidade.TabIndex = 4;
@@ -82,7 +82,7 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(230, 542);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(142, 65);
             this.btCancelar.TabIndex = 5;
@@ -93,7 +93,7 @@
             // btSalvar
             // 
             this.btSalvar.Location = new System.Drawing.Point(384, 542);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(6);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(142, 65);
             this.btSalvar.TabIndex = 6;
@@ -114,7 +114,7 @@
             // tbValor
             // 
             this.tbValor.Location = new System.Drawing.Point(38, 315);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(6);
             this.tbValor.Name = "tbValor";
             this.tbValor.Size = new System.Drawing.Size(484, 31);
             this.tbValor.TabIndex = 3;
@@ -133,7 +133,7 @@
             // 
             this.tbCodigo.Enabled = false;
             this.tbCodigo.Location = new System.Drawing.Point(38, 129);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(484, 31);
             this.tbCodigo.TabIndex = 1;
@@ -172,6 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(554, 631);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.tbQuantidade);
@@ -185,7 +186,7 @@
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.lbCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaCadastroVenda";
             this.Text = "TelaCadastroVenda";
             this.Load += new System.EventHandler(this.TelaCadastroVenda_Load);

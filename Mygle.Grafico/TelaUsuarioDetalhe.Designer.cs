@@ -51,7 +51,7 @@
             this.Quantidade,
             this.Check});
             this.dgVendas.Location = new System.Drawing.Point(36, 125);
-            this.dgVendas.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dgVendas.Margin = new System.Windows.Forms.Padding(6);
             this.dgVendas.Name = "dgVendas";
             this.dgVendas.Size = new System.Drawing.Size(1090, 515);
             this.dgVendas.TabIndex = 53;
@@ -100,7 +100,7 @@
             // btExcluir
             // 
             this.btExcluir.Location = new System.Drawing.Point(984, 33);
-            this.btExcluir.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btExcluir.Margin = new System.Windows.Forms.Padding(6);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(142, 65);
             this.btExcluir.TabIndex = 2;
@@ -111,7 +111,7 @@
             // btAlterar
             // 
             this.btAlterar.Location = new System.Drawing.Point(830, 33);
-            this.btAlterar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btAlterar.Margin = new System.Windows.Forms.Padding(6);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(142, 65);
             this.btAlterar.TabIndex = 1;
@@ -123,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1160, 669);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
@@ -130,7 +131,7 @@
             this.Controls.Add(this.lbDetalhe);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaUsuarioDetalhe";
             this.Text = "TelaUsuarioDetalhe";
             this.Load += new System.EventHandler(this.TelaUsuarioDetalhe_Load);

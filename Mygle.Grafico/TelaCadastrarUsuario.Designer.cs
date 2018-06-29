@@ -47,7 +47,7 @@
             // tbUsuario
             // 
             this.tbUsuario.Location = new System.Drawing.Point(34, 315);
-            this.tbUsuario.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(692, 31);
             this.tbUsuario.TabIndex = 3;
@@ -65,7 +65,7 @@
             // tbNome
             // 
             this.tbNome.Location = new System.Drawing.Point(34, 221);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(6);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(692, 31);
             this.tbNome.TabIndex = 2;
@@ -83,7 +83,7 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(434, 608);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(142, 65);
             this.btCancelar.TabIndex = 6;
@@ -94,7 +94,7 @@
             // btSalvar
             // 
             this.btSalvar.Location = new System.Drawing.Point(588, 608);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(6);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(142, 65);
             this.btSalvar.TabIndex = 6;
@@ -126,7 +126,7 @@
             // tbCodigo
             // 
             this.tbCodigo.Location = new System.Drawing.Point(34, 129);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(692, 31);
             this.tbCodigo.TabIndex = 1;
@@ -134,7 +134,7 @@
             // tbSenha2
             // 
             this.tbSenha2.Location = new System.Drawing.Point(34, 504);
-            this.tbSenha2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbSenha2.Margin = new System.Windows.Forms.Padding(6);
             this.tbSenha2.Name = "tbSenha2";
             this.tbSenha2.PasswordChar = '*';
             this.tbSenha2.Size = new System.Drawing.Size(692, 31);
@@ -153,7 +153,7 @@
             // tbSenha
             // 
             this.tbSenha.Location = new System.Drawing.Point(34, 408);
-            this.tbSenha.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbSenha.Margin = new System.Windows.Forms.Padding(6);
             this.tbSenha.Name = "tbSenha";
             this.tbSenha.PasswordChar = '*';
             this.tbSenha.Size = new System.Drawing.Size(692, 31);
@@ -173,6 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(760, 696);
             this.Controls.Add(this.tbSenha);
             this.Controls.Add(this.label5);
@@ -189,7 +190,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaCadastrarUsuario";
             this.Text = "TelaCadastrarUsuario";
             this.Load += new System.EventHandler(this.TelaCadastrarUsuario_Load);

@@ -41,10 +41,10 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(124, 147);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btCancelar.Location = new System.Drawing.Point(186, 230);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(95, 42);
+            this.btCancelar.Size = new System.Drawing.Size(142, 66);
             this.btCancelar.TabIndex = 4;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
@@ -52,46 +52,46 @@
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(78, 44);
-            this.tbId.Margin = new System.Windows.Forms.Padding(4);
+            this.tbId.Location = new System.Drawing.Point(117, 69);
+            this.tbId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(244, 22);
+            this.tbId.Size = new System.Drawing.Size(364, 31);
             this.tbId.TabIndex = 1;
             // 
             // tbCodigo
             // 
             this.tbCodigo.AutoSize = true;
-            this.tbCodigo.Location = new System.Drawing.Point(19, 48);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tbCodigo.Location = new System.Drawing.Point(28, 75);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(56, 17);
+            this.tbCodigo.Size = new System.Drawing.Size(86, 25);
             this.tbCodigo.TabIndex = 69;
             this.tbCodigo.Text = "Código:";
             // 
             // tbValor
             // 
-            this.tbValor.Location = new System.Drawing.Point(78, 76);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(4);
+            this.tbValor.Location = new System.Drawing.Point(117, 119);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbValor.Name = "tbValor";
-            this.tbValor.Size = new System.Drawing.Size(244, 22);
+            this.tbValor.Size = new System.Drawing.Size(364, 31);
             this.tbValor.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 80);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(28, 125);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 67;
             this.label1.Text = "Valor:";
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(227, 147);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btSalvar.Location = new System.Drawing.Point(340, 230);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(95, 42);
+            this.btSalvar.Size = new System.Drawing.Size(142, 66);
             this.btSalvar.TabIndex = 3;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
@@ -101,37 +101,38 @@
             // 
             this.lbCategorias.AutoSize = true;
             this.lbCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lbCategorias.Location = new System.Drawing.Point(13, 9);
-            this.lbCategorias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCategorias.Location = new System.Drawing.Point(20, 14);
+            this.lbCategorias.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCategorias.Name = "lbCategorias";
-            this.lbCategorias.Size = new System.Drawing.Size(184, 25);
+            this.lbCategorias.Size = new System.Drawing.Size(287, 37);
             this.lbCategorias.TabIndex = 72;
             this.lbCategorias.Text = "Cadastro de Meta";
             this.lbCategorias.Click += new System.EventHandler(this.lbCategorias_Click);
             // 
             // tbComissao
             // 
-            this.tbComissao.Location = new System.Drawing.Point(192, 110);
-            this.tbComissao.Margin = new System.Windows.Forms.Padding(4);
+            this.tbComissao.Location = new System.Drawing.Point(288, 172);
+            this.tbComissao.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbComissao.Name = "tbComissao";
-            this.tbComissao.Size = new System.Drawing.Size(130, 22);
+            this.tbComissao.Size = new System.Drawing.Size(193, 31);
             this.tbComissao.TabIndex = 73;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 113);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(28, 177);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 17);
+            this.label2.Size = new System.Drawing.Size(252, 25);
             this.label2.TabIndex = 74;
             this.label2.Text = "Percentual de Comissão:";
             // 
             // TelaGerenteMeta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 215);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(519, 336);
             this.Controls.Add(this.tbComissao);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbCategorias);
@@ -141,7 +142,6 @@
             this.Controls.Add(this.tbValor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btSalvar);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaGerenteMeta";
             this.Text = "TelaGerenteMeta";
             this.Shown += new System.EventHandler(this.TelaGerenteMeta_Shown);

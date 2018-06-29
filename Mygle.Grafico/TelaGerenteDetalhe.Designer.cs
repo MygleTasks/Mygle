@@ -63,7 +63,7 @@
             this.Valor,
             this.Quantidade});
             this.dgDetalhes.Location = new System.Drawing.Point(36, 125);
-            this.dgDetalhes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dgDetalhes.Margin = new System.Windows.Forms.Padding(6);
             this.dgDetalhes.Name = "dgDetalhes";
             this.dgDetalhes.Size = new System.Drawing.Size(1286, 516);
             this.dgDetalhes.TabIndex = 51;
@@ -102,12 +102,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1344, 664);
             this.Controls.Add(this.dgDetalhes);
             this.Controls.Add(this.lbDetalhe);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TelaGerenteDetalhe";
             this.Text = "TelaGerenteDetalhe";
             this.Load += new System.EventHandler(this.TelaGerenteDetalhe_Load);
